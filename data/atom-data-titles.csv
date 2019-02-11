@@ -1,0 +1,263 @@
+Title,Labels
+Uncaught TypeError Cannot read property length of undefined,bug
+Wrong suggested title for opening a new issue,bug
+Does not work on Linux duplicate handles,bug
+Live reload in dev mode fails when multiple files are symlinks to the same path,bug
+Exception when nonError thrown,bug
+Fails to report error when stacktrace includes core JavaScript API,bug
+Markdown links are broken on reflow,bug
+Latex comments broken on reflow selection,bug
+Autoflow does not play well with comments,bug
+Cannot autoflow JSDoc comments,bug
+Reflow jumbles separate lines together,bug
+Symlinks within repository now breaking gitdiff,bug
+CRLF showing as changes when git commits them in LF ,bug
+Deletion mark in gutter is partially covered when the marks bottom row is selected,bug
+Diff lines only change on window focus after commit,bug
+Close icon reappears after dragdropping a tab,bug
+About package does not disable cleanly,bug
+getEnvFromShell does not handle newlines in environment variables correctly,bug
+Double soft wrap indicator,bug
+Dock Bug Crossing dock toggle with drag and drop breaks dock positioning,bug
+Certain custom themes can load in Safe Mode,bug
+Unable to open project directory while its removed,bug
+Application Install Update closes the window and breaks the sessions,bug
+Regression Auto indentation fails when moving multiple lines up or down,bug
+Menu showing wrong key binding,bug
+DISPOSE of MENU item not functioning as expected,bug
+Mapping ctrltabs key behavior to a different key  key doesnt work the same as ctrltab does,bug
+Workspace Item API documentation is truncated,bug
+Bug text rerendering on save,bug
+Uncaught TypeError Cannot read property length of undefined,bug
+atom test not showing exceptions  simply exiting with no message,bug
+BUG Fix resize behaviour when soft wrapping is enabled,bug
+Atom does not remember lastopened state if a spec window is closed last,bug
+Scrollbar moves to the top when splitting panes,bug
+Editor is empty if you scroll up after splitting,bug
+Cursor rendered incorrectly when horizontalPixelPositions are measured while not visible,bug
+File save dialog does not get focus,bug
+Uncaught TypeError Cannot read property classList of null,bug
+logfile parameter didnt create log file,bug
+Atom doesnt correctly indent lines with combining diacritics,bug
+Editor is not responding after leaving Save As dialog open for some time on macOS Sierra,bug
+Window dimensions and position not being saved,bug
+A cursor position is not restored when switching to and back from a pane without cursor,bug
+command  control  space | cmd  ctrl  space does not open the Characters selector on macOS with system lang with nonEnglish system language,bug
+macOS custom titlebar does not hide titlebar when reloading editor in fullscreen mode,bug
+Ctrlaltletter Keybindings do not appear as a shortcut,bug
+Atom doesnt handle gitignoreexclude files with trailing whitespace,bug
+Scroll Past End retains 3 lines instead of 1,bug
+Dock Icon stays visible when mouse leaves Atom window,bug
+Dockdestroy leaves part of the UI of the Dock behind and then exceptions happen,bug
+Opening directory with spaces and trailing slash opens invalid file,bug
+Atom 1170beta5  onDidChangeActivePane and onDidStopChangingActivePaneItem on atomworkspacegetCenter do not work,bug
+Lost input focus when switching between popup dialogs via shortcut key,bug
+Saving and renaming different files causes conflict,bug
+Pasting new line char into settings field causing problem  see gif,bug
+Data loss when adding and removing project folders,bug
+Copying or cutting without selecting text results in unexpected paste behaviour,bug
+Folding keybindings duplicated,bug
+horizontal scroll bar not fits longest line,bug
+Proxy icon shows  in directory stack only when no files open,bug
+Improper display of long indented hyperlinks in text files with soft wrap,bug
+Unexpected restart causes Atom to lose project state,bug
+With invisibles on  hard tabs render larger than they should,bug
+Key combination doesnt show up in the menu  altshiftn,bug
+Rename  reveal in tree view  and show in finder with split files can affect the wrong split ,bug
+Arabic sentences between double quotations are rendered out of the quotations,bug
+The entire editor breaks when a UI themes uivariablesless causes the Less compiler to error,bug
+Atom cant save over hidden files,bug
+Paste indentation issue with autoindent off,bug
+Some editor DOM operations stop working correctly after a certain number of lines,bug
+Grapheme clusters are not properly supported,bug
+Problems editing mixed GermanSyriac text,bug
+Package settings Keybindings disappear after unchecking Enable box,bug
+Failed to remove usrlocalbinatom,bug
+subword selection behaves differently for UPPER_CASE and lower_case,bug
+Case where TextEditorgetLastVisibleScreenRow is off by one,bug
+Executing paneclose will ask to save changes of TextEditors twice,bug
+Can not dismiss No update available window if opening menu again before the update check finishes,bug
+editorbufferRangeForScopeAtCursor return undefined as special condition,bug
+Indents based on previous lines are incorrectly tested using currentnext line scope,bug
+missing first letter on file operations cutcopyrename exc,bug
+File  Open not functional after closing editor Window OS X,bug
+Open project folder dialog defaults to current filename,bug
+Negated patterns from gitignore_global are still included in VCS ignored paths,bug
+The tmpAtom Crashes directory vs multiple userids,bug
+Scrollbar not refreshing when pasting code,bug
+Cursor keeps switching back to pointer instead of i beam,bug
+190 Problem with highlighting RTL language text ,bug
+when opening a file with a line number  atom should scroll down to display that line number at the top of the view,bug
+Vertical Scroll When Horizontal Scroll Bar Is Visible,bug
+Issue changing focus to a fullscreen Atom instance on OSX,bug
+word boundary not working with Unicode punctuations,bug
+MouseWheel Scrolling Ignores Operating System Settings,bug
+onDidChangeCursorPosition sends textChanged as false when backspace is pressed,bug
+Cursor in unexpected position when moving between lines with CJK characters,bug
+Error moving files across mounts or drives  Failed to move entry EXDEV crossdevice link not permitted,bug
+Windows installupdate does not always createmodify bin folder in appdata,bug
+Scroll to center is ignored if already visible,bug
+Data loss after power outage,bug
+Mix of Arabic and Latin rendered incorrectly,bug
+Identical folders are opened as separate projects on caseinsensitive filesystems,bug
+Multiple instances of Atom  multiple versions in Finder rightclick menu,bug
+atompackagesresolvePackagePathname works incorrectly when directory with given name exists in current working directory,bug
+SpawnENOENT thrown if the app is moved while it is open,bug
+Restored window size set to maximized after exiting maximized,bug
+Graphical glitches that occur under Arch Linux,bug
+atom is ignoring files that shouldnt be ignored,bug
+Standard mac hotkeys not working  on File Open choose directory  dialog,bug
+Doubleclick drag selections have unusual and bad behavior on nonword characters,bug
+RTL text selection,bug
+Default font size reset  deleted after command windowresetfontsize,bug
+Switching UISyntax theme does not display all elements in the new correct color,bug
+Horizontal Scolling From Trackpad Treated Like Arrow Keys,bug
+Positioning Caret in CTL Text,bug
+GitHub Markdown syntax highlighting bug for bash codeblocks,bug
+File auto reloading with untracked git files during branch change,bug
+Multiple applications running simultaneously,bug
+Bad cursor positioning when mixing RTL and LTR characters,bug
+Emojis count as two characters,bug
+Problem installing Packages Themes and Updates Corporate SSL Proxies,bug
+Copypaste doesnt work properly with Unixstyle line endings under Windows,bug
+open new file in an already open window,bug
+Contextmenu triggered by menu key is positioned at the mouse cursor,bug
+Cannot install shell commands if no window is open,bug
+Frequent recurring freezing on Windows,bug
+editorselecttoendofline should work similarly to editormovetoendofline,bug
+Atom may open windows offscreen if resolutionmonitors have changed,bug
+no mnemonics in menus File  Edit  ,bug
+Autoindent not working properly,bug
+Windows Restart and Update does not work,bug
+ShipIt service crashes,bug
+Atom Editor Doesnt Come to Foreground,bug
+Enable jumping between menus using leftright arrow keys,bug
+The insanity of Unicodes RTL override,bug
+Three finger tap for definitions doesnt work on OS X ,bug
+Failed to load configcson  stdin11 error unexpected  configcson filled with whitespaces,bug
+Auto indent on paste behaves oddly with already indented lines,bug
+Javascript comment indentation,bug
+View  Panes doesnt show keybindings in menu,bug
+Multiline editing becomes unusable with large selections,bug
+File replacement does not work against directories,bug
+Atom does not start when using x2go,bug
+Ask for root password when required,bug
+Dont render byte order mark BOM,bug
+Atom can lock files or folders under some circumstances,bug
+Unexpected Ctrl  Del behaviour,bug
+LSOpenURLsWithRole strikes back,bug
+OS X Atom shell command should not show a temporary second dock icon when Atom is already open,bug
+Autoupdate on Mac doesnt work as a nonAdmin user,bug
+processcwd behaviour,bug
+Atom over sshfs Unusably Slow,bug
+Editor Does Not Preview  Edit Files on Network Drive,bug
+Tree view and status bar show files with accented characters as new,bug
+ctrlcmddown combo for switching lines produces a sound,bug
+Resizing the window leaves a white trail ,bug
+Recognize grammar abbreviations in Grammar selector,enhancement
+Dont wait till user presses Enter button,enhancement
+Customize presenceabsenceignored of final EOL,enhancement
+Intelligent defaults based on mimetype,enhancement
+Allow Normalize File EOLs On Save,enhancement
+Allow converting line endings for multiple files in project,enhancement
+Change Report Issue button to reflect current status of the deprecation,enhancement
+grammar reload,enhancement
+Package name and command misleading,enhancement
+Report browser process exceptions,enhancement
+Collect recent errors and make them available,enhancement
+Request Indicate that package is looking for existing issue,enhancement
+Use wrapguides column length if it differs from editors preferred line length,enhancement
+Reflow multiple paragraphs,enhancement
+Autoreflow on editing,enhancement
+reflowing JSdoc fails,enhancement
+Reflow selection breaks indentation,enhancement
+Autoreflow doesnt take nonbreaking space into account,enhancement
+Add support for editorconfig file,enhancement
+Provide option to ignore EOL whitespace,enhancement
+Atoms UX problems,enhancement
+check for updates button for Linux,enhancement
+Warn if using a git package with an unsupported version of Atom,enhancement
+Improve softwrapping by breaking words like web browsers,enhancement
+Windows installer graphic blurry on highDPI screens,enhancement
+Prompt for registering as default atom protocol handler is unclear,enhancement
+Support scopelanguagespecific fontFamily  lineHeight,enhancement
+Revert buffer  Revert to saved  Refresh from source,enhancement
+Add the TextEditorelement to the public API,enhancement
+Persist undo history when reopening a previouslyclosed buffer,enhancement
+Feature request add selectcurrentparagraph,enhancement
+Redirect outdated links in keymapcson,enhancement
+Merge All Windows,enhancement
+Add setting to disable docks arrows,enhancement
+Feature Request Always discard project state when Restore Previous Windows On Start is false,enhancement
+Missing behavior when dropping a tab in another editor window,enhancement
+File content is missing when dragdropping file from zip archive,enhancement
+Add spec for Save As dialog,enhancement
+Should use name of symlink for determining file type or have an option,enhancement
+command line interface refinement macOS,enhancement
+Replacing project folder from CLI in open atom editor window,enhancement
+Overriding nonWordCharacters is unwieldy,enhancement
+change the atomsh script to launch the local build,enhancement
+Unsaved buffer state isnt silently preserved when the Window has no project folder,enhancement
+File  Reopen Project Option to reopen in current window,enhancement
+Double click English surrounded by Chinese selects whole line,enhancement
+CLI flag to load only particular packages,enhancement
+Slow response of scriptbuild when help toggles,enhancement
+Remember previous window state for multiple fullscreen windows,enhancement
+DeserializerManager should throw an error if a registered deserializer returns undefined,enhancement
+Invisibles enhancements and fixes,enhancement
+Commenting selection comments out entire line instead of selection,enhancement
+Code folding based on grammar instead of indentation,enhancement
+Flatpak release support,enhancement
+Unfold tree unfold everything under definition feature,enhancement
+Opening a file should open a new window if no window present on current Ubuntu workspace,enhancement
+Hide atomoverlay when not visible,enhancement
+Show closing bracetag when folding code blocks for clarity,enhancement
+Cannot rename file from window titlebar on OS X,enhancement
+Enhance Atoms Mac Services support to include text services editor not NSText,enhancement
+Atom QuickLook plugin on OS X,enhancement
+Ligatures put cursor inside of glyph,enhancement
+Fix auto update UX,enhancement
+Support external tokenizers,enhancement
+There is no naming convention of scope selectors,enhancement
+Atom does not recognize git worktree repositories,enhancement
+Branch undo,enhancement
+Sign Linux releases,enhancement
+Deactivate multiple cursors feature on Ctrlmouse click,enhancement
+Add Project Folder… menu item does nothing if no window is open ,enhancement
+Show invisibles only when selecting text,enhancement
+Disable application menu items when they dont apply to the focused element,enhancement
+Selecting text with option  shift  arrow behaves differently to other Mac apps,enhancement
+Add support for specifying humanreadable command labels,enhancement
+Folding toggle command,enhancement
+Atom should save new files where the last openedsaved file was,enhancement
+Warn before quitting,enhancement
+Inserting control characters,enhancement
+Man pages for atom and apm,enhancement
+Smooth scrolling Linux,enhancement
+Perproject config settings,enhancement
+Cursor is not between comment tags when toggling line comment with startend components,enhancement
+Atom doesnt respectupdate OSXs find pasteboard  clipboard,enhancement
+Undo grouping is too eager,enhancement
+UndoRedo doesnt affect file operations,enhancement
+Implement Chromium task manager,enhancement
+Notify when file has changed outside of atom on unsaved buffer,enhancement
+Feature Request Folding for includeimport statements,enhancement
+Ability to log in with GitHub account to sync Atom config,enhancement
+set width of a individual character,enhancement
+Keybinding to Rename The Current Buffer,enhancement
+Possible Translations,enhancement
+Tab Length Detection,enhancement
+Overtype mode isnt working,enhancement
+Support configurable  nonuniform  visually aligned tab stops,enhancement
+Create an atom bisect command for determining which package is causing a problem,enhancement
+Add support for block  column selection,enhancement
+Add a way to handle mouse with keymaps,enhancement
+Git integration doesnt work if git not in top level,enhancement
+It isnt possible to draganddrop selected text,enhancement
+Piping input into Atom doesnt work,enhancement
+Accessibility,enhancement
+Add some security precautions to package installation,enhancement
+Nonnative Fullscreen on OSX,enhancement
+Panes within tabs,enhancement
+How do I unsplit panes,enhancement
+Elastic scrolling not working on editors,enhancement

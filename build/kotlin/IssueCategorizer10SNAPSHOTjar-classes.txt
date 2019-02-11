@@ -1,0 +1,1 @@
+C:\Users\mokro\Documents\git\IssueCategorizer\build\classes\java\main\Main.class;C:\Users\mokro\Documents\git\IssueCategorizer\build\classes\java\main\parsing\Parser.class
