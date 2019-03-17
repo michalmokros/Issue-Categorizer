@@ -1,4 +1,111 @@
 Title,Body,Label
+Opens new (duplicate) windows for already-open projects,"### Description
+
+If you launch Atom from the command line multiple times in the same directory, it should re-use the same Atom window each time.
+
+### Steps to Reproduce
+
+1. Open a directory with Atom (e.g., `atom /path/to/directory`)
+2. Open the same directory with Atom a second time (e.g., `atom /path/to/directory`)
+
+**Expected behavior:** One Atom window should be open showing files for the directory
+
+**Actual behavior:** Two Atom windows are open showing files for the directory
+
+**Reproduces how often:** 100%
+
+### Versions
+
+macOS 10.14.3
+
+```
+$ atom-nightly --version
+Atom    : 1.37.0-nightly15
+Electron: 2.0.18
+Chrome  : 61.0.3163.100
+Node    : 8.9.3
+
+$ apm-nightly --version
+apm  2.1.3
+npm  6.2.0
+node 8.9.3 x64
+atom 1.37.0-nightly15
+python 2.7.15
+git 2.21.0
+```
+
+### Additional Information
+
+This also causes Atom to open a new window when you're using Atom as your Git commit editor. As a result, we lose the [performance benefits introduced in Atom 1.25](https://blog.atom.io/2018/03/15/atom-1-25.html#performance-and-responsiveness) for people wanting to use Atom as their Git commit editor.
+",bug
+Scrollbars don't disappear on macOS,"<!--
+
+Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
+
+Do you want to ask a question? Are you looking for support? The Atom message board is the best place for getting support: https://discuss.atom.io
+
+-->
+
+### Prerequisites
+
+* [x] Put an X between the brackets on this line if you have done all of the following:
+    * Reproduced the problem in Safe Mode: https://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
+    * Followed all applicable steps in the debugging guide: https://flight-manual.atom.io/hacking-atom/sections/debugging/
+    * Checked the FAQs on the message board for common solutions: https://discuss.atom.io/c/faq
+    * Checked that your issue isn't already filed: https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Aatom
+    * Checked that there is not already an Atom package that provides the described functionality: https://atom.io/packages
+
+### Description
+
+Scrollbars don't disappear after scrolling stopped.
+
+### Steps to Reproduce
+
+1. Make sure that in macOS's ""General"" settings, the ""Show scroll bars"" is set to ""Automatically"" or ""When scrolling"".
+2. Open Atom's ""About"" page
+3. Resize the window so that a scrollbar appears
+
+**Expected behavior:** 
+
+The scrollbar disappears when not scrolling.
+
+**Actual behavior:**
+
+The scrollbar stays visible.
+
+**Reproduces how often:**
+
+100%. But not in all locations. For example the editor and tree-view is fine.
+
+![scrollbar](https://user-images.githubusercontent.com/378023/53077685-ebf8ca00-3535-11e9-9376-d89331536821.gif)
+
+
+### Versions
+
+You can get this information from copy and pasting the output of `atom --version` and `apm --version` from the command line. Also, please include the OS and what version of the OS you're running.
+
+```
+macOS: Mojave 10.14.2 (18C54)
+
+Atom    : 1.37.0-dev-41a180b9d
+Electron: 3.1.3
+Chrome  : 66.0.3359.181
+Node    : 10.2.0
+
+apm  2.1.3
+npm  6.2.0
+node 8.9.3 x64
+atom 1.37.0-dev-41a180b9d
+python 2.7.10
+git 2.20.1
+```
+
+### Additional Information
+
+Something interesting: It also happens in the DevTools. Which makes me think it's Electron 3/Chromium related?
+
+![scrollbar-devtools](https://user-images.githubusercontent.com/378023/53077902-67f31200-3536-11e9-836e-02678a1be57d.gif)
+",bug
 Recognize grammar abbreviations in Grammar selector,"_From @MoritzKn on January 4, 2018 23:24_
 
 ### Prerequisites
@@ -129,12 +236,6 @@ No dev packages
 /cc @atom/core
 
 *This issue was moved by [daviwil](https://github.com/daviwil) from [atom/go-to-line#19](https://github.com/atom/go-to-line/issues/19).*",bug
-Dont wait till user presses Enter button,"*@ankithherle commented on Oct 23, 2015, 4:29 AM UTC:*
-
-I am new to Atom ( i am shifting from `sublime-text` to `Atom`)
-Goto line package in Atom is waiting for user to press enter, but i think it should goto line as user types a number (as there its in sublime text). If an user wants to goto line `812` as user enters `8` editor should goto line `8` and next when `1` is pressed it should goto line # `81` etc.
-
-*This issue was moved by [daviwil](https://github.com/daviwil) from [atom/go-to-line#26](https://github.com/atom/go-to-line/issues/26).*",enhancement
 Customize presence/absence/ignored of final EOL,"*@mcandre commented on Feb 25, 2018, 3:01 AM UTC:*
 
 Proper LF text files feature a final EOL terminator at the end, and even CRLF files benefit from a final EOL terminator. For example, C/C++ `*.h` headers and `*.js` client code may break when a final EOL is absent, due to the way that these files are concatenated. Some formats such as (GNU) Makefile's require a final EOL terminator.
@@ -1351,61 +1452,6 @@ See also https://github.com/atom/atom/issues/16556
 
 This is a regression that only started happening in the last month or so in Atom's dev builds.
 Are there no tests in place around these kind of indentation actions?",bug
-Menu showing wrong key binding,"<!--
-
-Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
-
-Do you want to ask a question? Are you looking for support? The Atom message board is the best place for getting support: https://discuss.atom.io
-
--->
-
-### Prerequisites
-
-* [X] Put an X between the brackets on this line if you have done all of the following:
-    * Reproduced the problem in Safe Mode: https://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
-    * Followed all applicable steps in the debugging guide: https://flight-manual.atom.io/hacking-atom/sections/debugging/
-    * Checked the FAQs on the message board for common solutions: https://discuss.atom.io/c/faq
-    * Checked that your issue isn't already filed: https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Aatom
-    * Checked that there is not already an Atom package that provides the described functionality: https://atom.io/packages
-
-### Description
-
-The menu for my package ([atom-xterm](https://atom.io/packages/atom-xterm)) shows an incorrect key binding. See the following.
-
-![Atom Xterm menu](https://raw.githubusercontent.com/amejia1/atom-xterm/dab2521a8cbfd72b70e2063e1e23c579bd62e7e1/resources/atom-xterm-menu.png)
-
-All the menu items should have `Ctrl+` at the beginning. The proper key bindings work but using the key bindings as shown above won't do anything.
-
-### Steps to Reproduce
-
-1. `apm install atom-xterm`
-2. Click on `Packages > Atom Xterm`
-
-**Expected behavior:** Should show proper key bindings.
-
-**Actual behavior:** Leaves out the `Ctrl+` at the beginning.
-
-**Reproduces how often:** Happens all the time.
-
-### Versions
-
-You can get this information from copy and pasting the output of `atom --version` and `apm --version` from the command line. Also, please include the OS and what version of the OS you're running.
-
-```
-Atom    : 1.23.2
-Electron: 1.6.15
-Chrome  : 56.0.2924.87
-Node    : 7.4.0
-```
-
-I'm using Windows 10. This also happens in Ubuntu 17.04.
-
-### Additional Information
-
-Any additional information, configuration or data that might be necessary to reproduce the issue.
-
-  
-  ",bug
 DISPOSE of MENU item not functioning as expected.,"### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -1515,36 +1561,6 @@ Thanks for your attention.
 \- Dan Padric
 
   ",bug
-Windows installer graphic blurry on high-DPI screens,"### Prerequisites
-
-* [x] Put an X between the brackets on this line if you have done all of the following:
-    * Reproduced the problem in Safe Mode: https://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
-    * Followed all applicable steps in the debugging guide: https://flight-manual.atom.io/hacking-atom/sections/debugging/
-    * Checked the FAQs on the message board for common solutions: https://discuss.atom.io/c/faq
-    * Checked that your issue isn't already filed: https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Aatom
-    * Checked that there is not already an Atom package that provides the described functionality: https://atom.io/packages
-
-### Description
-
-The Windows installer graphic looks blurry when using a hi-res screen.
-
-![installer](https://user-images.githubusercontent.com/378023/34634855-a7092f50-f2cb-11e7-83fc-454e5ed4632c.gif)
-
-
-### Steps to Reproduce
-
-1. Install Atom on Windows with a hi-res screen
-
-**Expected behavior:** Installer graphic should look sharp
-
-**Actual behavior:** Installer graphic looks blurry
-
-**Reproduces how often:** 100%
-
-### Versions
-
-Since 2 years
-",enhancement
 Prompt for registering as default atom:// protocol handler is unclear,"<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -1698,129 +1714,6 @@ Node    : 7.4.0
 ![copy_bug](https://user-images.githubusercontent.com/2036040/32116289-09c68804-bb18-11e7-8307-4bf2ab06a0f1.gif)
 
 /cc @maxbrunsfeld ",bug
-Uncaught TypeError: Cannot read property 'length' of undefined,"<!--
-
-Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
-
-Do you want to ask a question? Are you looking for support? The Atom message board is the best place for getting support: https://discuss.atom.io
-
--->
-
-### Prerequisites
-
-* [x] Put an X between the brackets on this line if you have done all of the following:
-    * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
-    * Followed all applicable steps in the debugging guide: http://flight-manual.atom.io/hacking-atom/sections/debugging/
-    * Checked the FAQs on the message board for common solutions: https://discuss.atom.io/c/faq
-    * Checked that your issue isn't already filed: https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Aatom
-    * Checked that there is not already an Atom package that provides the described functionality: https://atom.io/packages
-
-### Description
-
-```
-<embedded>:25444 Uncaught (in promise) TypeError: Cannot read property 'length' of undefined
-    at Project.module.exports.Project.setPaths (/Applications/Atom.app/Contents/Resources/app/src/project.js:271:44)
-    at /Applications/Atom.app/Contents/Resources/app/src/project.js:143:30
-```
-![screen shot 2017-10-25 at 1 34 06 pm](https://user-images.githubusercontent.com/26739/32013452-30cb0f8c-b989-11e7-80ff-c763783d62ba.png)
-
-Happens with or without `atom --safe .` 
-
-
-### Steps to Reproduce
-
-1. `git clone git@github.com:mozilla/balrog.git`
-2. `cd balrog`
-3. `docker-compose up`
-3. `atom .`
-
-Note. The `docker-compose up` creates a bunch of files in `.cache` and a bunch of files in `ui/node_modules`
-
-**Expected behavior:** [What you expect to happen]
-That it opens without errors and that I can open files.
-
-**Actual behavior:** [What actually happens]
-It never opens properly. No side-pane. See screenshot. 
-
-**Reproduces how often:** [What percentage of the time does it reproduce?]
-Every time. 
-
-### Versions
-
-```
-▶ atom --version
-Atom    : 1.21.1
-Electron: 1.6.15
-Chrome  : 56.0.2924.87
-Node    : 7.4.0
-▶ apm --version
-apm  1.18.5
-npm  3.10.10
-node 6.9.5 x64
-python 2.7.11
-git 2.9.0
-```
-
-I'm on macOS Sierra, 10.12.6
-
-### Additional Information
-
-I don't know how to debug (or even share) what extensions I have installed that might affect this. 
-
-Note that the error only happens *after* you've run `docker-compose up` which creates a bunch of files. But it's nevertheless reproducible. The files that are created should all be in `.gitignore`. ",bug
-"`atom --test` not showing exceptions, simply exiting with no message","### Prerequisites
-
-* [x] Put an X between the brackets on this line if you have done all of the following:
-    * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
-    * Followed all applicable steps in the debugging guide: http://flight-manual.atom.io/hacking-atom/sections/debugging/
-    * Checked the FAQs on the message board for common solutions: https://discuss.atom.io/c/faq
-    * Checked that your issue isn't already filed: https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Aatom
-    * Checked that there is not already an Atom package that provides the described functionality: https://atom.io/packages
-
-### Description
-
-When running `atom --test spec` and there is a problem encountered that will not allow the tests to start, this is the result:
-
-```
-[master][~/Source/atom/keybinding-resolver] atom --test spec
-Error Downloading Update: Could not get code signature for running application
-[master][~/Source/atom/keybinding-resolver][1]
-```
-
-It turned out that the problem was that I had forgotten to run `apm install` on the repository before attempting to run the tests. When I finally attempted to run the tests in the GUI, I was able to find this in the JavaScript Console
-
-```
-Error: Cannot find module 'etch'
-  at Module._resolveFilename (module.js:470:15)
-  at Module._resolveFilename (/Applications/Atom.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-  ...
-```
-
-This led me to the solution of running `apm install`. We should output any exception like this at the command line to help people figure out why things aren't working.
-
-### Steps to Reproduce
-
-1. Execute `git clone https://github.com/atom/keybinding-resolver.git ~/keybinding-resolver-test`
-1. `cd ~/keybinding-resolver-test`
-1. `atom --test spec`
-
-**Expected behavior:** An exception message (or even better a real error message explaining the problem)
-
-**Actual behavior:** Program simply exits with an unhelpful error code
-
-### Versions
-
-Atom    : 1.23.0-dev-dec47761f
-Electron: 1.6.14
-Chrome  : 56.0.2924.87
-Node    : 7.4.0
-
-apm  1.18.8
-npm  3.10.10
-node 6.9.5 x64
-python 2.7.10
-git 2.14.2
-",bug
 [BUG] Fix resize behaviour when soft wrapping is enabled,"
 ### Prerequisites
 
@@ -5691,136 +5584,6 @@ python 2.7.10
 git 2.6.3
 ```
 ",enhancement
-Show closing brace/tag when folding code blocks for clarity,"### Prerequisites
-- [x] Can you reproduce the problem in [safe mode](https://atom.io/docs/latest/hacking-atom-debugging#check-if-the-problem-shows-up-in-safe-mode)?
-- [x] Are you running the [latest version of Atom](https://atom.io/docs/latest/hacking-atom-debugging#update-to-the-latest-version)?
-- [x] Did you check the [debugging guide](https://atom.io/docs/latest/hacking-atom-debugging)?
-- [x] Did you check the [FAQs on Discuss](https://discuss.atom.io/c/faq)?
-- [x] Are you reporting to the [correct repository](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#atom-and-packages)?
-- [x] Did you [perform a cursory search](https://github.com/issues?q=is%3Aissue+user%3Aatom+-repo%3Aatom%2Felectron) to see if your bug or enhancement is already reported?
-
-For more information on how to write a good [bug report](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#how-do-i-submit-a-good-bug-report) or [enhancement request](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#how-do-i-submit-a-good-enhancement-suggestion), see the `CONTRIBUTING` guide.
-### Description
-
-[Per some discussion on the Atom boards](https://discuss.atom.io/t/code-folding-close-bracket/9997) there's some concession that folded blocks of code can often be difficult to parse and work around.
-
-Here are some examples of the current behavior and a suggested change to make the fold easier to parse.
-
-``` js
-// Example code
-function () {
-  console.log('Hello world.');
-  console.log('How are you today?');
-}
-
-/*
- * How Atom currently handles folds within a given syntax
- */
-// Folding the function - Atom (JavaScript syntax)
-function () {...
-
-/*
- * What I expect to happen to happen in a given syntax
- */
-// Folding the function - Atom (Plain Text syntax)
-function () {
-}
-
-// Folding the function - Sublime Text
-function () {
-}
-
-// A one-line variation
-function () {..}
-```
-
-And another example using HTML
-
-``` html
-<!-- Example code -->
-<section>
-  <p>Hello world.</p>
-</section>
-
-<!--
- How Atom currently handles folds within a given syntax
- -->
-<!-- Folding the block - Atom (HTML syntax) -->
-<section>...
-
-<!--
- What I expect to happen to happen in a given syntax
- -->
-<!-- Folding the block - Atom (Plain Text syntax) -->
-<section>
-</section>
-
-<!-- Folding the block - Sublime Text -->
-<section>
-</section>
-
-<!-- A one-line variation -->
-<section>...</section>
-```
-
-The `Atom (Plain Text syntax)` and `Sublime Text` format is easier to parse because it's clear where the function/block starts and stops. It also makes wrapping a folded block with more code easier because you can see the beginning and end of the full statement.
-
-The other problem with the current Atom folding method is indenting a folded function does not work properly.
-
-**JavaScript Example**:
-![Indenting folded JavaScript in Atom](https://zippy.gfycat.com/ExcellentMerryCoyote.gif)
-
-**HTML Example**:
-![Indenting folded HTML in Atom](https://zippy.gfycat.com/FarTenseAdeliepenguin.gif)
-
-@lee-dohm suggested I provide some examples of other folds besides just the [1TBS](https://en.wikipedia.org/wiki/Indent_style#Variant:_1TBS) style. I've noted some proposals:
-
-**Stroustrup**:
-
-``` c++
-// Example
-class Vector { 
-  public:
-      Vector(int s) :elem(new double[s]), sz(s) { }
-      double& operator[](int i) { return elem[i]; }
-      int size() { return sz; } 
-  private:
-      double elem[lowast];
-      int sz;
-};
-
-// Expected
-class Vector {
-  public:...
-  private:...
-}
-```
-
-**Allman**:
-
-``` js
-// Example
-while (x == y)
-{
-  something();
-  somethingelse();
-}
-
-// Expected
-while (x == y)
-{
-}
-```
-### Steps to Reproduce
-1. Launch Atom
-2. In the correct syntax (not just ""Plain Text""), write a multiline, indented function/block
-3. Collapse block
-4. (To replicate indentation issue) Indent the folded, one-line block
-### Versions
-
-**Atom**: 1.5.4
-**apm**: 1.6.0
-",enhancement
 Identical folders are opened as separate projects on case-insensitive filesystems,"### Description
 
 On case-insensitive (but case-preserving) filesystems, opening a project by passing its folder to the `atom` command will not restore the project, if the path given has the wrong case.
@@ -6536,21 +6299,7 @@ def correctly_indents_after_return():
     return True
 ```
 ",bug
-[Windows] Restart and Update does not work,"all it does is close and update, never restarts for me.
-
-Tested with .193 => .196
-",bug
 Disable application menu items when they don't apply to the focused element,"Currently, all application menu items are enabled no matter what element is focused, even if their commands aren't bound to that element or its parents. This can contribute to strange behavior / bugs like #6587. If a command isn't bound to a focused element or its parent elements, then it should be disabled (and maybe also removed from the Command Palette? I think that might be better off in another issue though).
-",enhancement
-Selecting text with option + shift + arrow behaves differently to other Mac apps,"Atom doesn't seem to follow Mac convention in certain cases. To reproduce:
-1. Double click to highlight a word
-2. Option + shift + left arrow
-- In other apps, both words are now selected.
-- In atom, the selection is cleared and the cursor is now at the start of the original word.
-
-Similarly, if the 2. is replaced with command + shift + left arrow, in Atom the extended selection doesn't include the originally selected word as it would in other apps.
-
-(This is clearly a minor issue; but it's frustrating if you're used to this pattern. Atom is fantastic overall!)
 ",enhancement
 ShipIt service crashes,"I have Atom 0.138.0 on Mac OS X 10.10.3
 When I launch it, it downloads a newer version, prompts me to provide admin password to add a new helper. Then I start seeing the service errors non-stop at Mac Console (please see below). It seems that update does not succeed.
@@ -6678,28 +6427,6 @@ Thoughts?
 Three finger tap for definitions doesn't work on OS X ,"In a Mac text view or web view, when you three finger tap a word it becomes yellow and a popover window with definitions (from country specific dictionaries and wikipedia) appears. Not so in atom.
 I find this very annoying since I use that feature a lot. I'm not sure if this is a bug or a feature request since it is standard in all (not strictly) other similar apps.
 ",bug
-"Failed to load config.cson / [stdin]:1:1 error: unexpected, config.cson filled with whitespaces","![0](http://i.imgur.com/DqXICg5.png)
-
-```
-Windows 10 Build 9926
-Atom version 0.182.0
-
-Community Packages:
-atom-lint
-minimap
-recent-files
-recent-projects
-```
-
-The contents of the file are exactly 238 whitespaces. I have no idea why it's that, I didn't modify anything on my own.
-",bug
-Inserting control characters,"To insert a control character:
-- In GNU Emacs, I can precede the combination with `C-q` (`quoted-insert`).
-- In Vim, I can precede the combination with `C-v`.
-- In GNU nano, I can precede the combination with `M-v`.
-
-But AFAIK there is no way to insert (and display, see #1839) control characters in Atom. The [GCS](https://www.gnu.org/prep/standards/standards.html#index-formfeed) uses formfeed characters (control-L) to divide programs into pages at logical places, but I have to use other editors to do the insertion.
-",enhancement
 Auto indent on paste behaves oddly with already indented lines.,"When copying a segment of code that starts with a new-line followed by tabbed-in code while ""Auto Indent On Paste"" is enabled, consecutive pastes will each be an additional tab deeper. I tested this with C++, Java, and JavaScript which makes me believe it is not a problem with the language specs.
 
 Here is an example in the form of an animated gif:
@@ -6903,28 +6630,6 @@ Keybinding to Rename The Current Buffer,"When saving a new file above the root f
 ",enhancement
 Possible Translations?,"Hi, how can I translate Atom into Azerbaijani language? Thanks!
 ",enhancement
-LSOpenURLsWithRole() strikes back,"I am unable to open Atom from the command line on Mac OS X 10.10 (Beta 4)—I don't remember when it broke or what caused it, but re-downloading/re-installing the command line tools didn't fix it. I believe this is different from #1103 because I'm on Atom `0.119.0`.
-
-I investigated which line of `/usr/local/bin/atom` was causing the error and discovered that
-
-```
-open -a /Applications/Atom.app
-```
-
-works fine, but
-
-```
-open -a /Applications/Atom.app -n
-```
-
-causes the error.
-
-Full error message:
-
-```
-LSOpenURLsWithRole() failed for the application /Applications/Atom.app with error -10810.
-```
-",bug
 Tab Length Detection,"Default setting for tab length is 2 spaces.
 - When I open a file that uses 3 spaces for indentation, and press `Tab`, I expect editor to insert 3 spaces (currently 2)
 - When I open a file that uses 4 spaces for indentation, and press `Tab`, I expect editor to insert 4 spaces (currently 2)
@@ -6993,8 +6698,6 @@ But it's one of those features that would set Atom apart from any other editor.
 
 Again, the tricky part is just the configurable tab stops. That would allow extension writers to align code, tables, and other data with various algorithms, including Elastic tabstops.
 ",enhancement
-Atom over sshfs Unusably Slow,"When editing files over an sshfs connection, it takes long periods of time to perform basic actions (directory expansion, file opening).  This is likely because git is running locally, but querying a remote repository many times -- can these behaviors be migrated into a non-blocking request?  e.g., allow the file to open before the git repo has been read for any changes.
-",bug
 Create an `atom bisect` command for determining which package is causing a problem,"Similar to the `git bisect` command, this command would load Atom with a subset of the packages available to it. It would launch Atom, then when Atom exits it could ask for ""good"", ""bad"", ""reset"" or ""quit"". It would perform a binary search of the packages until only one package is left and is marked bad (the most likely scenario) telling the user which package it is.
 ",enhancement
 Editor Does Not Preview / Edit Files on Network Drive,"OS: Windows 7
@@ -7118,12 +6821,6 @@ Panes within tabs?,"I have a Vim workflow that I am having trouble recreating in
 Thus I can `{` and `}` my way through tabs and `[` and `]` my way through splits within them, and all was right with the world. My splits are about keeping related files together, not separate panes or editors.
 
 The modeling of `Pane` and `EditSession` doesn't really allow this right now. It's fairly easy to see a number of ways to do it, but I was stymied when I started to edit core stuff by things marked as internal. @kevinsawicki said to ignore that, so I'm going to slowly work on something that works for me. But he also said to make an issue, so here it is. I'm hoping that one of you core guys sees a super easy way to do it :)
-",enhancement
-How do I unsplit panes?,"Splitting panes is easy: I got `C-|` and `C--` into my fingers quickly. What's hard for me is unsplits. Currently it looks like I have to `M-w` until I've closed every tab in the pane, at which point it goes away.
-
-The problem for me is that I don't use tabs, and I don't think of files being open in a pane. I think of them as being open in _Atom_ and displayed in a pane when I ask for 'em.
-
-When I think about unsplitting I don't connect it to the idea of closing files at all. I'd love it if unsplitting was a pane-level concern like splitting is.
 ",enhancement
 Elastic scrolling not working on editors,"Can the rubber band scroll effect at the top and bottom of the editor when reaching the end of the scrollable area be enabled?  I'm not sure if this works yet on scrollable divs, but it would be nice.
 ",enhancement

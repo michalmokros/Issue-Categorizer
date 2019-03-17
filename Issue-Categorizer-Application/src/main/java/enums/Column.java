@@ -1,4 +1,4 @@
-package parsing;
+package enums;
 
 public enum Column {
     TITLE("Title"),

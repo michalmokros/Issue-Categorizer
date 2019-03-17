@@ -1,5 +1,7 @@
 package parsing;
 
+import entities.DataHolder;
+import enums.Column;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import weka.core.*;
@@ -12,16 +14,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class Parser {
-    private static String csvFile = "../data/atom-atom-issues-open.csv";
-    private static String arffFile = "../data/atom-atom-issues-open.arff";
-    private static List<DataHolder> arffList = new ArrayList<>();
 
-    public static void parseCsvFile() {
+    public static List<DataHolder> parseCsvFile(String csvFile) {
+        List<DataHolder> arffList = new ArrayList<>();
         try (Reader in = new FileReader(csvFile)) {
             Iterable<CSVRecord> records = CSVFormat.EXCEL.withFirstRecordAsHeader().parse(in);
             for (CSVRecord record : records) {
-                String title = record.get("Title").replaceAll("[^\\p{L}\\p{Nd}]+", " ");
-                String body = record.get("Body").replaceAll("[^\\p{L}\\p{Nd}]+", " ");
+                String title = record.get("Title");
+                String body = record.get("Body");
                 String label = record.get("Label");
 
                 arffList.add(new DataHolder(title, body, label));
@@ -29,9 +29,11 @@ public final class Parser {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        return arffList;
     }
 
-    public static void createArffFile() {
+    public static void createArffFile(String arffFile, List<DataHolder> arffList) throws Exception {
         FastVector attributes = new FastVector();
         FastVector attributesRel = new FastVector();
         attributes.addElement(new Attribute(Column.TITLE.toString(), (FastVector) null));
@@ -50,7 +52,8 @@ public final class Parser {
             data.add(instance);
         }
 
-        System.out.println(data);
+        //System.out.println(data);
+
         ArffSaver saver = new ArffSaver();
         saver.setInstances(data);
 

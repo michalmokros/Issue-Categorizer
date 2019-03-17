@@ -49,7 +49,7 @@ def get_issues(name):
                      (link.split(';') for link in
                       r.headers['link'].split(','))}
             while 'last' in pages and 'next' in pages:
-                print(pages)
+                print(pages['next'])
                 pages = {rel[6:-1]: url[url.index('<')+1:-1] for url, rel in
                          (link.split(';') for link in
                           r.headers['link'].split(','))}

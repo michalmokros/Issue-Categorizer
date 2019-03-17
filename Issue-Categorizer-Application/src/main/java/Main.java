@@ -22,7 +22,11 @@
 
 //package wekaexamples.classifiers;
 
+import entities.DataHolder;
+import filtering.Cleaner;
 import parsing.Parser;
+
+import java.util.List;
 
 /**
  * This example trains NaiveBayes incrementally on data obtained
@@ -41,7 +45,13 @@ public class Main {
      * @throws Exception  if something goes wrong
      */
     public static void main(String[] args) throws Exception {
-        Parser.parseCsvFile();
-        Parser.createArffFile();
+        String csvFile = "../data/atom-atom-issues-open.csv";
+        String arffFile = "../data/atom-atom-issues-open.arff";
+        List<DataHolder> arffList;
+
+        arffList = Parser.parseCsvFile(csvFile);
+        Cleaner.cleanArffList(arffList);
+
+        Parser.createArffFile(arffFile, arffList);
     }
 }
