@@ -2,6 +2,7 @@ package parsing;
 
 import entities.DataHolder;
 import enums.Column;
+import filtering.SmartData;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import weka.core.*;
@@ -55,7 +56,8 @@ public final class Parser {
         //System.out.println(data);
 
         ArffSaver saver = new ArffSaver();
-        saver.setInstances(data);
+        SmartData smartData = new SmartData(data);
+        saver.setInstances(smartData.convertBigDataToSmartData());
 
         try {
             saver.setFile(new File(arffFile));

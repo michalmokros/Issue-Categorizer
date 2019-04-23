@@ -3,21 +3,43 @@ package filtering;
 import java.util.*;
 
 public class Vocabulary {
-    private Map<String, Integer> dictionary;
+    private Map<String, Integer> bugDictionary;
+    private Map<String, Integer> enhDictionary;
+    private int bugCount;
+    private int enhCount;
 
     Vocabulary() {
-        dictionary = new HashMap<>();
+        bugDictionary = new HashMap<>();
+        enhDictionary = new HashMap<>();
     }
 
-    public void addWord(String word) {
-        if (dictionary.containsKey(word)) {
-            dictionary.put(word, dictionary.get(word) + 1);
+    public int getBugCount() {
+        return bugCount;
+    }
+
+    public int getEnhCount() {
+        return enhCount;
+    }
+
+    public void addWord(String word, String label) {
+        if (label.equals("bug")) {
+            if (bugDictionary.containsKey(word)) {
+                bugDictionary.put(word, bugDictionary.get(word) + 1);
+            } else {
+                bugDictionary.put(word, 1);
+            }
+            bugCount++;
         } else {
-            dictionary.put(word, 1);
+            if (enhDictionary.containsKey(word)) {
+                enhDictionary.put(word, enhDictionary.get(word) + 1);
+            } else {
+                enhDictionary.put(word, 1);
+            }
+            enhCount++;
         }
     }
 
-    public Set<String> findWordsWithCountLessThan(int minimum) {
+ /*   public Set<String> findWordsWithCountLessThan(int minimum) {
         Set<String> output = new HashSet<>();
 
         for (Map.Entry<String, Integer> dict : dictionary.entrySet()) {
@@ -47,6 +69,23 @@ public class Vocabulary {
 
             output.add(entry.getValue());
             number--;
+        }
+
+        return String.join(" ", output);
+    }
+*/
+    public String removeWordsUsedInMultipleLabels(List<String> words) {
+        List<String> output = new ArrayList<>();
+
+        for (String word : words) {
+            int bugOccurence = bugDictionary.get(word) == null ? 0 : bugDictionary.get(word);
+            int enhOccurence = enhDictionary.get(word) == null ? 0 : enhDictionary.get(word);
+
+            if ((enhOccurence > bugOccurence * 2) || (bugOccurence > enhOccurence * 2)) {
+                output.add(word);
+            } else {
+                System.out.println("Removing word '" + word + "' with bugOcc -> " + bugOccurence + " and enhOcc -> " + enhOccurence);
+            }
         }
 
         return String.join(" ", output);

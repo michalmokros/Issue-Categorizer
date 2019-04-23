@@ -31,11 +31,11 @@ public final class Cleaner {
             dataHolder.setBody(newBody.toLowerCase());
 
             for (String word : dataHolder.getTitle().split(" ")) {
-                vocabTitle.addWord(word);
+                vocabTitle.addWord(word, dataHolder.getLabel());
             }
 
             for (String word : dataHolder.getBody().split(" ")) {
-                vocabBody.addWord(word);
+                vocabBody.addWord(word, dataHolder.getLabel());
             }
         }
 
@@ -45,10 +45,17 @@ public final class Cleaner {
             dataHolder.setBody(removeVocabularyWords(vocabBody, dataHolder.getBody(), 5));
         }*/
 
-        for (DataHolder dataHolder : arffList) {
+        /*for (DataHolder dataHolder : arffList) {
             dataHolder.setTitle(adjustVocabularyWordsToNumber(vocabTitle, dataHolder.getTitle(), 3));
             dataHolder.setBody(removeVocabularyWords(vocabBody, dataHolder.getBody(), 4));
+        }*/
+
+        for (DataHolder dataHolder : arffList) {
+            dataHolder.setTitle(removeWordsUsedInMultipleLabels(vocabTitle, dataHolder.getTitle()));
+            dataHolder.setBody(removeWordsUsedInMultipleLabels(vocabBody, dataHolder.getBody()));
         }
+
+
     }
 
     private static String removeWholeNumbers(String line) {
@@ -89,7 +96,7 @@ public final class Cleaner {
     }
 
     //used to remove words with appearance less than minimum
-    private static String removeVocabularyWords(Vocabulary vocab, String line, int minimum) {
+    /*private static String removeVocabularyWords(Vocabulary vocab, String line, int minimum) {
         Set<String> delWords = vocab.findWordsWithCountLessThan(minimum);
         List<String> output = new ArrayList<>();
 
@@ -110,5 +117,10 @@ public final class Cleaner {
         }
 
         return vocab.reduceWordsToNumOfMostPopular(words, number);
+    }*/
+
+    private static String removeWordsUsedInMultipleLabels(Vocabulary vocab, String line) {
+        List<String> words = Arrays.asList(line.split(" "));
+        return vocab.removeWordsUsedInMultipleLabels(words);
     }
 }

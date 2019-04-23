@@ -1,43 +1,4 @@
 Title,Body,Label
-Opens new (duplicate) windows for already-open projects,"### Description
-
-If you launch Atom from the command line multiple times in the same directory, it should re-use the same Atom window each time.
-
-### Steps to Reproduce
-
-1. Open a directory with Atom (e.g., `atom /path/to/directory`)
-2. Open the same directory with Atom a second time (e.g., `atom /path/to/directory`)
-
-**Expected behavior:** One Atom window should be open showing files for the directory
-
-**Actual behavior:** Two Atom windows are open showing files for the directory
-
-**Reproduces how often:** 100%
-
-### Versions
-
-macOS 10.14.3
-
-```
-$ atom-nightly --version
-Atom    : 1.37.0-nightly15
-Electron: 2.0.18
-Chrome  : 61.0.3163.100
-Node    : 8.9.3
-
-$ apm-nightly --version
-apm  2.1.3
-npm  6.2.0
-node 8.9.3 x64
-atom 1.37.0-nightly15
-python 2.7.15
-git 2.21.0
-```
-
-### Additional Information
-
-This also causes Atom to open a new window when you're using Atom as your Git commit editor. As a result, we lose the [performance benefits introduced in Atom 1.25](https://blog.atom.io/2018/03/15/atom-1-25.html#performance-and-responsiveness) for people wanting to use Atom as their Git commit editor.
-",bug
 Scrollbars don't disappear on macOS,"<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -1283,73 +1244,6 @@ Electron: 1.8.2
 Chrome  : 59.0.3071.115
 Node    : 8.2.1
 ```",enhancement
-Certain custom themes can load in Safe Mode,"### Prerequisites
-
-* [X] Put an X between the brackets on this line if you have done all of the following:
-    * Reproduced the problem in Safe Mode: https://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
-    * Followed all applicable steps in the debugging guide: https://flight-manual.atom.io/hacking-atom/sections/debugging/
-    * Checked the FAQs on the message board for common solutions: https://discuss.atom.io/c/faq
-    * Checked that your issue isn't already filed: https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Aatom
-    * Checked that there is not already an Atom package that provides the described functionality: https://atom.io/packages
-
-### Description
-
-If certain custom themes are selected before entering safe mode, they are loaded and activated during safe mode instead of being forced to One Dark temporarily.
-
-### Steps to Reproduce
-
-1. Set a custom theme (`atom-material-ui@2.1.3`)
-2. Close Atom
-3. Launch Atom in safe mode using `atom --safe`
-4. Note that the custom theme is still active and shows as an option in the list.
-5. Select a built in theme (`one-dark-ui`)
-6. Close Safe Mode and launch Atom in Safe Mode again
-7. Note that only the built in themes show as options in the theme selection list.
-8. Close Atom, launch in normal mode
-9. Select a _different_ UI theme (`city-lights-ui@1.3.3`)
-10. Restart Atom in safe mode
-11. Note that One Dark is selected as the theme as it should be.
-
-**Expected behavior:**
-
-Custom themes are not loaded or available in Safe Mode.
-
-**Actual behavior:**
-
-Certain custom themes can continue showing in Safe Mode if they was selected before entering Safe Mode:
-
-![2018-02-17_00-06-26](https://user-images.githubusercontent.com/427137/36339306-3516a432-1377-11e8-9a7f-c76d44e39acb.gif)
-
-Atom Material UI is the only one found so far that does this.
-
-**Reproduces how often:**
-
-100% of the time.
-
-### Versions
-
-**Not** a beta bug 😆.
-
-OS: Windows 10 x64 Enterprise
-
-```
-Atom    : 1.24.0
-Electron: 1.6.16
-Chrome  : 56.0.2924.87
-Node    : 7.4.0
-apm  1.18.12
-npm  3.10.10
-node 6.9.5 x64
-atom 1.24.0
-python 2.7.14
-git 2.16.1.windows.4
-visual studio 2015
-```
-
-### Additional Information
-
-I've tested this back to Atom v1.17.2, all Atom versions behave the same. I also tested with `atom-material-ui@2.0.0` and found the same behavior.
-",bug
 Application: Install Update closes the window and breaks the sessions,"<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -2981,60 +2875,6 @@ Software:
 
 ### Additional Information
 💖",enhancement
-Missing behavior when dropping a tab in another editor window,"Receive highlighting and pane splitting don't happen when drag-and-dropping a tab into another editor window.
-
-I'd expect drag-and-drop to work the same everywhere, no matter which editor window is receiving the drop.
-
-### Prerequisites
-
-* [x] Put an X between the brackets on this line if you have done all of the following:
-    * [x] Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
-    * [x] Followed all applicable steps in the debugging guide: http://flight-manual.atom.io/hacking-atom/sections/debugging/
-    * [x] Checked the FAQs on the message board for common solutions: https://discuss.atom.io/c/faq
-    * [x] Checked that your issue isn't already filed: https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Aatom
-    * [x] Checked that there is not already an Atom package that provides the described functionality: https://atom.io/packages
-
-### Description
-
-The split-pane layout management feature doesn't work when dragging tabs to a new window.
-
-In fact, dropping a tab anywhere outside the tab bar just gets ignored.  This is surprising because that's not how dragging works in the main window.
-
-This is related to this excellent PR: https://github.com/atom/tabs/pull/252
-
-### Steps to Reproduce
-
-1. Open a project
-2. Create a new window with `cmd-shift-N`
-3. Drag a tab from the project to the window you just opened
-
-**Expected behavior:** Ideally, you'd see the shaded regions allowing you to open a new pane left/right/top...  But I'd settle for a drop in the content area working.
-
-**Actual behavior:** The drag is ignored.  You must hit the tab bar exactly for it to work.
-
-**Reproduces how often:** 100%
-
-![bug3](https://cloud.githubusercontent.com/assets/1776/25256002/af8eb80e-25e2-11e7-9f14-9629488d2fce.gif)
-
-### Versions
-
-You can get this information from copy and pasting the output of `atom --version` and `apm --version` from the command line. Also, please include the OS and what version of the OS you're running.
-
-MacOS Sierra
-
-```
-~$ atom --version
-Atom    : 1.16.0
-Electron: 1.3.13
-Chrome  : 52.0.2743.82
-Node    : 6.5.0
-~$ apm --version
-apm  1.16.1
-npm  3.10.5
-node 6.9.5 x64
-python 2.7.9
-git 2.2.1
-```",enhancement
 File content is missing when drag&dropping file from zip archive,"<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -5056,42 +4896,6 @@ If horizontal scroll bar is visible you can scroll vertically (using mouse wheel
 Atom: 1.8.0
 OS: Linux Fedora 23
 ",bug
-Issue changing focus to a fullscreen Atom instance on OSX,"### Description
-
-I have an Atom instance running in fullscreen mode and a terminal in fullscreen mode. If I use the `atom` command to open a file from the terminal the file opens but the window does not come into focus.
-
-Some additional information is available in [the original discussion post](https://discuss.atom.io/t/issue-changing-focus-to-a-fullscreen-atom-instance-on-osx/30458), though the relevant information is reproduced here.
-### Steps to Reproduce
-1. Open an Atom workspace and put the window in fullscreen mode using the green button in the upper-left corner.
-2. Open an terminal window and make it fullscreen as well.
-3. Run the command `atom foo.txt:7` in the terminal (where `foo.txt` is an actual file).
-
-**Expected behavior:** The file should open in the existing window and the Atom window should be in focus.
-
-**Actual behavior:** The file is opening as expected, but the _desktop_ is in focus.
-### Versions
-
-Running on OS X 10.10.5.
-
-output of `atom --version`:
-
-```
-Atom    : 1.9.0-beta0
-Electron: 0.37.8
-Chrome  : 49.0.2623.75
-Node    : 5.10.0
-```
-
-output of `apm --version`:
-
-```
-apm  1.10.0
-npm  2.13.3
-node 0.10.40
-python 2.7.11
-git 2.7.0
-```
-",bug
 word boundary not working with Unicode punctuations,"### Prerequisites
 
   none
@@ -5535,55 +5339,6 @@ python 2.7.11
 git 2.7.2
 ```
 ",bug
-Hide atom-overlay when not visible,"### Prerequisites
-- [x] Can you reproduce the problem in [safe mode](https://atom.io/docs/latest/hacking-atom-debugging#check-if-the-problem-shows-up-in-safe-mode)?
-- [x] Are you running the [latest version of Atom](https://atom.io/docs/latest/hacking-atom-debugging#update-to-the-latest-version)?
-- [x] Did you check the [debugging guide](https://atom.io/docs/latest/hacking-atom-debugging)?
-- [x] Did you check the [FAQs on Discuss](https://discuss.atom.io/c/faq)?
-- [x] Are you reporting to the [correct repository](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#atom-and-packages)?
-- [x] Did you [perform a cursory search](https://github.com/issues?q=is%3Aissue+user%3Aatom+-repo%3Aatom%2Felectron) to see if your bug or enhancement is already reported?
-
-For more information on how to write a good [bug report](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#how-do-i-submit-a-good-bug-report) or [enhancement request](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#how-do-i-submit-a-good-enhancement-suggestion), see the `CONTRIBUTING` guide.
-### Description
-
-This issue came up [here](https://github.com/atom/one-dark-ui/pull/127).
-
-Currently `atom-overlay`s overlap the rest of the UI. I think it's ok, but only as long as the current line is visible. If you scroll it ""out of sight"", it looks odd having the overlay still be shown.
-
-A possible solution might be to try to detect when the current line is not visible and then hide the `atom-overlay`. I think autocomplete kinda already tries to do that by jumping to the top when scrolling down, but doesn't hide completely. And would be nice if it's part of the core behavior, so all packages would get it. Maybe with an option to opt-out if a package wants stay visible all the time.
-### Steps to Reproduce
-1. Open find + replace `cmd-f`
-2. Have autocomplete enabled and type something to open the autocomplete overlay.
-3. Scroll down until the current line is underneath the find + replace panel
-
-**Expected behavior:**
-
-The autocomplete overlay should disappear
-
-![overlay](https://cloud.githubusercontent.com/assets/378023/13974127/810694a6-f0ec-11e5-897b-f80c7d7fbb52.gif)
-
-**Actual behavior:**
-
-It stays on top of the find + replace panel, even tough you can't see the current line anymore
-
-![screen shot 2016-03-23 at 11 47 53 am](https://cloud.githubusercontent.com/assets/378023/13974215/2793be34-f0ed-11e5-8209-8bd9754f4e6a.png)
-### Versions
-
-You can get this information from executing `atom --version` and `apm --version` at the command line.
-
-```
-Atom    : 1.8.0-dev-64308bb
-Electron: 0.36.8
-Chrome  : 47.0.2526.110
-Node    : 5.1.1
-
-apm  1.9.1
-npm  2.13.3
-node 0.10.40
-python 2.7.10
-git 2.6.3
-```
-",enhancement
 Identical folders are opened as separate projects on case-insensitive filesystems,"### Description
 
 On case-insensitive (but case-preserving) filesystems, opening a project by passing its folder to the `atom` command will not restore the project, if the path given has the wrong case.
@@ -5904,70 +5659,6 @@ Attached is a gif of the behavior.  Please let me know if I can provide any more
 
 ![atom-bug](https://cloud.githubusercontent.com/assets/4690898/10678022/bcda2682-78dd-11e5-830e-c29b223c1763.gif)
 ",bug
-Fix auto update UX,"Our automatic update process is pretty bad. We release once a week, and every week over a half million people need to go through this process.
-
-There are [errors](https://github.com/atom/atom/issues/7854), [bugs](https://github.com/atom/atom/issues/6482), folks want [better feedback](https://github.com/atom/atom/issues/8038), and the squirrel icon + release notes are really really confusing:
-- https://github.com/atom/settings-view/issues/511
-- https://github.com/atom/release-notes/pull/38
-- https://github.com/atom/atom/issues/5692
-- https://github.com/atom/atom/issues/6922
-- https://github.com/atom/atom/issues/3757
-- https://github.com/atom/atom/issues/8265
-### What happens now
-- Download an [old version](https://github.com/atom/atom/releases/tag/v1.0.18)
-- Start it
-- Notice there is a blue squirrel in the status bar, and it says 'view release notes'
-- Click the squirrel
-- See the release notes, note that they are showing notes for an old release
-- Click the restart and update button
-- Atom quits, notice that there is no feedback as to what is happening.
-- It's still not back. What's up?
-- Atom restarts again after 5 - 15 seconds
-- Notice that the release notes are up in the reloaded window. They are still out of date, and still have the 'Restart and Update' button showing and enabled
-- Notice that the squirrel icon is still showing, and still blue, with the same tooltip text
-- I click the squirrel because it's still there, and not going away. It focuses the release notes. Ok.
-- I'm thinking: is there another update??!? What is happening?
-- I check the atom menu
-  - Click the 'About' item, theres no information saying it's the latest version
-  - I notice there is a version number, and a 'Check for update'
-  - Nothing indicates I'm at the latest version
-- On reload, squirrel goes away; still nothing tells me I'm at the latest version. But no squirrel, so I guess so?
-### A 70% fix
-
-tl;dr: fix the squirrel icon, remove the release notes package, use the about package for update status (similar to chrome).
-- An update becomes available
-- The blue squirrel shows, its tooltip says ""Downloading update for version 1.0.20...""
-- Clicking the squirrel shows the about page which shows
-  - the current version
-  - new version detected
-  - some text indicating that the update is being downloaded
-- When it's finished downloading:
-  - the blue squirrel turns green, with a tooltip of ""Version 1.0.20 is available""
-  - the about page now shows that an update is available, and has a button to restart the editor
-  - The menu item now takes you to the about page
-- Clicking the green squirrel still shows / focuses the about page
-- Clicking reload reloads the editor like today
-- On reload the about page is shown.
-- The about page indicates that you are up to date, and has a link to the release notes
-- The squirrel is _gone_ after reload as the about page has the relevant information
-
-Additionally, take a stab at the bugs:
-- https://github.com/atom/atom/issues/7854
-- https://github.com/atom/atom/issues/6482
-
-Bonus:
-- In the about page, indicate which release rail you are on. beta? stable? development?
-### An extra 10%
-
-Add some kind of feedback when atom is reloading. A small window with an infinite spinner would be sufficient. The goal is to indicate that it is working.
-### That last 20%
-- Add progress to the download in squirrel (cc @joshaber, is this possible today?)
-  - Add progress to the menu item in %
-  - Add progress to the squirrel icon
-    - Could add a progress bar to the tooltip
-    - Could make the blue squirrel ""fill up"" with green as it progresses
-- Add an option to turn off automatic downloads in the about page to fix https://github.com/atom/atom/issues/1882
-",enhancement
 Multiple applications running simultaneously,"Every now an again when I use the `atom` command line tool to open a directory in Atom it starts a new process instead of opening it in the already running process.
 
 I don't see any pattern to it, more than that the first time it happens Atom has been running for hours, maybe days. If I just do `atom .` in two different directories after each other it opens in the same process, just as expected. Maybe it's just that I notice it more often when I get back to the computer in the morning or after I haven't used it for a long time, but it seems to happen more frequently in those cases.
@@ -5995,10 +5686,6 @@ test test اثر کارآزمودگی
 With the new character measurement mechanism we now degrade gracefully, but the cursor can only be placed before and after the arabic text. This _seems_ like a limitation in the `Range` API which gets confused when mixing the two: I think this kinda makes sense 'cause I believe that, in order to provide a full RTL editing experience, we should need to go beyond character measurement.
 
 /cc: @nathansobo @izuzak 
-",bug
-Emojis count as two characters,"Expected behaviour: Emojis should only be counted as one character, to make counting easier. As you can see from the screenshot, Atom claims the cursor to be at position 1:5, even though it's at 1:3.
-
-![screen shot 2015-09-28 at 14 44 49](https://cloud.githubusercontent.com/assets/2098462/10135611/ab3bfd16-65ef-11e5-8ac1-1c6f81a60364.png)
 ",bug
 Support external tokenizers,"Formalizing [this forum question](https://discuss.atom.io/t/custom-grammar-based-on-external-tokenizer/19537) as a feature request here. Some languages don't lend themselves very well to regex-based grammars, and there are several languages out there that expose their tokenizers.
 
@@ -6080,12 +5767,6 @@ Atom should convert any text's line ending to the platform's native line ending 
 Atom does not recognize git worktree repositories,"When `git-repository-provider.coffee` searches for the git repository it looks for the `.git` directory, however `git worktree` creates repositories that have `.git` file that has `gitdir: path/to/gitdir` as contents. As a result atom cannot currently work with repositories created with `git worktree`. Unfortunately even making `.git` a symlink doesn't work, since worktree gitdir doesn't have `objects` or `refs` subdirectories.
 
 Atom should recognize `.git` files that start with `gitdir:` as valid git repositories.
-",enhancement
-Branch undo,"One very useful feature that vim has is undo branching. This feature can be a real life saver. Let's say I make some changes, undo them, and then start typing again, only to realize that I needed some of those other changes. Without undo branches, those changes are gone. With them, I am free from worry about losing work!
-
-See: http://vim.wikia.com/wiki/Using_undo_branches
-
-It would be so nice for Atom to have this as well!
 ",enhancement
 Context-menu triggered by menu key is positioned at the mouse cursor,"Using Atom 1.0.1 on Windows.
 
@@ -6176,6 +5857,24 @@ In short: we should have an option to only display invisibles within a selection
 
 If this request appeals more as something that's more generic (and allow us to achieve what we want with CSS) you could actually just attach a `.selected` class to all elements (scopes) that are within the selection (obviously a selection part-way through an element will require an inner span injected with just the `.selected` class). This way, we can do what we want in regards to the invisibles, but package developers may find interesting ways to use this selection class/scope for other purposes.
 ",enhancement
+"no mnemonics in menus (File, Edit, ...)","My system:
+Linux
+Desktop: KDE 4.14.6
+
+In the menus there are any mnemonics shown at all!
+(the menu buttons themselves show mnemonics when pressing ALT)
+E.g. in File menu:
+
+```
+New Window
+New File
+Open File
+...
+```
+
+don't show any mnemonics. Also when pressing ""ALT"" while menu is opened.
+Nevertheless, mnemonics seem to be there (but not shown). If I press ""n"" while in File menu (found out by guessing) Atom opens a new file.
+",bug
 Autoindent not working properly,"Version: 0.192.0
 ## Problem
 
@@ -6362,8 +6061,6 @@ Sublime Text was a lot smarter with this -- although I do not remember the exact
 Even if I want to save to the root directory, which is the current behavior, navigating upwards in the file save dialog is really simple.
 
 PS: I am using Atom 0.187.0
-",enhancement
-Warn before quitting,"It'd be nice to have an option to warn before quitting when hitting Cmd+Q as its too easy to close all your editors when trying to close a single tab. Chrome has this option and its a time saver.
 ",enhancement
 Enable jumping between menus using left-right arrow keys,"If there is no sub-menu to a menu-entry, I would like to switch to the next menu when I press the left/right arrow keys. Also when I'm on the last nesting level in a sub-menu, I'd like to switch to the next main menu entry. If the said feature already exists it does not work for me on Ubuntu 14.04 using Atom version 0.187.0.
 
