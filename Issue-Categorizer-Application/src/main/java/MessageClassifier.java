@@ -20,8 +20,6 @@
  *
  */
 
-package wekaexamples.book;
-
 import weka.classifiers.Classifier;
 import weka.classifiers.trees.J48;
 import weka.core.Attribute;

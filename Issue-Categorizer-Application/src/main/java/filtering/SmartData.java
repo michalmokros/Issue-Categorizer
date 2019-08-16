@@ -1,11 +1,7 @@
 package filtering;
 
-import weka.classifiers.Classifier;
 import weka.classifiers.bayes.NaiveBayesMultinomialText;
-import weka.classifiers.meta.FilteredClassifier;
 import weka.core.Instances;
-import weka.filters.unsupervised.attribute.Remove;
-import weka.filters.unsupervised.attribute.StringToWordVector;
 
 public class SmartData {
     private Instances train;
