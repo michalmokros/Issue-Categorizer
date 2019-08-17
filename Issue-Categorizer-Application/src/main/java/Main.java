@@ -45,8 +45,8 @@ public class Main {
      * @throws Exception  if something goes wrong
      */
     public static void main(String[] args) throws Exception {
-        String csvFile = "../data/atom-atom-issues-open.csv";
-        String arffFile = "../data/atom-atom-issues-open.arff";
+        String csvFile = "../data/atom-atom-issues-all.csv";
+        String arffFile = "../data/atom-atom-issues-all.arff";
         List<DataHolder> arffList;
 
         arffList = Parser.parseCsvFile(csvFile);

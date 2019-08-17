@@ -6,14 +6,13 @@ import weka.core.Stopwords;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 
 public final class Cleaner {
 
     public static void cleanArffList(List<DataHolder> arffList) {
         Vocabulary vocabTitle = new Vocabulary();
         Vocabulary vocabBody = new Vocabulary();
-        //cleans data of numbers, symbols and stopwords
+        //cleans data of numbers, symbols and stop-words
         for (DataHolder dataHolder : arffList) {
             //removes non alphanumeric symbols
             String newTitle = dataHolder.getTitle().replaceAll("[^\\p{L}\\p{Nd}]+", " ");
@@ -23,9 +22,9 @@ public final class Cleaner {
             newTitle = removeWholeNumbers(newTitle);
             newBody = removeWholeNumbers(newBody);
 
-            //clears string of stopwords
-            newTitle = removeStopwords(newTitle);
-            newBody = removeStopwords(newBody);
+            //clears string of stop-words
+            newTitle = removeStopWords(newTitle);
+            newBody = removeStopWords(newBody);
 
             dataHolder.setTitle(newTitle.toLowerCase());
             dataHolder.setBody(newBody.toLowerCase());
@@ -81,12 +80,12 @@ public final class Cleaner {
         return String.join(" ", output);
     }
 
-    private static String removeStopwords(String line) {
+    private static String removeStopWords(String line) {
         String[] list = line.split(" ");
         List<String> output = new ArrayList<>();
 
         for (String word : list) {
-            //removes stopwords and words with length one
+            //removes stop-words and words with length one
             if (!Stopwords.isStopword(word) && word.length() > 1) {
                 output.add(word);
             }
