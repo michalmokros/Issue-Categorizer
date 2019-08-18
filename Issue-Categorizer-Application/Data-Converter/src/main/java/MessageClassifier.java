@@ -171,7 +171,7 @@ public class MessageClassifier
     }
 
     /**
-     * Main method. The following parameters are recognized:
+     * Converter method. The following parameters are recognized:
      * <ul>
      *   <li>
      *      <code>-m messagefile</code><br/>
