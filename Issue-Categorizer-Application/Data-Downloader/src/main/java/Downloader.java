@@ -7,12 +7,8 @@ import org.json.simple.parser.ParseException;
 
 import java.io.*;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Downloader {
     public static void main(String[] args) throws IOException, ParseException {
@@ -44,8 +40,10 @@ public class Downloader {
     private static List<EntryDTO> extractEntriesRecursively(String urlString) throws IOException, ParseException {
         URL url = new URL(urlString);
         System.out.println(url.toString());
+        String encoding = Base64.getEncoder().encodeToString(("IssueCategorizerUsername:IssueCategorizerPassword").getBytes());
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
+        connection.setRequestProperty("Authorization", "Basic " + encoding);
         connection.setRequestProperty("Content-Type", "application/json");
         int status = connection.getResponseCode();
         BufferedReader  in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -98,7 +96,7 @@ public class Downloader {
 
     private static String getLabel(JSONArray labels) {
         for (int i = 0; i < labels.size(); i++) {
-            String label = ((JSONObject) labels.get(0)).get("name").toString();
+            String label = ((JSONObject) labels.get(i)).get("name").toString();
 
             if (label.equals("bug")) {
                 return "bug";
