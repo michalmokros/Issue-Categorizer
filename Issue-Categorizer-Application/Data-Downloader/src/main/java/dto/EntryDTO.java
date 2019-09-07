@@ -1,5 +1,10 @@
 package dto;
 
+/**
+ * DTO Entry class for Issue extracted from github api page.
+ *
+ * @author xmokros
+ */
 public class EntryDTO {
     private String title;
     private String body;
@@ -33,5 +38,14 @@ public class EntryDTO {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    @Override
+    public String toString() {
+        return "EntryDTO{" +
+                "title='" + title + '\'' +
+                ", body='" + body + '\'' +
+                ", label='" + label + '\'' +
+                '}';
     }
 }
