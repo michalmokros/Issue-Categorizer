@@ -1,6 +1,16 @@
 plugins {
     id 'java'
+    id 'application'
 }
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+
+group 'cz.muni.fi'
+version '1.0-SNAPSHOT'
 
 allprojects {
     repositories {
@@ -14,4 +24,9 @@ subprojects {
 
 dependencies {
     compile project(':Data-Converter')
+    compile project(':Data-Downloader')
+}
+
+application {
+    mainClassName = 'Main'
 }

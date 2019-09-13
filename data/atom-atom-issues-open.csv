@@ -1,4 +1,81 @@
 Title,Body,Label
+"atom --wait works only after closing the window, not just the file tab","<!--
+
+Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
+
+Do you want to ask a question? Are you looking for support? The Atom message board is the best place for getting support: https://discuss.atom.io
+
+-->
+
+### Prerequisites
+
+* [x] Put an X between the brackets on this line if you have done all of the following:
+    * Reproduced the problem in Safe Mode: <https://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode>
+    * Followed all applicable steps in the debugging guide: <https://flight-manual.atom.io/hacking-atom/sections/debugging/>
+    * Checked the FAQs on the message board for common solutions: <https://discuss.atom.io/c/faq>
+    * Checked that your issue isn't already filed: <https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Aatom>
+    * Checked that there is not already an Atom package that provides the described functionality: <https://atom.io/packages>
+
+### Description
+
+<!-- Description of the issue -->
+
+I have always had `git config core.editor` set to `atom --wait`.
+_NOTE:_ This also happens if I set the config to `atom --wait --safe`.
+
+This issue appeared after I upgraded from version **1.36.0** to **1.40.1**
+
+An old closed issue that might be related to this one: #16740
+
+### Steps to Reproduce
+
+1. Open the project folder in Atom.
+2. Edit files and run `git commit`.
+3. Because the project folder is already opened in Atom, the `COMMIT_EDITMSG` file is opened in a new tab in the existing window.
+4. Write message and save.
+
+_NOTE:_ Of course this also happens for `git rebase -i` and any other git operations that require input from the editor.
+
+**Expected behavior:**
+
+<!-- What you expect to happen -->
+
+After closing the file tab the commit should finalize.
+
+**Actual behavior:**
+
+<!-- What actually happens -->
+
+You need to close the window for the commit to finalize.
+
+**Reproduces how often:**
+
+<!-- What percentage of the time does it reproduce? -->
+
+100% of the time.
+
+### Versions
+
+<!-- You can get this information from copy and pasting the output of `atom --version` and `apm --version` from the command line. Also, please include the OS and what version of the OS you're running. -->
+
+```
+Atom    : 1.40.1
+Electron: 3.1.10
+Chrome  : 66.0.3359.181
+Node    : 10.2.0
+
+git version 2.21.0.windows.1
+
+Windows 10 Enterprise 64bit
+```
+
+### Additional Information
+
+<!-- Any additional information, configuration or data that might be necessary to reproduce the issue. -->
+
+Demo:
+
+![atom--wait_issue](https://user-images.githubusercontent.com/3825876/63950139-1fd41f80-ca84-11e9-99ae-b66a191ca56d.gif)",bug
 [WSL] atom.sh assumes default root automount,"<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -5286,8 +5363,6 @@ git 1.9.1
 return name if name !== path.basename(name) and fs.isDirectorySync(name)
 ```
 ",bug
-Spawn/ENOENT thrown if the app is moved while it is open,"https://github.com/atom/atom/issues/9594 is a good example of this.
-",bug
 Restored window size set to maximized after exiting maximized,"When I exit Atom and window state is restored, its size is remembered; so when I start Atom again, the window starts restored and remembers its size. However, when I exit Atom maximized, the restored window size is set to maximized size; so when I start Atom again, it start maximized and when I click restore, the window size remains just the same (maximized size).
 
 Simply said, nonmaximized window is too often set to maximized size and is just too big to normaly drag around and I have to manually resize window to smaller size each time.
@@ -5814,29 +5889,6 @@ def correctly_indents_after_return():
 
     return True
 ```
-",bug
-ShipIt service crashes,"I have Atom 0.138.0 on Mac OS X 10.10.3
-When I launch it, it downloads a newer version, prompts me to provide admin password to add a new helper. Then I start seeing the service errors non-stop at Mac Console (please see below). It seems that update does not succeed.
-
-4/15/15 9:21:37.153 PM Atom[66263]: Download completed to: file:///Users/adil/Library/Application%20Support/com.github.atom.ShipIt/update.e0Ofe6m/download
-4/15/15 9:21:42.735 PM com.apple.SecurityServer[86]: Killing auth hosts
-4/15/15 9:21:42.735 PM com.apple.SecurityServer[86]: Session 100166 destroyed
-4/15/15 9:21:53.705 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt) The Debug key is no longer respected. Please remove it.
-4/15/15 9:21:53.731 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt[66283]) Service exited with abnormal code: 1
-4/15/15 9:21:53.731 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt) Service only ran for 0 seconds. Pushing respawn out by 2 seconds.
-4/15/15 9:21:55.750 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt[66284]) Service exited with abnormal code: 1
-4/15/15 9:21:55.750 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt) Service only ran for 0 seconds. Pushing respawn out by 2 seconds.
-4/15/15 9:21:57.768 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt[66285]) Service exited with abnormal code: 1
-4/15/15 9:21:57.768 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt) Service only ran for 0 seconds. Pushing respawn out by 2 seconds.
-4/15/15 9:21:59.791 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt[66286]) Service exited with abnormal code: 1
-4/15/15 9:21:59.791 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt) Service only ran for 0 seconds. Pushing respawn out by 2 seconds.
-4/15/15 9:22:01.811 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt[66287]) Service exited with abnormal code: 1
-4/15/15 9:22:01.811 PM com.apple.xpc.launchd[1]: (com.github.atom.ShipIt) Service only ran for 0 seconds. Pushing respawn out by 2 seconds.
-4/15/15 9:22:01.949 PM sudo[66288]:     adil : TTY=ttys000 ; PWD=/Users/adil/Library/Application Support/com.github.atom.ShipIt ; USER=root ; COMMAND=/bin/launchctl stop com.github.atom.ShipIt
-
-*\* Also from ShipIt_stderr.log **:
-2015-04-15 21:21:53.729 ShipIt[66283:5623798] Installation error: Error Domain=SQRLShipItRequestErrorDomain Code=2 ""Could not read update request"" UserInfo=0x7fb2aa609110 {NSLocalizedDescription=Could not read update request, NSUnderlyingError=0x7fb2aa606fc0 ""The file “ShipItState.plist” couldn’t be opened because there is no such file.""}
-2015-04-15 21:21:53.729 ShipIt[66283:5623798] ShipIt quitting
 ",bug
 Atom Editor Doesn't Come to Foreground,"Hi,
 

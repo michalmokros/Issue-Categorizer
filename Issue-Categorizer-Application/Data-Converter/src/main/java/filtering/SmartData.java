@@ -7,6 +7,11 @@ import weka.core.Instances;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class for SmartDate Clearing, using ML for better pre-processing of training data.
+ *
+ * @author xmokros
+ */
 public class SmartData {
     private Instances instances;
     private final static int PARTITION_SPLIT_COUNT = 5;
@@ -51,8 +56,8 @@ public class SmartData {
         return output;
     }
 
-    private Instances getGroupedInstances(List<Instances> allInstances, int testInstancesIndex, boolean isReturingTestInstances) {
-        if (isReturingTestInstances) {
+    private Instances getGroupedInstances(List<Instances> allInstances, int testInstancesIndex, boolean isReturningTestInstances) {
+        if (isReturningTestInstances) {
             return allInstances.get(testInstancesIndex);
         }
 

@@ -13,10 +13,21 @@ import java.io.FileReader;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
+import static java.util.logging.Level.INFO;
+
+/**
+ * Class for parsing of different types of files (csv, arff)
+ *
+ * @author xmokros
+ */
 public final class Parser {
+    private final static Logger LOGGER = Logger.getLogger(Parser.class.getName());
 
     public static List<DataHolder> parseCsvFile(String csvFile) {
+        LOGGER.log(INFO, "Beginning of parsing csv file --> " + csvFile + " <--");
+
         List<DataHolder> arffList = new ArrayList<>();
         try (Reader in = new FileReader(csvFile)) {
             Iterable<CSVRecord> records = CSVFormat.EXCEL.withFirstRecordAsHeader().parse(in);
@@ -31,10 +42,13 @@ public final class Parser {
             e.printStackTrace();
         }
 
+        LOGGER.log(INFO, "Finished parsing the file.");
         return arffList;
     }
 
     public static void createArffFile(String arffFile, List<DataHolder> arffList) throws Exception {
+        LOGGER.log(INFO, "Beginning of creation of arff file --> " + arffFile + " <--");
+
         FastVector attributes = new FastVector();
         FastVector attributesRel = new FastVector();
         attributes.addElement(new Attribute(Column.TITLE.toString(), (FastVector) null));
@@ -65,5 +79,7 @@ public final class Parser {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        LOGGER.log(INFO, "Finished creating and filling arff file.");
     }
 }

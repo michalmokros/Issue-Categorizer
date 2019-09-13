@@ -1,5 +1,10 @@
 package entities;
 
+/**
+ * Class for holding entries of data containing information.
+ *
+ * @author xmokros
+ */
 public class DataHolder {
 
     private String title;

@@ -34,10 +34,11 @@ public final class DownloaderUtil {
      * @param issuesState state of Issues to be downloaded
      * @param githubUsername application user's github username
      * @param githubPassword application user's github password
+     * @return name of csv file written into
      * @throws IOException
      * @throws ParseException
      */
-    public static void getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String githubUsername, String githubPassword)
+    public static String getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String githubUsername, String githubPassword)
             throws IOException, ParseException {
         LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState);
 
@@ -46,6 +47,8 @@ public final class DownloaderUtil {
 
         String csvFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + ".csv";
         writeEntriesIntoFile(csvFileName, listOfEntries);
+
+        return csvFileName;
     }
 
     /**

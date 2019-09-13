@@ -2,6 +2,11 @@ package filtering;
 
 import java.util.*;
 
+/**
+ * Vocabulary class for storing and analyzing words used in different labels.
+ *
+ * @author xmokros
+ */
 public class Vocabulary {
     private Map<String, Integer> bugDictionary;
     private Map<String, Integer> enhDictionary;
@@ -39,41 +44,12 @@ public class Vocabulary {
         }
     }
 
- /*   public Set<String> findWordsWithCountLessThan(int minimum) {
-        Set<String> output = new HashSet<>();
-
-        for (Map.Entry<String, Integer> dict : dictionary.entrySet()) {
-            if (dict.getValue() <= minimum) {
-                output.add(dict.getKey());
-            }
-        }
-
-        return output;
-    }
-
-    public String reduceWordsToNumOfMostPopular(List<String> words, int number) {
-        SortedMap<Integer, String> resultMap = new TreeMap<>();
-        List<String> output = new ArrayList<>();
-
-        for (String word : words) {
-            int wordCount = this.dictionary.get(word);
-            resultMap.put(wordCount, word);
-        }
-
-        resultMap = ((TreeMap<Integer, String>) resultMap).descendingMap();
-
-        for (SortedMap.Entry<Integer, String> entry : resultMap.entrySet()) {
-            if (number == 0) {
-                break;
-            }
-
-            output.add(entry.getValue());
-            number--;
-        }
-
-        return String.join(" ", output);
-    }
-*/
+    /**
+     * Method for comparing and removing words, by some given ratio, used in opposing labels
+     *
+     * @param words to be checked and filtered
+     * @return filtered line without words
+     */
     public String removeWordsUsedInMultipleLabels(List<String> words) {
         List<String> output = new ArrayList<>();
 
