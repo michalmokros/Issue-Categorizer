@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeb1ee8f-185d-4867-9c57-76454d6c09b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/util/ConverterUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,29 +14,26 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/Converter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/MessageClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/entities/DataHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/entities/DataHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/enums/Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/enums/Column.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/Cleaner.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/Cleaner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/SmartData.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/SmartData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/Vocabulary.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/Vocabulary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/parsing/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/parsing/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/util/ConverterUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/util/ConverterUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/MessageClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MessageClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/enums/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/enums/Column.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/Downloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/Downloader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/dto/EntryDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/dto/EntryDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/atom-atom-issues-all.arff" beforeDir="false" afterPath="$PROJECT_DIR$/../data/atom-atom-issues-all.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/atom-atom-issues-all.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/atom-atom-issues-open.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/atom-atom-issues-open.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,8 +60,51 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Issue-Categorizer-Application" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Issue-Categorizer-Application" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Issue-Categorizer-Application" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="85" />
+            <state relative-caret-position="408">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,38 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
-              <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data-Converter/src/main/java/enums/Column.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-              <folding>
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -158,6 +170,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="850">
@@ -172,25 +193,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data-Converter/src/main/java/util/ConverterUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="115" selection-start-line="25" selection-start-column="115" selection-end-line="25" selection-end-column="115" />
+            <state relative-caret-position="493">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MessageClassifier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#8181#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,9 +225,7 @@
         <option value="$PROJECT_DIR$/Data-Converter/build.gradle" />
         <option value="$PROJECT_DIR$/Data-Downloader/src/main/java/dto/EntryDTO.java" />
         <option value="$PROJECT_DIR$/Data-Downloader/build.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" />
         <option value="$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java" />
         <option value="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" />
@@ -228,14 +235,16 @@
         <option value="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" />
         <option value="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" />
         <option value="$PROJECT_DIR$/Data-Converter/src/main/java/util/ConverterUtil.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="373" />
-    <option name="y" value="-1100" />
-    <option name="width" value="738" />
-    <option name="height" value="402" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="923" />
+    <option name="height" value="503" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -251,112 +260,6 @@
             <path>
               <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
               <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Converter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Converter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Converter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Converter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Converter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Converter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Converter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="filtering" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Converter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="parsing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Converter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Downloader" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Downloader" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Downloader" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Downloader" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Issue-Categorizer-Application" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Data-Downloader" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Issue-Categorizer-Application" type="b2602c69:ProjectViewProjectNode" />
@@ -408,7 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.Issue-Categorizer-Application [wrapper]">
     <configuration name="Downloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Downloader" />
       <module name="Issue-Categorizer-Application.Data-Downloader.main" />
@@ -442,8 +345,28 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Issue-Categorizer-Application [wrapper]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="wrapper" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Issue-Categorizer-Application [wrapper]" />
         <item itemvalue="Gradle.Issue-Categorizer-Application [dependencies]" />
         <item itemvalue="Application.Downloader" />
         <item itemvalue="Application.Main" />
@@ -462,18 +385,27 @@
       <updated>1566126915954</updated>
       <workItem from="1566126917268" duration="46478000" />
       <workItem from="1568401548340" duration="47000" />
-      <workItem from="1568401669151" duration="5857000" />
+      <workItem from="1568401669151" duration="8999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52382000" />
+    <option name="totallyTimeSpent" value="55524000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-1088" width="1936" height="1096" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16950959" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21342282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -482,15 +414,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.5981308" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.65085286" weight="0.5825545" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.5977654" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.65085286" weight="0.5824022" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49946696" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49946696" weight="0.3282123" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32960895" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3491471" side_tool="true" weight="0.5192108" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3491471" side_tool="true" weight="0.5181564" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -500,7 +432,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="6" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="right" id="Gradle" order="7" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -649,30 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MessageClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -711,16 +619,6 @@
             <element signature="e#210#211#0" expanded="true" />
             <element signature="e#256#257#0" expanded="true" />
             <element signature="e#285#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -775,11 +673,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data-Converter/src/main/java/util/ConverterUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="115" selection-start-line="25" selection-start-column="115" selection-end-line="25" selection-end-column="115" />
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
