@@ -1,11 +1,13 @@
 package filtering;
 
 import weka.classifiers.bayes.NaiveBayesMultinomialText;
-import weka.core.Instance;
 import weka.core.Instances;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
+
+import static java.util.logging.Level.INFO;
 
 /**
  * Class for SmartDate Clearing, using ML for better pre-processing of training data.
@@ -13,6 +15,8 @@ import java.util.List;
  * @author xmokros
  */
 public class SmartData {
+    private final static Logger LOGGER = Logger.getLogger(SmartData.class.getName());
+
     private Instances instances;
     private final static int PARTITION_SPLIT_COUNT = 5;
 
@@ -44,8 +48,10 @@ public class SmartData {
 
             for (int j = 0; j < test.numInstances(); j++) {
                 double pred = naiveBayesMultinomialText.classifyInstance(test.instance(j));
-                System.out.print("actual: " + test.classAttribute().value((int) test.instance(j).classValue()));
-                System.out.println(", predicted: " + test.classAttribute().value((int) pred));
+
+                LOGGER.log(INFO, "actual: " + test.classAttribute().value((int) test.instance(j).classValue())
+                        + ", predicted: " + test.classAttribute().value((int) pred));
+
                 if (test.classAttribute().value((int) test.instance(j).classValue())
                         .equals(test.classAttribute().value((int) pred))) {
                     output.add(test.instance(j));

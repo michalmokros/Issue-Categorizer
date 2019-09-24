@@ -1,6 +1,12 @@
 package filtering;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.logging.Logger;
+
+import static java.util.logging.Level.FINE;
 
 /**
  * Vocabulary class for storing and analyzing words used in different labels.
@@ -8,6 +14,8 @@ import java.util.*;
  * @author xmokros
  */
 public class Vocabulary {
+    private final static Logger LOGGER = Logger.getLogger(Vocabulary.class.getName());
+
     private Map<String, Integer> bugDictionary;
     private Map<String, Integer> enhDictionary;
     private int bugCount;
@@ -60,7 +68,7 @@ public class Vocabulary {
             if ((enhOccurence > bugOccurence * 2) || (bugOccurence > enhOccurence * 2)) {
                 output.add(word);
             } else {
-                System.out.println("Removing word '" + word + "' with bugOcc -> " + bugOccurence + " and enhOcc -> " + enhOccurence);
+                LOGGER.log(FINE, "Removing word '" + word + "' with bugOcc -> " + bugOccurence + " and enhOcc -> " + enhOccurence);
             }
         }
 

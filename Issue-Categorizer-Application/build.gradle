@@ -25,6 +25,7 @@ subprojects {
 dependencies {
     compile project(':Data-Converter')
     compile project(':Data-Downloader')
+    compile project(':Data-Modeller')
 }
 
 application {

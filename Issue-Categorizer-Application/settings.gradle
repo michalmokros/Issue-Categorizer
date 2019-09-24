@@ -2,3 +2,5 @@ rootProject.name = 'Issue-Categorizer-Application'
 
 include 'Data-Converter'
 include 'Data-Downloader'
+include 'Data-Modeller'
+
