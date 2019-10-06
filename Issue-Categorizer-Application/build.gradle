@@ -32,10 +32,6 @@ application {
     mainClassName = 'Main'
 }
 
-task(runMain, dependsOn: 'classes', type: JavaExec) {
-    main = 'Main'
-    classpath = sourceSets.main.runtimeClasspath
-    args 'test'
+run{
+    standardInput = System.in
 }
-
-defaultTasks 'runMain'

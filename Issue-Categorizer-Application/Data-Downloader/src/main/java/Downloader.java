@@ -1,7 +1,5 @@
-import org.json.simple.parser.ParseException;
-import util.DownloaderUtil;
+import weka.core.Utils;
 
-import java.io.IOException;
 import java.util.logging.Logger;
 
 import static java.util.logging.Level.INFO;
@@ -15,23 +13,17 @@ import static util.DownloaderUtil.getIssues;
 public class Downloader {
     private final static Logger LOGGER = Logger.getLogger(Downloader.class.getName());
 
-    public static String main(String[] args) throws IOException, ParseException {
+    public static String main(String[] args) throws Exception {
         String csvFileName = null;
 
-        if (args.length < 2) {
+        if (args.length < 3) {
             LOGGER.log(INFO, "Initialized Downloader with only " + args.length + " arguments.");
         } else {
-            String[] githubDownloadArgs = args[0].split("/");
-            String issuesStatus = args[1];
-            String githubUsername = "IssueCategorizerUsername";
-            String githubPassword = "IssueCategorizerPassword";
+            String[] githubDownloadArgs = Utils.getOption("R", args).split("/");
+            String issuesStatus = Utils.getOption("S", args);
+            String[] labels = Utils.getOption("L", args).split(",");
 
-            if (args.length == 4) {
-                githubUsername = args[2];
-                githubPassword = args[3];
-            }
-
-            csvFileName = getIssues(githubDownloadArgs[0], githubDownloadArgs[1], issuesStatus, githubUsername, githubPassword);
+            csvFileName = getIssues(githubDownloadArgs[0], githubDownloadArgs[1], issuesStatus, labels);
         }
 
         return csvFileName;

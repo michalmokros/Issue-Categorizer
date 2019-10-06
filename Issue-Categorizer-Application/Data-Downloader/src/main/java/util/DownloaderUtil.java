@@ -2,12 +2,12 @@ package util;
 
 import com.opencsv.CSVWriter;
 import dto.EntryDTO;
+import org.apache.http.HttpException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import javax.xml.ws.http.HTTPException;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -32,18 +32,16 @@ public final class DownloaderUtil {
      * @param githubDownloadUsername username of github account to download issues from
      * @param githubDownloadRepository repository of github's account to download issues from
      * @param issuesState state of Issues to be downloaded
-     * @param githubUsername application user's github username
-     * @param githubPassword application user's github password
      * @return name of csv file written into
      * @throws IOException
      * @throws ParseException
      */
-    public static String getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String githubUsername, String githubPassword)
-            throws IOException, ParseException {
-        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState);
+    public static String getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] labels)
+            throws IOException, ParseException, HttpException {
+        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + Arrays.toString(labels));
 
         String urlString = "https://api.github.com/repos/" + githubDownloadUsername + "/" + githubDownloadRepository + "/issues?state=" + issuesState;
-        List<EntryDTO> listOfEntries = extractEntriesRecursively(urlString, githubUsername, githubPassword);
+        List<EntryDTO> listOfEntries = extractEntriesRecursively(0, urlString, labels);
 
         String csvFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + ".csv";
         writeEntriesIntoFile(csvFileName, listOfEntries);
@@ -55,18 +53,16 @@ public final class DownloaderUtil {
      * Method for extracting entries from github api URL, used recursively.
      *
      * @param urlString url to be extracted from
-     * @param githubUsername application user's github username
-     * @param githubPassword application user's github password
      * @return list of recursively extracted entries
      * @throws IOException
      * @throws ParseException
      */
-    private static List<EntryDTO> extractEntriesRecursively(String urlString, String githubUsername, String githubPassword)
-            throws IOException, ParseException {
+    private static List<EntryDTO> extractEntriesRecursively(long numOfCurrentEntries, String urlString, String[] labels)
+            throws IOException, ParseException, HttpException {
         LOGGER.log(INFO, "Extracting Issues for --> " + urlString + " <--");
 
         URL url = new URL(urlString);
-        String login = githubUsername + ":" + githubPassword;
+        String login = "IssueCategorizerUsername:IssueCategorizerPassword";
         String encoding = Base64.getEncoder().encodeToString((login).getBytes());
 
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -77,7 +73,7 @@ public final class DownloaderUtil {
 
         if (status != 200) {
             LOGGER.log(WARNING, "Connection status is " + status);
-            throw new HTTPException(status);
+            throw new HttpException("Response code of connection: " + status);
         }
 
         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -85,7 +81,7 @@ public final class DownloaderUtil {
         String input;
 
         while ((input = in.readLine()) != null) {
-            listOfEntries = getEntries(input);
+            listOfEntries = getEntries(numOfCurrentEntries, input, labels);
         }
 
         if (connection.getHeaderFields().containsKey("Link")) {
@@ -94,7 +90,8 @@ public final class DownloaderUtil {
 
             for (Map.Entry<String, String> pageEntry : pagesMap.entrySet()) {
                 if (pageEntry.getKey().equals("next")) {
-                    listOfEntries.addAll(extractEntriesRecursively(pageEntry.getValue(), githubUsername, githubPassword));
+                    listOfEntries.addAll(extractEntriesRecursively(
+                            numOfCurrentEntries + listOfEntries.size(), pageEntry.getValue(), labels));
                 }
             }
         }
@@ -111,10 +108,11 @@ public final class DownloaderUtil {
      * @return list of entries extracted from specific page
      * @throws ParseException
      */
-    private static List<EntryDTO> getEntries(String content) throws ParseException {
+    private static List<EntryDTO> getEntries(long numOfPreviousEntries, String content, String[] labels) throws ParseException {
         JSONParser parser = new JSONParser();
         JSONArray jsonArray = (JSONArray) parser.parse(content);
         List<EntryDTO> listOfEntries = new ArrayList<>();
+        long id = numOfPreviousEntries;
 
         for (int i = 0; i < jsonArray.size(); i++) {
             JSONObject jsonObject = (JSONObject) jsonArray.get(i);
@@ -124,7 +122,7 @@ public final class DownloaderUtil {
             }
 
             LOGGER.log(FINE, "Getting Label for Issue with Order Number : " + (i + 1) + ". with Title --> " + jsonObject.get("title") + " <--");
-            String label = getLabel((JSONArray) jsonObject.get("labels"));
+            String label = getLabel((JSONArray) jsonObject.get("labels"), labels);
 
             if (label.isEmpty()) {
                 continue;
@@ -132,7 +130,7 @@ public final class DownloaderUtil {
 
             String title = jsonObject.get("title").toString();
             String body = jsonObject.get("body").toString();
-            EntryDTO entry = new EntryDTO(title, body, label);
+            EntryDTO entry = new EntryDTO(++id, title, body, label);
 
             LOGGER.log(FINE, "Adding Entry --> " + entry  + " <--");
             listOfEntries.add(entry);
@@ -147,14 +145,14 @@ public final class DownloaderUtil {
      * @param labels to be searched in
      * @return specific label for that issue's labels
      */
-    private static String getLabel(JSONArray labels) {
+    private static String getLabel(JSONArray labels, String[] labelsToFind) {
         for (int i = 0; i < labels.size(); i++) {
             String label = ((JSONObject) labels.get(i)).get("name").toString();
 
-            if (label.equals("bug")) {
-                return "bug";
-            } else if (label.equals("enhancement")) {
-                return "enhancement";
+            for (String labelToFind : labelsToFind) {
+                if (labelToFind.equals(label)) {
+                    return label;
+                }
             }
         }
 
@@ -195,11 +193,11 @@ public final class DownloaderUtil {
         LOGGER.log(INFO, "Writing Entries into file --> " + csvFileName + " <--");
 
         try (CSVWriter writer = new CSVWriter(new FileWriter(new File(csvFileName)))) {
-            String[] header = { "Title", "Body" , "Label" };
+            String[] header = { "Id", "Title", "Body" , "Label" };
             writer.writeNext(header);
 
             for (EntryDTO entryDTO : listOfEntries) {
-                String[] entry = { entryDTO.getTitle(), entryDTO.getBody(), entryDTO.getLabel() };
+                String[] entry = { String.valueOf(entryDTO.getId()), entryDTO.getTitle(), entryDTO.getBody(), entryDTO.getLabel() };
                 writer.writeNext(entry);
             }
         }
