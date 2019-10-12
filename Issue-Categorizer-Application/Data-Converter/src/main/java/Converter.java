@@ -1,3 +1,5 @@
+import weka.core.Utils;
+
 import java.util.logging.Logger;
 
 import static java.util.logging.Level.INFO;
@@ -16,7 +18,8 @@ public class Converter {
         if (args.length < 1) {
             LOGGER.log(INFO, "Initialized Converter with only " + args.length + " arguments.");
         } else {
-            String csvFile = args[0];
+            String csvFile = Utils.getOption("F", args);
+
             arffFile = preprocessIssues(csvFile);
         }
 

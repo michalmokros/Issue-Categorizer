@@ -6,6 +6,7 @@ package enums;
  * @author xmokros
  */
 public enum Column {
+    ID("Id"),
     TITLE("Title"),
     BODY("Body"),
     LABEL("Label");

@@ -16,8 +16,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
         LOGGER.log(INFO, "Started application with arguments: " + Arrays.toString(args));
         String csvFileName = Downloader.main(args);
-//        String[] converterInput = {csvFileName};
-//        String arffFileName = Converter.main(converterInput); //../data/IssueCategorizer-atom-atom-issues-open.arff
+        String[] converterArgs = new String[] {"-F", csvFileName};
+        String arffFileName = Converter.main(converterArgs); //../data/IssueCategorizer-atom-atom-issues-open.arff
 //        String arffFileName = "../data/IssueCategorizer-atom-atom-issues-open.arff";
 //        String arffTestFileName = "../data/IssueCategorizer-atom-atom-issues-open-test.arff";
 //        String[] modellerInput = {arffFileName, arffTestFileName}; //../data/IssueCategorizer-atom-atom-issues-open-test.arff

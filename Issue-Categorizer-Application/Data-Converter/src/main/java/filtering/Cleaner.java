@@ -33,24 +33,24 @@ public final class Cleaner {
         //cleans data of numbers, symbols and stop-words
         for (DataHolder dataHolder : arffList) {
             //removes non alphanumeric symbols
-            LOGGER.log(FINE, "Removing non alpha-numeric symbols.");
+            LOGGER.log(FINE, "Removing non alpha-numeric symbols for Entry with Id: " + dataHolder.getId());
             String newTitle = dataHolder.getTitle().replaceAll("[^\\p{L}\\p{Nd}]+", " ");
             String newBody = dataHolder.getBody().replaceAll("[^\\p{L}\\p{Nd}]+", " ");
 
             //removes numbers only (not words containing numbers)
-            LOGGER.log(FINE, "Removing whole numbers.");
+            LOGGER.log(FINE, "Removing whole numbers for Entry with Id: " + dataHolder.getId());
             newTitle = removeWholeNumbers(newTitle);
             newBody = removeWholeNumbers(newBody);
 
             //clears string of stop-words
-            LOGGER.log(FINE, "Clearing stopwords.");
+            LOGGER.log(FINE, "Clearing stopwords for Entry with Id: " + dataHolder.getId());
             newTitle = removeStopWords(newTitle);
             newBody = removeStopWords(newBody);
 
             dataHolder.setTitle(newTitle.toLowerCase());
             dataHolder.setBody(newBody.toLowerCase());
 
-            LOGGER.log(FINE, "Creating vocabulary for arff entry.");
+            LOGGER.log(FINE, "Creating vocabularies for arff Entry with Id: " + dataHolder.getId());
             for (String word : dataHolder.getTitle().split(" ")) {
                 vocabTitle.addWord(word, dataHolder.getLabel());
             }
@@ -62,8 +62,8 @@ public final class Cleaner {
 
         LOGGER.log(FINE, "Removing words used in multiple labels.");
         for (DataHolder dataHolder : arffList) {
-            dataHolder.setTitle(removeWordsUsedInMultipleLabels(vocabTitle, dataHolder.getTitle()));
-            dataHolder.setBody(removeWordsUsedInMultipleLabels(vocabBody, dataHolder.getBody()));
+            dataHolder.setTitle(removeWordsUsedInMultipleLabels(vocabTitle, dataHolder.getTitle(), dataHolder.getLabel()));
+            dataHolder.setBody(removeWordsUsedInMultipleLabels(vocabBody, dataHolder.getBody(), dataHolder.getLabel()));
         }
 
         LOGGER.log(INFO, "Finished cleaning of arffList.");
@@ -119,14 +119,15 @@ public final class Cleaner {
     }
 
     /**
-     * Method for removing words used in multiple labels, for more info {@link Vocabulary#removeWordsUsedInMultipleLabels(List)}
+     * Method for removing words used in multiple labels, for more info {@link Vocabulary#removeWordsUsedInMultipleLabels(List, String)}
      *
      * @param vocab vocabulary instance to be used
      * @param line to be processed
+     * @param label label of the entry for comparison
      * @return line without words used in multiple labels
      */
-    private static String removeWordsUsedInMultipleLabels(Vocabulary vocab, String line) {
+    private static String removeWordsUsedInMultipleLabels(Vocabulary vocab, String line, String label) {
         List<String> words = Arrays.asList(line.split(" "));
-        return vocab.removeWordsUsedInMultipleLabels(words);
+        return vocab.removeWordsUsedInMultipleLabels(words, label);
     }
 }

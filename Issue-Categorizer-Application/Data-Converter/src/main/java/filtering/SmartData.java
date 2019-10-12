@@ -1,7 +1,9 @@
 package filtering;
 
 import weka.classifiers.bayes.NaiveBayesMultinomialText;
+import weka.classifiers.meta.FilteredClassifier;
 import weka.core.Instances;
+import weka.filters.unsupervised.attribute.Remove;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +12,7 @@ import java.util.logging.Logger;
 import static java.util.logging.Level.INFO;
 
 /**
- * Class for SmartDate Clearing, using ML for better pre-processing of training data.
+ * Class for SmartData Clearing, using ML for better pre-processing of training data.
  *
  * @author xmokros
  */
@@ -19,6 +21,7 @@ public class SmartData {
 
     private Instances instances;
     private final static int PARTITION_SPLIT_COUNT = 5;
+    private final static int LABEL_INDEX = 3;
 
     public SmartData(Instances instances) {
         this.instances = instances;
@@ -41,15 +44,21 @@ public class SmartData {
         for (int i = 0; i < PARTITION_SPLIT_COUNT; i++) {
             Instances train = getGroupedInstances(splitInstances, i, false);
             Instances test = getGroupedInstances(splitInstances, i, true);
-            train.setClassIndex(2);
-            test.setClassIndex(2);
+            Remove remove = new Remove();
+            remove.setAttributeIndices("1");
+            train.setClassIndex(LABEL_INDEX);
+            test.setClassIndex(LABEL_INDEX);
             NaiveBayesMultinomialText naiveBayesMultinomialText = new NaiveBayesMultinomialText();
-            naiveBayesMultinomialText.buildClassifier(train);
+            FilteredClassifier filteredClassifier = new FilteredClassifier();
+            filteredClassifier.setFilter(remove);
+            filteredClassifier.setClassifier(naiveBayesMultinomialText);
+            filteredClassifier.buildClassifier(train);
 
             for (int j = 0; j < test.numInstances(); j++) {
-                double pred = naiveBayesMultinomialText.classifyInstance(test.instance(j));
+                double pred = filteredClassifier.classifyInstance(test.instance(j));
 
-                LOGGER.log(INFO, "actual: " + test.classAttribute().value((int) test.instance(j).classValue())
+                LOGGER.log(INFO, "Classified instance with Id: " + (int) test.instance(j).value(0)
+                        + ", actual: " + test.classAttribute().value((int) test.instance(j).classValue())
                         + ", predicted: " + test.classAttribute().value((int) pred));
 
                 if (test.classAttribute().value((int) test.instance(j).classValue())

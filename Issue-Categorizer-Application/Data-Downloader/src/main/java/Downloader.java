@@ -20,8 +20,8 @@ public class Downloader {
             LOGGER.log(INFO, "Initialized Downloader with only " + args.length + " arguments.");
         } else {
             String[] githubDownloadArgs = Utils.getOption("R", args).split("/");
-            String issuesStatus = Utils.getOption("S", args);
-            String[] labels = Utils.getOption("L", args).split(",");
+            String issuesStatus = Utils.getOptionPos("S", args) == -1 ? "open" : Utils.getOption("S", args);
+            String[] labels = Utils.getOptionPos("L", args) == -1 ? new String[] {"enhancement", "bug"} : Utils.getOption("L", args).split(",");
 
             csvFileName = getIssues(githubDownloadArgs[0], githubDownloadArgs[1], issuesStatus, labels);
         }

@@ -13,21 +13,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/enums/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/enums/Column.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/Downloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/Downloader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/dto/EntryDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/dto/EntryDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/util/DownloaderUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/util/DownloaderUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/dto/EntryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/dto/EntryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +233,8 @@
       <workItem from="1570281133029" duration="209000" />
       <workItem from="1570281514879" duration="157000" />
       <workItem from="1570284734672" duration="435000" />
-      <workItem from="1570285373554" duration="12432000" />
+      <workItem from="1570285373554" duration="12474000" />
+      <workItem from="1570355973319" duration="10498000" />
     </task>
     <servers />
   </component>
@@ -268,7 +269,7 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
           <line>16</line>
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
