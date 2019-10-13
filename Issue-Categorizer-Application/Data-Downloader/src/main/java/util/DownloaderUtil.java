@@ -24,6 +24,8 @@ import static java.util.logging.Level.*;
 public final class DownloaderUtil {
     private final static Logger LOGGER = Logger.getLogger(DownloaderUtil.class.getName());
 
+    private final static String UNLABELED_LABEL = "unlabeled";
+
     private DownloaderUtil() {}
 
     /**
@@ -36,17 +38,28 @@ public final class DownloaderUtil {
      * @throws IOException
      * @throws ParseException
      */
-    public static String getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] labels)
+    public static String[] getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] trainLabels, String[] testLabels)
             throws IOException, ParseException, HttpException {
-        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + Arrays.toString(labels));
+        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + Arrays.toString(trainLabels));
 
         String urlString = "https://api.github.com/repos/" + githubDownloadUsername + "/" + githubDownloadRepository + "/issues?state=" + issuesState;
-        List<EntryDTO> listOfEntries = extractEntriesRecursively(0, urlString, labels);
+        List<EntryDTO> listOfEntries = extractEntriesRecursively(0, urlString, trainLabels, null);
 
-        String csvFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + ".csv";
-        writeEntriesIntoFile(csvFileName, listOfEntries);
+        String csvTrainFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "/" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(trainLabels) + ".csv";
+        writeEntriesIntoFile(csvTrainFileName, listOfEntries);
 
-        return csvFileName;
+        if (testLabels != null) {
+            LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + Arrays.toString(testLabels));
+
+            listOfEntries = extractEntriesRecursively(0, urlString, testLabels, trainLabels);
+
+            String csvTestFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "/" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(testLabels) + ".csv";
+            writeEntriesIntoFile(csvTestFileName, listOfEntries);
+
+            return new String[]{csvTrainFileName, csvTestFileName};
+        }
+
+        return new String[]{csvTrainFileName};
     }
 
     /**
@@ -57,7 +70,7 @@ public final class DownloaderUtil {
      * @throws IOException
      * @throws ParseException
      */
-    private static List<EntryDTO> extractEntriesRecursively(long numOfCurrentEntries, String urlString, String[] labels)
+    private static List<EntryDTO> extractEntriesRecursively(long numOfCurrentEntries, String urlString, String[] labels, String[] labelsToExclude)
             throws IOException, ParseException, HttpException {
         LOGGER.log(INFO, "Extracting Issues for --> " + urlString + " <--");
 
@@ -81,7 +94,7 @@ public final class DownloaderUtil {
         String input;
 
         while ((input = in.readLine()) != null) {
-            listOfEntries = getEntries(numOfCurrentEntries, input, labels);
+            listOfEntries = getEntries(numOfCurrentEntries, input, labels, labelsToExclude);
         }
 
         if (connection.getHeaderFields().containsKey("Link")) {
@@ -91,7 +104,7 @@ public final class DownloaderUtil {
             for (Map.Entry<String, String> pageEntry : pagesMap.entrySet()) {
                 if (pageEntry.getKey().equals("next")) {
                     listOfEntries.addAll(extractEntriesRecursively(
-                            numOfCurrentEntries + listOfEntries.size(), pageEntry.getValue(), labels));
+                            numOfCurrentEntries + listOfEntries.size(), pageEntry.getValue(), labels, labelsToExclude));
                 }
             }
         }
@@ -108,7 +121,7 @@ public final class DownloaderUtil {
      * @return list of entries extracted from specific page
      * @throws ParseException
      */
-    private static List<EntryDTO> getEntries(long numOfPreviousEntries, String content, String[] labels) throws ParseException {
+    private static List<EntryDTO> getEntries(long numOfPreviousEntries, String content, String[] labelsToFind, String[] labelsToExclude) throws ParseException {
         JSONParser parser = new JSONParser();
         JSONArray jsonArray = (JSONArray) parser.parse(content);
         List<EntryDTO> listOfEntries = new ArrayList<>();
@@ -122,21 +135,71 @@ public final class DownloaderUtil {
             }
 
             LOGGER.log(FINE, "Getting Label for Issue with Order Number : " + (i + 1) + ". with Title --> " + jsonObject.get("title") + " <--");
-            String label = getLabel((JSONArray) jsonObject.get("labels"), labels);
+            List<String> labelNames = getLabelNames((JSONArray) jsonObject.get("labels"));
+            List<String> labels = getEntryLabels(labelNames, labelsToFind, labelsToExclude);
 
-            if (label.isEmpty()) {
+            if (labels == null || labels.isEmpty()) {
                 continue;
             }
 
             String title = jsonObject.get("title").toString();
             String body = jsonObject.get("body").toString();
-            EntryDTO entry = new EntryDTO(++id, title, body, label);
 
-            LOGGER.log(FINE, "Adding Entry --> " + entry  + " <--");
-            listOfEntries.add(entry);
+            for (String label : labels) {
+                if (label.equals(UNLABELED_LABEL)) {
+                    label = "";
+                }
+
+                EntryDTO entry = new EntryDTO(++id, title, body, label);
+                LOGGER.log(FINE, "Adding Entry --> " + entry  + " <--");
+                listOfEntries.add(entry);
+            }
         }
 
         return listOfEntries;
+    }
+
+    /**
+     * Find labels for current entry
+     * @param labelNames all labels in current found issue
+     * @param labelsToFind labels to find in entry
+     * @param labelsToExclude labels to exclude if found in entry
+     * @return labels that belong to issue, null if not found or labelsToExclude are in them
+     */
+    private static List<String> getEntryLabels(List<String> labelNames, String[] labelsToFind, String[] labelsToExclude) {
+        List<String> output = new ArrayList<>();
+
+        if (labelsToExclude != null) {
+            for (String labelToExclude : labelsToExclude) {
+                if (labelNames.contains(labelToExclude)) {
+                    return null;
+                }
+            }
+        }
+
+        for (String labelToFind : labelsToFind) {
+            if (labelToFind.equals("") && labelsToFind.length == 1) {
+                if (labelNames.isEmpty()) {
+                    output.add(UNLABELED_LABEL);
+                    break;
+                }
+
+                for (String labelName : labelNames) {
+                    output.add(labelName);
+                }
+                break;
+            }
+
+            if (labelNames.contains(labelToFind)) {
+                output.add(labelToFind);
+            }
+        }
+
+        if (labelNames.isEmpty() && Arrays.asList(labelsToFind).contains(UNLABELED_LABEL)) {
+            output.add(UNLABELED_LABEL);
+        }
+
+        return output;
     }
 
     /**
@@ -145,18 +208,15 @@ public final class DownloaderUtil {
      * @param labels to be searched in
      * @return specific label for that issue's labels
      */
-    private static String getLabel(JSONArray labels, String[] labelsToFind) {
+    private static List<String> getLabelNames(JSONArray labels) {
+        List<String> labelNames = new ArrayList<>();
+
         for (int i = 0; i < labels.size(); i++) {
             String label = ((JSONObject) labels.get(i)).get("name").toString();
-
-            for (String labelToFind : labelsToFind) {
-                if (labelToFind.equals(label)) {
-                    return label;
-                }
-            }
+            labelNames.add(label);
         }
 
-        return "";
+        return labelNames;
     }
 
     /**

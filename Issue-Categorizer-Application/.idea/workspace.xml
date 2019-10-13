@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeb1ee8f-185d-4867-9c57-76454d6c09b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/Utility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
@@ -14,19 +15,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/enums/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/enums/Column.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/Downloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/Downloader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.arff" beforeDir="false" afterPath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.arff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,12 +75,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>serialVersionUID</find>
-      <find>removing word</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -105,7 +95,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -235,6 +225,7 @@
       <workItem from="1570284734672" duration="435000" />
       <workItem from="1570285373554" duration="12474000" />
       <workItem from="1570355973319" duration="10498000" />
+      <workItem from="1570979873113" duration="13963000" />
     </task>
     <servers />
   </component>
@@ -267,9 +258,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="11" />
+          <line>24</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

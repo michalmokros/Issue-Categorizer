@@ -1,5 +1,3 @@
-import weka.core.Utils;
-
 import java.util.logging.Logger;
 
 import static java.util.logging.Level.INFO;
@@ -13,20 +11,19 @@ import static util.DownloaderUtil.getIssues;
 public class Downloader {
     private final static Logger LOGGER = Logger.getLogger(Downloader.class.getName());
 
-    public static String main(String[] args) throws Exception {
-        String csvFileName = null;
+    public static String[] download(String githubDownloadArgs, String issuesStatus, String trainLabels, String testLabels) throws Exception {
+        LOGGER.log(INFO, "Initialized Downloader module with github user/repository: " + githubDownloadArgs
+                + " status of the issues: " + issuesStatus + " for training labels: " + trainLabels + " and testing labels: " + testLabels);
 
-        if (args.length < 3) {
-            LOGGER.log(INFO, "Initialized Downloader with only " + args.length + " arguments.");
-        } else {
-            String[] githubDownloadArgs = Utils.getOption("R", args).split("/");
-            String issuesStatus = Utils.getOptionPos("S", args) == -1 ? "open" : Utils.getOption("S", args);
-            String[] labels = Utils.getOptionPos("L", args) == -1 ? new String[] {"enhancement", "bug"} : Utils.getOption("L", args).split(",");
+        String[] githubDownloadArgsArray = githubDownloadArgs.split("/");
+        String[] trainLabelsArray = trainLabels.split(",");
 
-            csvFileName = getIssues(githubDownloadArgs[0], githubDownloadArgs[1], issuesStatus, labels);
+        if (testLabels != null) {
+            String[] testLabelsArray = testLabels.split(",");
+            return getIssues(githubDownloadArgsArray[0], githubDownloadArgsArray[1], issuesStatus, trainLabelsArray, testLabelsArray);
         }
 
-        return csvFileName;
+        return getIssues(githubDownloadArgsArray[0], githubDownloadArgsArray[1], issuesStatus, trainLabelsArray, null);
     }
 }
 
