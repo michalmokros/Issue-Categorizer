@@ -1,0 +1,599 @@
+@relation Issues
+
+@attribute Id string
+@attribute Title string
+@attribute Body string
+@attribute Label {'',electron-4,electron,more-information-needed,mac,uncaught-exception,linux,packages/solarized-dark-syntax,network,'d â¬‡ï¸?','i â¬‡ï¸?',triaged,'v â¬‡ï¸?','d â¬†ï¸?',tree-sitter,auto-updater,regression,windows,packages/one-dark-ui,packages/one-light-ui,iteration-plan,packages/go-to-line,electron-3,'v â¬†ï¸?','FY2019Q5 atom perf','i â¬†ï¸?',crash,'FY2019Q5 deterministic builds',installer,startup-time,needs-reproduction,build-error,editor-rendering,blocked,git,package-migration,packages/grammar-selector,stale,packages/dalek,ui,papercut,atom.io,data-loss,proposal,documentation,help-wanted,performance,error-from-save,question,auto-indent,i18n}
+
+@data
+1,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent toggle',''
+2,'catalina notarization','taking quick notarized notarization malware scanning notarizing practice notarized notarized md5 622281426390b6649dee88807b5a1434 rules stricter january workflows xcrun altool appleid password asc provider teamid notarize downloads id xcrun altool appleid password asc provider teamid notarization info guuid staple',''
+3,opening,'big 500mb',''
+4,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent',''
+5,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent picker korean minimap',''
+6,'requested measurement component rendered','requested shresthr requested horizontalpositionstomeasure measurehorizontalpositions measurecontentduringupdatesync readdocument newline 70x 75x redo',''
+7,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent li item div panel div panel',''
+8,'module appdata local app res','module fake manager module fake manager module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent',''
+9,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent span ctags',''
+10,'module usr share resources app asar unpacked modules fuzzy','module fuzzy native fuzzy native compiled module module module instance rebuild module fuzzy native fuzzy native compiled module module module instance rebuild module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require fuzzy native fuzzy native module module object module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire nativefuzzy fuzzyfinderview observekeypath fuzzyfinderview projectview object createprojectview fuzzy toggle handlekeyboardevent handledocumentkeyevent newline fuzzy toggle wordcount chktex gcc pycodestyle shellcheck minimap minimap cursorline minimap minimap wordcount',''
+11,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent div span',''
+12,null,'eslintrc explosion submitting scenario treesitterlanguagemode tokenforposition tokenforbufferposition object linkatposition object linkundercursor object openlink commanddisposable handlekeyboardevent handledocumentkeyevent newline emacs kill yarn jedi cargo emacs hyperclick rust hyperclick gradle groovy rust scss shellcheck history racer toggle',''
+13,'white top app','border widely discussed border fullscreen ðº ðºñ bda42f00 f66e 8fb4 4590dc06822e border frameless',''
+14,'enoent lstat downloads','delano downloads delano downloads realpathsync realpathsync treeview moveentry treeview ondrop li item picker',''
+15,'difference ready usage','opinion 8161d600 f650 64278529d014 capabilities roughly wlan usage f651 7344ddc61c8f vertical 3s edge approximately edge perceived substantially gap measures perceived speed',''
+16,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent manager span roku rokudeploy div panel roku',''
+17,'enoent lstat onedrive qouittows front kb kb','onedrive qouittows front kb kb kb kb kb kb steven richard gierke notebook onedrive qouittows front kb kb kb kb kb kb steven richard gierke notebook realpathsync realpathsync treeview moveentry treeview ondrop',''
+18,thin,'thins harder thinner critical aspect',electron-4
+19,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent div panel notification native ternjs docblockr ftp hyperclick manager ftp',''
+20,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent li item',''
+21,'module register','module register module register module dlopen object module internal cjs loader object module module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module require require internal cjs helpers customrequire keyboardlayoutmanager manager object getcurrentkeyboardlayout keystrokeforkeyboardevent keystrokeforkeyboardevent handlekeyboardevent handledocumentkeyevent ftp toggle dark dark ftp connect dark dark ftp connect dark dark acf wordpress wordpress hooks minimap minimap ftp ftp wordpress wordpress dictionary',''
+22,'','',electron
+23,'','',more-information-needed
+24,compose,'putting funk compose instruction released worker deserialize compose',more-information-needed
+25,'incredibly long shell load','incredibly slowly load taking 4000ms nap exercise finally timings load 1000ms load 4000ms processor 7700hq ram 16gb',''
+26,crashing,'duplicating renaming toggling macbook air 19a602 2e9076cd 6c0e 38b6 b2ddce125fbf 0x89 interacting renaming duplicating ect interact interacting interacting',mac
+27,'','suddenly idk',more-information-needed
+28,'','',more-information-needed
+29,'','pane appdata pane pane appdata notificationelement appdata notificationelement appdata notificationelement appdata appdata',uncaught-exception
+30,'','quits yields',more-information-needed
+31,'','',linux
+32,'','',more-information-needed
+33,'','',more-information-needed
+34,'','private apptranslocation private apptranslocation private apptranslocation private apptranslocation private apptranslocation private apptranslocation private apptranslocation private apptranslocation private apptranslocation private apptranslocation',uncaught-exception
+35,'solarized js original solarized spec','solaried a19fe880 e51b 9a1b049bed47 altercation solarized b5138800 e5dd eb185a9667c6 solarized solarized solarized',packages/solarized-dark-syntax
+36,'interferes skype','skype troublemaker posted skype answers skype forum sk acc sk sk skype founds devices 6465d2a1 032d ac18 b374e4e81323 skype skype speaker microphone camera 28d96600 e4f4 9a1b a3217bd3e125 skype devices e4f4 89a3 07114386d9d0 skype devices remain skype skype skype devices skype defices skype communicate speaker microphone skype tiny person glad skype screencast 622ac980 e526 a077f9763b4a',''
+37,'message pops','pop c440eb80 e4a0 d10ac1ed3402 d28f0780 e4a0 347ce6da7b15 pop 171aa300 e4a1 8da6 88166c8ef7d9 197cfd00 e4a1 8b35 425a1a7089f5 1bdf5700 e4a1 8f5c 5d39d232da35 pop onchange 19a558d',more-information-needed
+38,'','',network
+39,read,'',uncaught-exception
+40,'','','d â¬‡ï¸?'
+41,'','','i â¬‡ï¸?'
+42,'','guide run copied git',triaged
+43,'','','v â¬‡ï¸?'
+44,'','',network
+45,'','',uncaught-exception
+46,'','','d â¬†ï¸?'
+47,'','','i â¬‡ï¸?'
+48,'','','v â¬‡ï¸?'
+49,previously,'snappier workplace homegrown scm guys ideas doskey 3773d900 e02d 85dd ed4b07ff5879 locked locked topic saved state state ws cbu1 2019x lap ws cbu1 2019x lap ws cbu1 2019x lap ws cbu1 2019x lap ws cbu1 2019x lap links cbu1 links cbu1 links',''
+50,'','',more-information-needed
+51,invalid,'texteditorcomponent texteditorcomponent updatesyncbeforemeasuringcontent texteditorcomponent updatesync server browser',uncaught-exception
+52,'undo redo leaks memory','periods duration days undoable actions upwards 1gb memory redo dealing killing kill memory leak racer cargo picker docblockr pegjs rust scala stylus webassembly assembly shellcheck tslint minimap minimap cursorline minimap minimap manager offenders iirc symptom persisted thousands optionally quick haven spending memory usage remain memory usage grows 500mb 1gb range keeping kill reclaim memory leaked haven suffering performance turned panics symptom machine absolutely atrocious minute range limited limited relevance',''
+53,'','','d â¬†ï¸?'
+54,'','','i â¬‡ï¸?'
+55,'','',tree-sitter
+56,'','guide git displayed bug',triaged
+57,'','','v â¬‡ï¸?'
+58,'typeerror function','utilizador appdata appdata appdata texteditorcomponent appdata texteditorcomponent updatesyncbeforemeasuringcontent appdata texteditorcomponent updatesync appdata appdata appdata textarea textarea ember daverona laravel daverona mellow daverona slime ember ember framer framer gibber gobbiegobgoo handsome hey pane ember detective julia junos julia juniper juniper junos junos sugar cube completions lime biber midnight owl moonlight rocket rubber ducky summer uber yuno zentabs',uncaught-exception
+59,'','','d â¬†ï¸?'
+60,'','','i â¬‡ï¸?'
+61,'','','v â¬‡ï¸?'
+62,put,'browser ja meta rel meta robots noarchive noimageindex meta viewport maximum scalable appdata oniguruma scanner appdata oniguruma scanner appdata appdata oniguruma scanner appdata oniguruma scanner appdata oniguruma oniguruma oniguruma oniguruma appdata appdata appdata appdata onigstring appdata nullgrammar appdata textmatelanguagemode buildtokenizedlineforrowwithtext appdata textmatelanguagemode suggestedindentforlineatbufferrow appdata appdata mutateselectedtext appdata getselectionsorderedbybufferposition appdata transact appdata transact appdata transact appdata pane pane pane pane converter',uncaught-exception
+63,'','',auto-updater
+64,'','','d â¬†ï¸?'
+65,'','','i â¬‡ï¸?'
+66,'','',regression
+67,'','guide click folder folder menus disable folder disable',triaged
+68,'','','v â¬‡ï¸?'
+69,'','',windows
+70,'','','d â¬†ï¸?'
+71,'','','i â¬‡ï¸?'
+72,'','',regression
+73,'','guide run run git',triaged
+74,'','','v â¬‡ï¸?'
+75,'infinite copies fork bomb','today infinite copies stacked computer computer finally computer experiment state fork bomb finally ready killall fork bomb fork bombs 20160110ubuntu0 20160110ubuntu0 noarch printing 20160110ubuntu0 printing 20160110ubuntu0 noarch 20160110ubuntu0 20160110ubuntu0 noarch id codename',''
+76,'eats ram releasing minutes','ram ram freed practical allowing saved greater 10mb practical performance ram equivalent load fills progressively ram sudden stabilize everytime applied family edition premium 8gb ram memory pentium g2020 syntactical coloration performance sudden filling ram',''
+77,'installing godot support','lang gdscript gdscript wyjp48 qkzu lang gdscript gdscript prebuild gyp rebuild prebuild warn prebuilt binaries aborted dumped aborted dumped gyp require gyp load gyp gyp configure gyp gyp failed gyp childprocess oncpexit gyp configure gyp childprocess gyp childprocess onexit internal child gyp generic gyp gyp gyp rebuild gyp wyjp48 qkzu lang gdscript gdscript gyp v10 gyp gyp v3 gyp aborted dumped warn wyjp48 qkzu warn wyjp48 qkzu warn wyjp48 qkzu warn wyjp48 qkzu warn wyjp48 qkzu elifecycle errno gdscript prebuild gyp rebuild failed gdscript logs 25t16 655z lang gdscript sucessful',''
+78,'','','d â¬†ï¸?'
+79,'','','i â¬‡ï¸?'
+80,'','',packages/one-dark-ui
+81,'','',packages/one-light-ui
+82,'','guide click folder click folder folder click folder click folder click folder folder folder',triaged
+83,'','','v â¬‡ï¸?'
+84,macros,'icue macros macro prnt begin itemize item itemize macro macro macro 25f15600 ba1a 905d 579e618717c1',''
+85,'','','d â¬†ï¸?'
+86,'','','i â¬‡ï¸?'
+87,height,'',triaged
+88,'','','v â¬‡ï¸?'
+89,'','wheel till varies triggers',electron
+90,'','','d â¬†ï¸?'
+91,'','','i â¬‡ï¸?'
+92,'','guide built folder git folder folder git git git git git git git git',triaged
+93,'','','v â¬‡ï¸?'
+94,'transpile ignores','transpiles transpile 1d9a4cafcf6cc288d675512db8fd984e13aab869 transpilation l99 l100 transpiled notfounderror typescriptsimple createservice typescriptsimple compilefileatpath atomtranspilers atomtranspilers glob transpile transpile transpilation',more-information-needed
+95,'','',auto-updater
+96,'','','d â¬†ï¸?'
+97,'','','i â¬‡ï¸?'
+98,'','guide run disable git',triaged
+99,'','','v â¬‡ï¸?'
+100,'','','d â¬†ï¸?'
+101,'','','i â¬‡ï¸?'
+102,'','',regression
+103,'','guide folder git',triaged
+104,'','','v â¬‡ï¸?'
+105,'iteration plan july aug','july constants subclasses leaking arithmetic shellscript restored inconsistent constants ansi shellscript optional truncated channel oracle lib64 libstdc glibcxx iteration',iteration-plan
+106,'','','d â¬‡ï¸?'
+107,'','','i â¬‡ï¸?'
+108,'','',regression
+109,'',bug,triaged
+110,'','','v â¬‡ï¸?'
+111,'','',electron
+112,'','',electron-4
+113,'','',regression
+114,'','guide displayed character displayed',triaged
+115,'','',tree-sitter
+116,'','guide detect detect',triaged
+117,'horizontal margin','horizontalscrollmargin horizontal e1f23d80 a3e8 8e2b e0a41da476ed horizontal horizontalscrollmargin 8378b5116af606a97c59663226da430af6206414 l176 autoscrollhorizontally guttercontainerwidth autoscroll 8378b5116af606a97c59663226da430af6206414 l2080 calculating desiredscrollright horizontal margin horizontalscrollmargin gutterwidthcontainer horizontal margin guttercontainerwidth horizontalscrollmargin guttercontainerwidth calculating horizontal margin horizontalscrollmargin horizontally horizontalscrollmargin verticalscrollmargin horizontalscrollmargin horizontal margin horizontally guttercontainerwidth calculating horizontal margin',''
+118,'vietnamese chars','vietnamese chars font vietnamese áº áº ãª 2f3c7b00 a088 8ce6 089d3cea1685 font',''
+119,page,'vcxsrv lxde vcxsrv lxde serving vcxsrv portable lxde navigated panel installpanel addpackageviews panel panel atomioclient module atomioclient fetchfromcache atomioclient module atomioclient featuredpackages installpanel loadfeaturedpackages panel installpanel panel settingsview getorcreatepanel settingsview showpanel clickhandler',''
+120,'button insecure response','produce 1a comma 1b gd insecure response processing conversion sternlab',''
+121,'generate 64bit','fork œscript bootstrapâ generate 64bit computer œscript buildâ building stops v10 v6 wrote fingerprint xr gitprojects fingerprint cbfce05d767b0c926487b711109ed54461b24ed0 xr gitprojects xr gitprojects transpiling xr gitprojects transpiling superstring xr gitprojects superstring gyp rebuild aborted dumped gyp require gyp load gyp gyp configure gyp gyp failed gyp childprocess oncpexit xr gitprojects manager gyp configure gyp childprocess gyp childprocess onexit internal child gyp generic gyp xr gitprojects manager xr gitprojects manager gyp gyp rebuild gyp xr gitprojects superstring gyp v10 gyp gyp v3 gyp aborted dumped elifecycle errno superstring gyp rebuild failed superstring xr logs 18t20 748z child throw failed xr gitprojects manager checkexecsyncerror child object execfilesync child module xr gitprojects module xr gitprojects object xr gitprojects module internal cjs loader object module internal cjs loader module load internal cjs loader trymoduleload internal cjs loader module load internal cjs loader module runmain internal cjs loader internal bootstrapnodejscore internal research suggesting didnâ generation applied building separately superstring superstring separately building unsuccessful',''
+122,'','','d â¬†ï¸?'
+123,'','',electron
+124,'','','i â¬‡ï¸?'
+125,'','',regression
+126,'','guide distribution built git',triaged
+127,'','','v â¬‡ï¸?'
+128,'','','d â¬†ï¸?'
+129,'','','i â¬‡ï¸?'
+130,'','','v â¬‡ï¸?'
+131,target,'unnecessarily slight jump 18e226',packages/go-to-line
+132,'textmate specifications scopes handled','scope specifier contentname specifies scopes handled 865d 6fba209631ad scopes specification scope automated scope specifier scopes separated vscode accepts specification 9c5e8a00 865e 986d f7bfd8d050e5 posted posted online item interpolation begin begincaptures keyword substatement powershell punctuation definition substatement powershell punctuation substatement begin powershell punctuation begin powershell punctuation substatement begin powershell contentname interpolated complex source powershell endcaptures punctuation powershell punctuation substatement powershell substatement powershell scopes alternate ideas scoped scope specification highest',''
+133,'','',network
+134,'','pane pane',uncaught-exception
+135,'openat stale connections','connection letting traverse holds fds sftp sftp connection sftp connection disco',network
+136,'enabling notify failures v3','retainedobjectinfo retainedobjectinfo removeenvironmentcleanuphook internalcallbackscope 0140999b 0140a236 015738dc 015af71e 015af892 015afa54 015b04b3 015b00f5 01404ab6 rtlinitializeexceptionchain rtlinitializeexceptionchain',electron-3
+137,'reuse cache azure devops','building generate 1edf94a24032a8a0e555c3db7aa7de01e5b00633 generate transforming source concatenating giant timings caching facility skips transformation advantage azure pipelines significant chunk jasonrudolph authored',''
+138,'','','d â¬‡ï¸?'
+139,'','','i â¬‡ï¸?'
+140,'','guide folder',triaged
+141,'','','v â¬‡ï¸?'
+142,'','','d â¬†ï¸?'
+143,'','','i â¬‡ï¸?'
+144,'','guide click',triaged
+145,'','','v â¬†ï¸?'
+146,'environment accessible','global usages unreliable state identified usages watcher watcher l185 watcher l223 watcher l232 watcher l547 l548 l33 l37 discussed archives g2lcnpxbp p1557406371287600 usages global object global object relying usage big object accessed originalatom global object defineproperty global global originalatom',''
+147,'reduce number loaded','deduplicate unneeded reduction delay delay hypothesis evaluation timing 133d9153ede248529204b5bfd6dff5bbc02eba69 l13 286a110ef4dc1f50e146e7e08ec320728bae41f4 l85 contributor median 160ms required 6d00e5300fd4ea3741a15bf71980a20e unique duplication nodegit promisify required plug origrequire starttime rootpath pathrelative rootpath moduleid modulepath pathrelative moduleid modulepath startswith modulepath required pathrelative origrequire debugsavestartupmodules starttime writefilesync debugsavestartupmodules 286a110ef4dc1f50e146e7e08ec320728bae41f4 l85','FY2019Q5 atom perf'
+148,'','','d â¬†ï¸?'
+149,'','','i â¬‡ï¸?'
+150,'','','v â¬‡ï¸?'
+151,'','','d â¬†ï¸?'
+152,'','',electron
+153,'','','i â¬‡ï¸?'
+154,'','','v â¬‡ï¸?'
+155,'opening lock seconds','snip locks mouse movable gdm3 locks usage htop spikes settles unfreezes offers kill unfreezes apt policy n11 candidate packagecloud atomeditor packagecloud atomeditor packagecloud atomeditor launchpad source shorter locks shorter duration repeatable underlying',''
+156,'invalid pattern','private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 scanner exports scanner createscanner private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 scanner exports scanner getscanner private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 scanner exports scanner findnextmatch private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 rule exports rule findnextmatch private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 rule exports rule getnexttags private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 exports private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 textmatelanguagemode buildtokenizedlineforrowwithtext private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 textmatelanguagemode buildtokenizedlineforrow private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 textmatelanguagemode tokenizenextchunk private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 tokenizationstarted pendingchunk alive defer private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 private 0qmk0nxd41g5qk9l26dl1rhh0000gp apptranslocation 5765e851 e4c7 4d21 4e53748411c7 vue graphql vue sass',uncaught-exception
+157,'','pane pane pane notificationelement exports notificationelement notificationelement exports notificationelement notificationelement exports notificationelement symbols symbols slash twig',uncaught-exception
+158,'','','d â¬‡ï¸?'
+159,'','','i â¬†ï¸?'
+160,'','ed guide',triaged
+161,'','','v â¬‡ï¸?'
+162,'support semantic','filling token requesting scope scopes lexical token semanticolor semanticolor advantage scope requested scopes lexical token scope languagelayer languagemode idforscope scopename languagelayer languagemode idforscope scopename treecursor nodetext produce scopes lexical token digitallyserviced semanticolor',''
+163,'buffer overflow detected','unexpectedly overflow ervin terminated crash freshly crash crash hour crash crash linuxmint crash dump',crash
+164,'typeerror invalid point nan','forward forward occurring nathaniel appdata exports assertvalid appdata translatescreenposition appdata exports translatescreenposition appdata displaymarker exports displaymarker setheadscreenposition appdata changeposition appdata changeposition appdata setscreenposition appdata moveleft appdata movecursors appdata transact appdata transact appdata transact appdata movecursors appdata moveleft appdata appdata appdata appdata exports appdata exports appdata appdata 5x 3x 16x',uncaught-exception
+165,'typeerror read undefined','emittext texteditorcomponent texteditorcomponent updatesyncbeforemeasuringcontent texteditorcomponent updatesync texteditorcomponent improved slash browser',uncaught-exception
+166,'mixin details','mixin netbeans netbeans mixin ctl',''
+167,'fetching outdated console','cc9e9380 55ef 88f6 6f8b9bb143cb complain 3028c100 55f0 84c5 eec06f64688a œâ œâ datatip œâ œâ œâ œâ œâ ternjs œâ autoprefixer œâ œâ picker œâ docblockr œâ œâ œâ œâ œâ machine œâ œâ œâ œâ apache œâ œâ nginx œâ œâ œâ œâ enhanced œâ œâ minimap œâ minimap œâ minimap cursorline œâ minimap œâ minimap œâ minimap quick œâ minimap œâ minimap œâ œâ œâ œâ manager œâ quick œâ œâ ftp œâ œâ œâ œâ',''
+168,'invisible elementary','maximized maximized bellow direction unmaximize id elementary elementary codename generic feb partial solucion maximized coffeescript iswindowmaximized unmaximizewindow',''
+169,'','','d â¬†ï¸?'
+170,'','','i â¬‡ï¸?'
+171,'','','v â¬‡ï¸?'
+172,'enhance fast','resolving builds yaml yaml finishing investigation realized yaml yaml misleading visualstudio buildid jobid a5e52b91 c83f 4a68 c246fc63a4f7 taskid bde16fc7 5b1c 12aa 0110866d993c linestart lineend colstart colend loses suppresses exiting yaml finishing proposed teach builds fast undesirable consequences developers discover builds fixing innocent developers learn buried middle yaml teach','FY2019Q5 deterministic builds'
+173,'npm usr share resources app modules npm modules sntp','preferences ansible ansible pink œlanguage ansible 2â failed outputâ outputâ reveals sntp sntp token cainesaj logs 243z cat twenty cat distrib id distrib distrib codename bionic distrib sntp portable qf sntp fc29',''
+174,'','',regression
+175,'','guide spec folder run run spec run run git git git spec run ran resolved resolved run git folder disable git',triaged
+176,'reassigned removed','guide reassigned reassign 3e586400 1ba53a2dc4ba 43b5ae80 8dcf cbfbb116d381 git archdesk arch1 mon mar',triaged
+177,'','','d â¬†ï¸?'
+178,'','','i â¬‡ï¸?'
+179,'','','v â¬‡ï¸?'
+180,'provide option enable darktheme option browserwindow','locked iâ dark variant predominantly dark dark variant darktheme browserwindow generally stick sore thumb chooses dark distracting ideal dark variant dark variant distracted dark variant finding dark variant distracting titlebar similiarly handled initialisation browserwindow darktheme browserwindow',''
+181,'','','d â¬†ï¸?'
+182,'','','i â¬‡ï¸?'
+183,'','','v â¬‡ï¸?'
+184,'','','d â¬†ï¸?'
+185,'','','i â¬‡ï¸?'
+186,'','','v â¬‡ï¸?'
+187,'bootstrap centos warnings src','v6 bootstra alex v6 v3 gyp verb gypi rh source temp gypi gyp verb gypi gypi rh source temp gypi gyp verb gypi gypi rh source temp gypi gyp verb gyp gyp forcing gyp info spawn rh source temp manager gyp info spawn args rh source temp manager gyp gyp gyp py gyp info spawn args gyp gyp info spawn args gyp info spawn args gyp info spawn args gyp info spawn args rh source temp gypi gyp info spawn args gyp info spawn args rh source temp manager gyp addon gypi gyp info spawn args gyp info spawn args shengxin gyp gyp iojs gypi gyp info spawn args dlibrary gyp info spawn args dvisibility gyp info spawn args dnode shengxin gyp gyp iojs gyp info spawn args dnode gyp rh source temp manager gyp gyp info spawn args dnode iojs gyp info spawn args dmodule rh source temp gyp info spawn args depth gyp info spawn args gyp info spawn args gyp info spawn args gyp info spawn args goutput gyp verb gyp verb gyp verb architecture gyp verb shengxin gyp gyp iojs gyp verb succeeded gyp info spawn gyp info spawn args buildtype parser parser declaration declare parser declaration declare parser declaration declare parser pragma gcc diagnosticâ parser countâ initializer parser braces initializer parser parse actions actionâ obj parser gyp gyp failed gyp childprocess onexit rh source temp manager gyp gyp gyp childprocess gyp childprocess onexit internal child gyp el6 gyp rh source temp manager rh source temp manager gyp rebuild gyp rh source temp gyp gyp gyp v3 gyp elifecycle errno gyp rebuild failed shengxin logs 01t00 997z 39m child throw failed rh source temp manager loglevel checkexecsyncerror child object execfilesync child module rh source temp object rh source temp module module object module module module load module trymoduleload module module load module module runmain module',''
+188,'',crash,crash
+189,'','','d â¬†ï¸?'
+190,'','','i â¬†ï¸?'
+191,'','',linux
+192,'','folder git folder git git built git',triaged
+193,'','','v â¬‡ï¸?'
+194,'','rm rf rm rf rm rf rm rf rm rf preferences rm rf shipit rm rf rm rf saved state savedstate rm rf caches rm rf caches e493f800 35eb ee35ac2c227e',''
+195,'ebusy resource busy locked unlink','xchecked xchecked ebusy resource locked locked temp vm22 failed œsort failed jherna3 jherna3 jherna3 childprocess jherna3 childprocess childprocess onexit internal child jherna3 temp throw er ebusy resource locked jherna3 temp ng8g0e ck9qp object unlinksync rimrafsync jherna3 temp cleanupdirssync jherna3 temp temp cleanupsync jherna3 temp temp vm22 vm22 vm22 vm22 vm22 vm22 childprocess onexit internal child notice today limited basis jherna3 jherna3 state jherna3 state jherna3 links jherna3 links jherna3 links',''
+196,'virtual memory leak executing make','allocates memory freeing memory allocation stops load torvalds distclean oldconfig memory allocates memory present mint generic dell xps ram',''
+197,'','','d â¬†ï¸?'
+198,'','','i â¬‡ï¸?'
+199,'',click,triaged
+200,'','','v â¬‡ï¸?'
+201,'opening improved','blown instance bonus caveat bonus regexp foo positioned match foo',''
+202,'','','d â¬†ï¸?'
+203,'','','i â¬‡ï¸?'
+204,'typeerror read undefined','appdata appdata appdata appdata appdata vue',uncaught-exception
+205,'','','v â¬‡ï¸?'
+206,'','',installer
+207,'','',mac
+208,scoring,'scoring shave faster',startup-time
+209,preload,'preload early lazily faster',startup-time
+210,'asynchronous loading','prepared asynchronously activations synchronously serial faster',startup-time
+211,'texteditorelement forces reflow dom attachment','didattach isvisible reflow faster',startup-time
+212,'keymapmanager ondidloaduserkeymap synchronous stat','ondidloaduserkeymap synchronous avoidable faster',startup-time
+213,'investigate requires happening','investigated faster renderer',startup-time
+214,'consolidate divergent versions snapshottable dependencies','diverge consolidating faster renderer copyfiles',startup-time
+215,'gitrepository opensubmodules called synchronously','costly synchronously renderer submodules lazily faster renderer',startup-time
+216,'','',linux
+217,'','',needs-reproduction
+218,'normalizepackagemetadata costly','normalizepackagemetadata fair improving renderer',startup-time
+219,'','crash crash crash crash crash',crash
+220,'','','d â¬†ï¸?'
+221,'','','i â¬†ï¸?'
+222,'','',tree-sitter
+223,'','guide git',triaged
+224,'','','v â¬‡ï¸?'
+225,'bitmap gtk','global font bitmap font lxappearance dialogs squares font roboto dialogs bitmap font zevv peep zevv nl play zevv peep squares bitmap font squares bec50480 1fe7 917e cf0b0dd99447 font zevv nl play zevv peep',''
+226,'fuse cryptomator vault','cryptomator cryptomator vault unlock cryptomator cryptomator vault inside cryptomator vault saved remained machines cryptomator editors gedit sublimetext cryptomator vault 83d89a80 1e48 8d1e 4dc6fc33c860',''
+227,'','','d â¬†ï¸?'
+228,'','','i â¬‡ï¸?'
+229,'','indentation indentation indentation',triaged
+230,'','','v â¬‡ï¸?'
+231,'subpixel anti aliasing stops smooth','editors subpixel anti aliasing font editors div div div div transform 09s ease big subpixel anti aliasing half notice subpixel anti aliasing reopened everytime subpixel antialiasing subpixel antialiasing sound unrelated expert subpixel antialiasing stops everytime',''
+232,'precision linux wayland','conflated animated transitions document motion wheels rotation precision touchpads finger continuous document misnomer mapping touchpad pixels pixels afaict precision precision damianmoore precision wayland wayland wayland gitlab wayland document touchpad precisely fingers document sizes wayland',linux
+233,'','','d â¬†ï¸?'
+234,'','','i â¬‡ï¸?'
+235,'','',regression
+236,'','',tree-sitter
+237,'','copied java guide latest reporting bug',triaged
+238,'','','v â¬‡ï¸?'
+239,'','','d â¬‡ï¸?'
+240,'','','i â¬‡ï¸?'
+241,'','',tree-sitter
+242,'','','v â¬‡ï¸?'
+243,'','','d â¬†ï¸?'
+244,'','','i â¬‡ï¸?'
+245,'','guide displayed displayed',triaged
+246,'','','v â¬‡ï¸?'
+247,'textmate ranges matching scopes','filling ranges scopes match scope scope scope negation basically relies knowing scope foo baz quux wib ble ranges strings overengineering toggle quotes toggle quotes strings ranges strings generally supporting scope slows balances scope inspects caches toggle quotes ready haven extended scopes blacklisted whitelisted scopes',''
+248,'services support','goal providing services services sourcetree services automator integrating cross services leverage inter equivalent eefc 992b f96b2a6b195c',''
+249,'','',needs-reproduction
+250,'','',windows
+251,'','craft switcher craft nada',needs-reproduction
+252,'regex based injection selectors','a384dde3f5978d804306bc2033b7aae8570ceeb2 l422 allowed regex scopeselector todo cleanly ideally targets iterate reliable robust todo aerijo todo todo aerijo todo apologies easiest customisation',tree-sitter
+253,'','',build-error
+254,linux,'',linux
+255,overlapping,'noticing funky overlapping 6834bc00 e9e1 9b85 130ba6cc4075 pasted 6a971600 e9e1 8a6b 0c69da7ba0d9 heavily decorations hitting vanessayuenn d33f3e945030a013db972fae4f4f75d70d354281 staging unstaging funky overlapping overlapping vanessayuenn vanessayuenn',editor-rendering
+256,tests,'requesting parse scopes equivalent translated scopes generally scopes compatibility scope scope source require require range require buildtexteditor params buildtexteditor buildtexteditor params require params grammarforscopename source languagemode buildtexteditor beforeeach usetreesitterparsers waitsforpromise grammarforscopename source languagemode buildtexteditor tobetruthy scopename tobe source assignment tokenizes languagemode settext foo languagemode parse languagemodule range infinity infinity rootnode tobe confirming languagemode scopedescriptorforposition scopes toequal source storage resorting',''
+257,'','','d â¬†ï¸?'
+258,'','','i â¬†ï¸?'
+259,'','',regression
+260,'','click click',triaged
+261,'','','v â¬‡ï¸?'
+262,'','','d â¬†ï¸?'
+263,'','','i â¬†ï¸?'
+264,'','spec spec click',triaged
+265,'','translatescreenposition exports exports texteditorcomponent texteditorcomponent updatesyncbeforemeasuringcontent texteditorcomponent updatesync texteditorcomponent 3x 3x',uncaught-exception
+266,'','','v â¬‡ï¸?'
+267,'anonymous nodes quotes log','scope nodes nodes notification c5a38a00 e39d 868d 4229f3ef3a09 mytype mytype getmax mytype mytype front scope notification c5a38a00 e39d 868d 4229f3ef3a09 32d632ba9e8c35bae83f516c09ab2dcd6f67e11d',''
+268,'lmb button double subword','lmb mouse subword subwords mouse subwords mouse lmb mouse mouse handy snake cased camelcased handy',''
+269,'','','d â¬‡ï¸?'
+270,'','','i â¬‡ï¸?'
+271,'','',linux
+272,'',guide,triaged
+273,'','','v â¬‡ï¸?'
+274,'','','d â¬‡ï¸?'
+275,'','','i â¬‡ï¸?'
+276,'','guide folder click folder folder folder',triaged
+277,'','','v â¬‡ï¸?'
+278,'','',blocked
+279,'','',git
+280,'','','d â¬†ï¸?'
+281,'','','i â¬‡ï¸?'
+282,'','',regression
+283,'','',tree-sitter
+284,'','guide bug git',triaged
+285,'','','v â¬‡ï¸?'
+286,'','','d â¬†ï¸?'
+287,'','','i â¬‡ï¸?'
+288,'','guide git bug',triaged
+289,'','','v â¬‡ï¸?'
+290,'','',package-migration
+291,'','guide guide guide guide guide git guide guide git guide folder guide guide guide guide guide guide guide guide guide guide run guide folder guide guide guide guide guide guide guide guide guide guide guide guide guide click',triaged
+292,'','',package-migration
+293,'','git git folder run folder click',triaged
+294,'','',package-migration
+295,'','git git folder run folder click',triaged
+296,'','',package-migration
+297,'','git git folder run folder click',triaged
+298,'','',package-migration
+299,'','git git folder run folder click',triaged
+300,'','',package-migration
+301,'','git git folder run folder click',triaged
+302,'','',package-migration
+303,'','git git folder run folder click',triaged
+304,'','',package-migration
+305,'','git git folder run folder click',triaged
+306,'','',package-migration
+307,'','git git folder run folder click',triaged
+308,'','',package-migration
+309,'','git git folder run folder click',triaged
+310,'','',package-migration
+311,'','git git folder run folder click',triaged
+312,responsible,'saizai identically named gear linking crosslink',packages/grammar-selector
+313,'','',packages/go-to-line
+314,'','',stale
+315,'','',packages/go-to-line
+316,'','',stale
+317,'jumping relative','falcondai oct',packages/go-to-line
+318,'displays falsely gutter utf8 encoded','falsely extended latin 0ee3c800 cd65 976a 1e88387d5c8b',''
+319,'','',regression
+320,'','',tree-sitter
+321,'',correct,triaged
+322,'','','d â¬†ï¸?'
+323,'','','i â¬†ï¸?'
+324,'','latest guide',triaged
+325,'','','v â¬‡ï¸?'
+326,'','',packages/dalek
+327,'','ben3eee run deprecation click copied',triaged
+328,'srgb mojave','srgb override produce srgb notice srgb vibrant mojave dull 18a391 4eb4fc00 c64f 75a3dbb19c84',''
+329,mojave,'dark mojave dark variant advantage dark mojave dark variants preferences',''
+330,'','','d â¬‡ï¸?'
+331,'','','i â¬‡ï¸?'
+332,'','guide guide guide',triaged
+333,'typeerror function','appdata textmatelanguagemode appdata appdata appdata appdata appdata appdata appdata appdata appdata appdata appdata updatesync appdata appdata appdata',uncaught-exception
+334,'','','v â¬‡ï¸?'
+335,'','','d â¬†ï¸?'
+336,'','','i â¬‡ï¸?'
+337,'',guide,triaged
+338,'','','v â¬‡ï¸?'
+339,'mojave parallels vm','mojave parallels parallels trial parallels mojave parallels mojave preferences mouse areas mouse range site',''
+340,'','',packages/one-dark-ui
+341,'','',regression
+342,'','',ui
+343,'sigbus centos','encountering blowing uninstalling logs localhost abrt ccpp killed sigbus dumping surface similarities dormat unresolved vmware fusion vmware fusion',''
+344,'','','d â¬†ï¸?'
+345,'','','i â¬‡ï¸?'
+346,'','',papercut
+347,'','','v â¬†ï¸?'
+348,'','',needs-reproduction
+349,'','',windows
+350,'','',package-migration
+351,'','folder built git folder run folder run click',triaged
+352,'','',package-migration
+353,'','folder built git folder run folder run click',triaged
+354,'','',package-migration
+355,'','folder built git folder run folder run click',triaged
+356,'','','d â¬†ï¸?'
+357,'','','i â¬†ï¸?'
+358,'','guide click palette git',triaged
+359,'','','v â¬‡ï¸?'
+360,preferences,'severeal aom drop cheching leftover whatsoever',stale
+361,'','','d â¬†ï¸?'
+362,'','','i â¬‡ï¸?'
+363,'',guide,triaged
+364,'','','v â¬‡ï¸?'
+365,'spawn e2big','reopens plaintext e2big e2big errnoexception util exports exports exports starttask startloadpathstask nexttick combinedtickcallback',uncaught-exception
+366,'','load downgraded potentially boots prevail repeated success boots repeated posted success',''
+367,'','','d â¬†ï¸?'
+368,'','','i â¬†ï¸?'
+369,'','',needs-reproduction
+370,'','','v â¬‡ï¸?'
+371,'','',atom.io
+372,'','',auto-updater
+373,'','ran resolved resolved',triaged
+374,'random idle','comeback a393991e 804e 72c7390f6f50 crash crash crashlog j0k3r 90ab81d07ca5dc070859bf46c7562068',crash
+375,reason,'crisp dark clearer hover mouse blurrier blurrier mouse 8f2dcc92 7fa2 989a b0be5cd12cc0 1080p 60hz asus rog g751jy clearing saved state incompatible trick days agagin permanent directing powerful 980m 4gb days year machine ideas bhavil jain',''
+376,'virtual box corporate','inside gui gui eai care featured gui inside machine inside',''
+377,'','foldable construct arrows construct begins arrows 28d2777c 7ad9 9d0b 0a1986d8a08d 2d9a7c46 7ad9 8dcd 825499ff1cdd arrows',tree-sitter
+378,'','','d â¬†ï¸?'
+379,'','','i â¬‡ï¸?'
+380,'','',mac
+381,'','',regression
+382,'','guide git',triaged
+383,'','','v â¬‡ï¸?'
+384,'causing numerous taskgated','alfred taskgated c75c6466 8da7 6fb6260ba66a peg fans hot kills battery numerous taskgated increased taskgated peg pegs profiler spsoftwaredatatype overview 16g1408 thneed andrew burns aburns mitigate lsenvironment dict shelling dict ilc grep grep grep',mac
+385,'ff crisp ish throuh ps blur filter','vstudio newest lcd directwrite ff sharp newest newest lcd 2560x1400p 120hz amd radeon cleartype plenty bricked mactype xd stellar someway ff hands horrible editorblurry 295f93b2 6e60 8ff5 33749a060d40',needs-reproduction
+386,'getvisiblerowrange folded','getvisiblerowrange range messed getvisiblerowrange range range match match earlier getfirstvisiblescreenrow getlastvisiblescreenrow getvisiblerowrange compatibility range bugfixing camel chased haven folds missmatches camel chased 35f4d38cb57bf91dc89bb720dc4f72df7460c562 l781',''
+387,'','','d â¬†ï¸?'
+388,'','','i â¬‡ï¸?'
+389,'','',linux
+390,'','guide creates resolved click resolved',triaged
+391,'','','v â¬‡ï¸?'
+392,'','','d â¬†ï¸?'
+393,'','','i â¬†ï¸?'
+394,'','',linux
+395,'','','v â¬‡ï¸?'
+396,behavior,'reposting bug java indentation java myclass mymethod',triaged
+397,'','',blocked
+398,'','crash crash crash',crash
+399,'','',electron
+400,gconf2,'gconf2 libgconf gconf2 workstation gconf2 customized altering rpmrebuild gconf2 solves',linux
+401,'compound keybindings displayed','guide compound displayed menus menus f777fa48 494c 9ae1 2946a81b1d1a keymaps palette contextmenu palette click displayed displayed git junolab jl',triaged
+402,symlinked,'filepath symlinked linktoproject linktoproject views propagating linktoproject linktoproject forever generic',''
+403,'','guide click',triaged
+404,'','',windows
+405,'fields showing typed','fields typed fields 1ec35b16 90c4 c7c68d100f3c 38b4 95d5 5b05a51439d2 6e82b316 38b4 8b97 607baee0fd54 3e692b88 38b4 901c 6f00d0e32e41 oppening pushing fields machine',''
+406,'','','d â¬†ï¸?'
+407,'','','i â¬‡ï¸?'
+408,'','','v â¬‡ï¸?'
+409,'','','d â¬†ï¸?'
+410,'','',data-loss
+411,'','','i â¬†ï¸?'
+412,settings,'guide folder folder run folder run bug bug run run hard git bug',triaged
+413,'','','v â¬†ï¸?'
+414,'automatic snapcraft','snapstore snapcraft deployment snapcraft snaps integration tracking',linux
+415,'awful anti aliasing hinting pixel','inexcusably terrible job anti aliasing hinting font 22751a5c 2d2b 9ac5 b10b0dd0d99a present font font electrons discord font noticable anti aliasing hinting powermap sat feb',''
+416,'','',regression
+417,height,'guide click ben3eee reload git',triaged
+418,'','',proposal
+419,'','built deprecation built',triaged
+420,'minor bug icon incorrect worktree','guide folder folder git ed folder book git worktree folder folder book git git git worktree detach folder folder git ed folder git ed git minor revision minor urgent bug',triaged
+421,'','','d â¬†ï¸?'
+422,'','','i â¬†ï¸?'
+423,'','',regression
+424,'','','v â¬‡ï¸?'
+425,'','','d â¬†ï¸?'
+426,'','','i â¬‡ï¸?'
+427,'','guide bug bug',triaged
+428,'','','v â¬‡ï¸?'
+429,'segmentation fault standard','guide whatwg fault whatwg invoke popup forcibly fault fault git distribution',triaged
+430,'rm modules',rm,''
+431,'','',needs-reproduction
+432,'',git,triaged
+433,'','appdata appdata exports appdata exports appdata appdata appdata',uncaught-exception
+434,'','',build-error
+435,'','','d â¬†ï¸?'
+436,'','','i â¬†ï¸?'
+437,'','',linux
+438,'','git git git git',triaged
+439,'','','v â¬‡ï¸?'
+440,'','','d â¬†ï¸?'
+441,'','','i â¬‡ï¸?'
+442,'','',tree-sitter
+443,'','',triaged
+444,'','','v â¬‡ï¸?'
+445,'',document,linux
+446,'','',needs-reproduction
+447,'call function getposition remote object 28error call','getposition getposition throwrpcerror browser rpc server browser rpc server emitmany webcontents browser web webcontents getposition getposition throwrpcerror browser rpc server browser rpc server emitmany webcontents browser web webcontents metatovalue remotememberfunction exports getwindowdimensions exports storewindowdimensions handlewindowblur 3x 3x eco slim',uncaught-exception
+448,'installing module npm','mint uninstalling module sitting typed typed slick module mint generic youtube ggf xelwxbw gitcached fdd2 8a0d223dbfb1 cleared state reinstalled crashpersist 0f416aea fdd2 c42b94d12a4e',''
+449,'','directions debapt curl packagecloud atomeditor apt xferd speed dload upload speed gpg packet ctb 2d gpg keydb keyblock failed gpg packet ctb 2d gpg apt gpghome j0qfggzhhe pubring gpg apt gpghome j0qfggzhhe pubring gpg failed packet gpg keyring apt gpghome j0qfggzhhe pubring gpg packet gpg packet ctb 2d gpg packet gpg import failed packet packagecloud atomeditor accept ranges bytes disposition atomeditor 4c6e74d6c0a35108 pub gpg sat gmt etag 8e4172cc039b35f7764b4bdb1e909a13 dec gmt amazons3 amz id 4xfogrdhf14be9zxebnely5 mzvsgil1jroklxihf3q62yshv2qlwp1dbc2vfl4jsf7ychwqb1k amz id 0eeade65f92a6029 kb atomeditor 4c6e74d6c0a35108 pub gpg kb 00067s apt atomeditor 4c6e74d6c0a35108 pub gpg trust lecture administrator privacy responsibility password gpg packet ctb 2d gpg keydb keyblock failed gpg packet ctb 2d gpg apt gpghome 1ucakhx5kc pubring gpg apt gpghome 1ucakhx5kc pubring gpg failed packet gpg keyring apt gpghome 1ucakhx5kc pubring gpg packet gpg packet ctb 2d gpg atomeditor 4c6e74d6c0a35108 pub gpg packet gpg import atomeditor 4c6e74d6c0a35108 pub gpg failed packet import retrieved apt curl httpie',''
+450,'','','d â¬†ï¸?'
+451,'','',editor-rendering
+452,'','','i â¬†ï¸?'
+453,'','','v â¬‡ï¸?'
+454,'regression pasting docblock subsequent','docblock worse cedb0d42 f99b 893e 38660e0dd5fa docblock fee member prototype findfeeformember member member member indentations pastes indendation 390ab7449 390ab7449 docblock plaguing addressed',regression
+455,'','','d â¬†ï¸?'
+456,'','',electron
+457,'','','i â¬‡ï¸?'
+458,linux,'',linux
+459,'','','v â¬‡ï¸?'
+460,'','','d â¬†ï¸?'
+461,'','','i â¬‡ï¸?'
+462,'','guide git',triaged
+463,'','','v â¬‡ï¸?'
+464,'','',installer
+465,'','',linux
+466,'requests primitives aware','manipulate basis constrain basis rewire realign serialization identify receives restrict easier instance getavailablepackagepaths alter state state separately wouldn wanting expanded fuller wanting flexibility strike incomplete proposal state instance global ondidopenwindow callback atomwindow instance atomwindow ondidclose callback atomwindow ondidreceivefocus callback receives atomwindow scope args ipc scope atomwindow ondidreceivemessage scope callback args scope enablepackageforwindow disablepackageforwindow ispackagedisabledforwindow setforwindow getforwindow unsetforwindow unset observeall callback nesting ipc',''
+467,'','',linux
+468,'','',needs-reproduction
+469,'','',auto-updater
+470,'','',mac
+471,'verify certificate','7dee83a4 dfb1 89ce 5bce6a0328cf failed leaf',''
+472,'','apologize terminology clarifications',windows
+473,'german layouts vim','guide bug german neo2 special german awesomizing neo tastaturbelegung ebene3 cookie awesome okie awesome awesome hard understanding understanding pushes layouted keycodes userspace presume german explains keycodes vi german neo2 vi stretch',triaged
+474,opening,'gui preferences state state',''
+475,'','','d â¬†ï¸?'
+476,'','',editor-rendering
+477,'','','i â¬†ï¸?'
+478,'','latest guide latest latest',triaged
+479,'','','v â¬‡ï¸?'
+480,'','',build-error
+481,linux,'',linux
+482,'','crash crash crash',crash
+483,'','','d â¬†ï¸?'
+484,'','','i â¬†ï¸?'
+485,'','','v â¬‡ï¸?'
+486,'','',mac
+487,'','',needs-reproduction
+488,'unicode written back hex','guide unicode hex unicode displayed hex character character hex 0xefbfbd 0x91 unicode character character unaltered character unicode character character character altered unicode character character hex 0xefbfbd',triaged
+489,'','','d â¬†ï¸?'
+490,'','',electron
+491,'','','i â¬‡ï¸?'
+492,'',document,linux
+493,'',newest,needs-reproduction
+494,'','',regression
+495,'','','v â¬‡ï¸?'
+496,'','',installer
+497,'','',mac
+498,'','',needs-reproduction
+499,'','',mac
+500,'','guide git',triaged
+501,'','',ui
+502,'','','d â¬†ï¸?'
+503,'','','i â¬‡ï¸?'
+504,'','',regression
+505,'','guide reload',triaged
+506,'','','v â¬‡ï¸?'
+507,'opening volume','mounted volume volume disappearing reappearing present volume logs scenario e0003a1c b264 414b 849c 96d6ce864538 e0003a1c b264 414b 849c 96d6ce864538 e0003a1c b264 414b 849c 96d6ce864538 e0003a1c b264 414b 849c 96d6ce864538 scenario volume volume diskcryptor pointing mounted volume unmount volume diskcryptor remount volume diskcryptor mounted volume scenario volume volume diskcryptor unmount volume diskcryptor remount volume diskcryptor mounted volume scenario usage scenario volume unmounted computer volume volume diskcryptor unmount volume diskcryptor computer computer remount volume diskcryptor mounted volume volume mounted unmounted finally mounted volume volume scenario repeated present years diskcryptor diskcryptor simulate unplugged volume volume shares ticket prerequisite diskcryptor volume volume',''
+508,'','','d â¬‡ï¸?'
+509,'','',documentation
+510,'','','i â¬‡ï¸?'
+511,'','',triaged
+512,'','','v â¬‡ï¸?'
+513,'','',help-wanted
+514,'','',mac
+515,'kubernetes support','source inside portable volume inside inside generally suppose global supposing informations practice volume',''
+516,panes,'panes panes panes',''
+517,'typeerror invalid point nan','swackets andrei exports assertvalid translatescreenposition exports translatescreenposition displaymarker exports displaymarker setheadscreenposition exports changeposition exports setscreenposition exports movecursors exports setcursorscreenposition texteditorcomponent exports texteditorcomponent onmousedown robin swackets',uncaught-exception
+518,'integrated shell terminal access','underpinning shells sad combo seperately consult integrated',''
+519,'','',blocked
+520,'','','d â¬†ï¸?'
+521,'','','i â¬†ï¸?'
+522,'','appdata appdata appdata appdata appdata appdata appdata appdata exports appdata exports appdata exports appdata exports appdata appdata',uncaught-exception
+523,'','','v â¬†ï¸?'
+524,'','',stale
+525,'','',windows
+526,'','',needs-reproduction
+527,'typeerror undefined','exports exports pane exports pane pane exports pane pane pane',uncaught-exception
+528,reloading,'guide palette run reload reload 03be10414',triaged
+529,'','',installer
+530,'','',windows
+531,'assigning height explicitly absolute deprecation','franklinrt mupchrch throwing deprecation paneforitem getactivetexteditor splitright run deprecation run paneforitem getactivetexteditor splitright deprecation deprecation assigning explicitly assigned implicitly assigns autoheight explicitly autoheight measuredimensions becamevisible checkforvisibilitychange attachedcallback axis childadded axis kit',triaged
+532,screens,'menus run menus git buildvm eduardm1 c88402ca e603 975d cd31cd2e49ea',triaged
+533,'','',linux
+534,'','',needs-reproduction
+535,'','',regression
+536,'',guide,triaged
+537,'','creates cursors cursors lclick cursors copied creates cursors cursors copied git',triaged
+538,'preserve gpu flag','guide preserves disable flag black glitches disable flag click disable glitch bug acceleration remains acceleration hardware vendor',triaged
+539,'','',build-error
+540,'','',linux
+541,'','spec spec',triaged
+542,'','','FY2019Q5 atom perf'
+543,'','',performance
+544,'','renderer renderer',startup-time
+545,'','explicitly hard hard understanding hard hard hard fault',triaged
+546,'','',electron
+547,'','',help-wanted
+548,linux,'',linux
+549,'','',windows
+550,'','',crash
+551,'','',git
+552,'','folder git git git run git folder folder folder reload',triaged
+553,'prefix installation','latest latest guide reporting correct contributing cursory 2felectron bug enhancement bug contributing bug enhancement contributing enhancement contributing guide prefix itâ distribution grunt prefix itâ itâ hard coded',triaged
+554,'','','d â¬†ï¸?'
+555,'','','i â¬‡ï¸?'
+556,'','hard hard hard git',triaged
+557,'','','v â¬‡ï¸?'
+558,'race settings party settings dynamically','bug jtokoph detect indentation bug jtokoph detect indentation involve latest latest guide reporting correct contributing cursory 2felectron bug enhancement manages races manage surprising counterintuitive ran detect indentation manage softtabs refer bug l333 l343 distinguish reasons grain salt detect indentation tabtype hard blatant indentation indentation hard indentation carefully indentation thwacked git',triaged
+559,'',crash,crash
+560,'','',network
+561,'','latest latest guide reporting correct contributing cursory 2felectron bug enhancement bug contributing bug enhancement contributing enhancement contributing guide reload',triaged
+562,'','',build-error
+563,'','latest latest guide reporting correct contributing cursory 2felectron bug enhancement ben3eee',triaged
+564,'option smooth','today tutorials hints',''
+565,'','notifies squirrelsetup squirrelsetup squirrelsetup ioexception squirreltemp tempe net45 locking druring scanning finish applied',''
+566,'','',crash
+567,'','',needs-reproduction
+568,'','',network
+569,'','',windows
+570,'','',error-from-save
+571,'','',network
+572,'','pane exports exports exports exports exports exports pane exports pane pane pane exports pane pane exports exports exports exports exports 3x symbols',uncaught-exception
+573,sublime,'truncate whitespace triple gifs autoindentonpaste normalizeindentonpaste 6x33kha t1dg82a',question
+574,moving,'fit flavor',auto-indent
+575,'story complicated confusing','effects modes misunderstood modes newcomers topics sources illustrate modes modes modes roots mdash mdash aid overlooking mdash combined modes unambiguous consideration scenarios stored belong decisions belong individual mdash buffers',proposal
+576,persian,'persian ce9f4708 b3e3 11e5 e0f7c250deaa 1792ae82 b3e4 11e5 9eb8 ba946055f969',i18n
+577,'locking smb connection','smb discard reboot',network
+578,'switching branches','branches switched switched branches',needs-reproduction
+579,'','',electron
+580,'','',help-wanted
+581,'','',linux
+582,'','',blocked
+583,'','',build-error
+584,'','',electron
+585,'','',linux
+586,'','',blocked
+587,'',hard,triaged
+588,'','loong fan decided curiosity purposes im annoying incredible 2s processors',performance
+589,'','',network
+590,'','',performance
+591,'','',stale

@@ -47,7 +47,7 @@ public final class Parser {
         return arffList;
     }
 
-    public static void createArffFile(String arffFile, List<DataHolder> arffList) throws Exception {
+    public static void createArffFile(String arffFile, List<DataHolder> arffList, boolean useSmartData) throws Exception {
         LOGGER.log(INFO, "Beginning of creation of arff file --> " + arffFile + " <--");
 
         FastVector attributes = new FastVector();
@@ -74,8 +74,13 @@ public final class Parser {
         }
 
         ArffSaver saver = new ArffSaver();
-        SmartData smartData = new SmartData(data);
-        saver.setInstances(smartData.convertBigDataToSmartData());
+
+        if (useSmartData) {
+            SmartData smartData = new SmartData(data);
+            saver.setInstances(smartData.convertBigDataToSmartData());
+        } else {
+            saver.setInstances(data);
+        }
 
         try {
             saver.setFile(new File(arffFile));

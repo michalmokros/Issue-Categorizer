@@ -45,7 +45,7 @@ public final class DownloaderUtil {
         String urlString = "https://api.github.com/repos/" + githubDownloadUsername + "/" + githubDownloadRepository + "/issues?state=" + issuesState;
         List<EntryDTO> listOfEntries = extractEntriesRecursively(0, urlString, trainLabels, null);
 
-        String csvTrainFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "/" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(trainLabels) + ".csv";
+        String csvTrainFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(trainLabels) + ".csv";
         writeEntriesIntoFile(csvTrainFileName, listOfEntries);
 
         if (testLabels != null) {
@@ -53,7 +53,7 @@ public final class DownloaderUtil {
 
             listOfEntries = extractEntriesRecursively(0, urlString, testLabels, trainLabels);
 
-            String csvTestFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "/" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(testLabels) + ".csv";
+            String csvTestFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(testLabels) + ".csv";
             writeEntriesIntoFile(csvTestFileName, listOfEntries);
 
             return new String[]{csvTrainFileName, csvTestFileName};

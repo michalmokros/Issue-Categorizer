@@ -13,15 +13,10 @@ import static util.ConverterUtil.preprocessIssues;
 public class Converter {
     private final static Logger LOGGER = Logger.getLogger(Converter.class.getName());
 
-    public static String main(String[] args) throws Exception {
-        String arffFile = null;
-        if (args.length < 1) {
-            LOGGER.log(INFO, "Initialized Converter with only " + args.length + " arguments.");
-        } else {
-            String csvFile = Utils.getOption("F", args);
+    public static String convert(String csvFile, boolean useSmartData) throws Exception {
+        LOGGER.log(INFO, "Initialized Converter for file: " + csvFile + ", using Smart Date: " + useSmartData);
 
-            arffFile = preprocessIssues(csvFile);
-        }
+        String arffFile = preprocessIssues(csvFile, useSmartData);
 
         return arffFile;
     }

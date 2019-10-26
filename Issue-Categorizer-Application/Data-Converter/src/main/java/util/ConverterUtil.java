@@ -14,14 +14,14 @@ public abstract class ConverterUtil {
 
     private ConverterUtil() {}
 
-    public static String preprocessIssues(String csvFile) throws Exception {
+    public static String preprocessIssues(String csvFile, boolean useSmartData) throws Exception {
         LOGGER.log(INFO, "Beginning of pre-processing data from csv file --> " + csvFile + " <--");
 
         List<DataHolder> arffList;
         arffList = Parser.parseCsvFile(csvFile);
         Cleaner.cleanArffList(arffList);
         String arffFile = csvFile.substring(0, csvFile.length() - 3).concat("arff");
-        Parser.createArffFile(arffFile, arffList);
+        Parser.createArffFile(arffFile, arffList, useSmartData);
 
         LOGGER.log(INFO, "Finished pre-processing data from csv file, created arff file --> " + arffFile + " <--");
         return arffFile;
