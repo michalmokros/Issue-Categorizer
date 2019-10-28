@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeb1ee8f-185d-4867-9c57-76454d6c09b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/dto/Issue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/util/ConverterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/util/ConverterUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Modeller/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/Modeller.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/Modeller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/classifier/IssuesClassifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/classifier/IssuesClassifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/util/ModellerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/util/ModellerUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Modeller/build/libs/Data-Modeller-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/build/libs/Data-Modeller-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Modeller/src/main/java/Modeller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/Modeller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Modeller/src/main/java/util/ModellerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/util/ModellerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.arff" beforeDir="false" afterPath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.arff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +61,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Issue-Categorizer-Application" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Issue-Categorizer-Application" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -124,7 +144,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Issue-Categorizer-Application [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Issue-Categorizer-Application [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -135,7 +155,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -179,17 +199,17 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.MessageClassifier" />
       <item itemvalue="Application.Modeller" />
-      <item itemvalue="Gradle.Issue-Categorizer-Application [dependencies]" />
       <item itemvalue="Gradle.Issue-Categorizer-Application [wrapper]" />
       <item itemvalue="Remote.GradleRemoteDebug" />
+      <item itemvalue="Gradle.Issue-Categorizer-Application [build]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Issue-Categorizer-Application [build]" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Modeller" />
         <item itemvalue="Application.MessageClassifier" />
         <item itemvalue="Gradle.Issue-Categorizer-Application [wrapper]" />
-        <item itemvalue="Gradle.Issue-Categorizer-Application [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +235,7 @@
       <workItem from="1570355973319" duration="10498000" />
       <workItem from="1570979873113" duration="19451000" />
       <workItem from="1572095114553" duration="314000" />
-      <workItem from="1572095459173" duration="7941000" />
+      <workItem from="1572095459173" duration="23196000" />
     </task>
     <servers />
   </component>
@@ -240,8 +260,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="28" />
+          <line>34</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Modeller/src/main/java/util/ModellerUtil.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

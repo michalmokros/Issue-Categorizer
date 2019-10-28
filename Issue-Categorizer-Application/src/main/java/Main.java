@@ -27,13 +27,12 @@ public class Main {
         LOGGER.log(INFO, "Started application with arguments: " + Arrays.toString(args));
 
         String[] csvFileNames = callDownloader(args);
-        String[] arffTrainFileName = callConverter(csvFileNames); //../data/IssueCategorizer-atom-atom-issues-open.arff
-//        String arffTestFileName = Converter.main(converterArgs);
+        String[] arffFileNames = callConverter(csvFileNames); //../data/IssueCategorizer-atom-atom-issues-open.arff
 //        String arffFileName = "../data/IssueCategorizer-atom-atom-issues-open.arff";
 //        String arffTestFileName = "../data/IssueCategorizer-atom-atom-issues-open-test.arff";
 //        String[] modellerInput = {arffFileName, arffTestFileName}; //../data/IssueCategorizer-atom-atom-issues-open-test.arff
 //        Modeller.main(modellerInput);
-
+        String csvClassiffiedFileNames = callModeller(ArrayUtils.addAll(arffFileNames, csvFileNames[1]));
     }
 
     private static String[] callDownloader(String[] args) throws Exception {
@@ -54,7 +53,19 @@ public class Main {
             output.add(convert(new String[] { "-f=" + args[i], "-sd=" + useSmartData}));
         }
 
-        return output.stream().toArray(String[]::new);
+        return output.toArray(new String[0]);
+    }
+
+    private static String callModeller(String[] args) throws Exception {
+        if (args.length == 3) {
+            String trainFile = "-train=" + args[0];
+            String testFile = "-test=" + args[1];
+            String originalFile = "-og=" + args[2];
+
+            return model(new String[] {trainFile, testFile, originalFile});
+        } else {
+            throw new Exception("For a modeller to be initialized there need to be 2 arguments.");
+        }
     }
 
     public static String[] download(String[] args) throws Exception {
@@ -87,5 +98,17 @@ public class Main {
         boolean useSmartData = Boolean.parseBoolean(Utility.extractArg("sd", args));
 
         return Converter.convert(csvFileName, useSmartData);
+    }
+
+    public static String model(String[] args) throws Exception {
+        String trainFile = Utility.extractArg("train", args);
+        String testFile = Utility.extractArg("test", args);
+        String originalFile = Utility.extractArg("og", args);
+
+        if (trainFile == null || testFile == null) {
+            throw new Exception("For a modeller to be initialized there need to be 2 arguments.");
+        }
+
+        return Modeller.model(trainFile, testFile, originalFile);
     }
 }

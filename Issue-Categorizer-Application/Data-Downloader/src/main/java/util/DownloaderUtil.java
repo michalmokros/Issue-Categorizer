@@ -39,13 +39,13 @@ public final class DownloaderUtil {
      * @throws ParseException
      */
     public static String[] getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] trainLabels, String[] testLabels)
-            throws IOException, ParseException, HttpException {
+            throws Exception {
         LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + Arrays.toString(trainLabels));
 
         String urlString = "https://api.github.com/repos/" + githubDownloadUsername + "/" + githubDownloadRepository + "/issues?state=" + issuesState;
         List<EntryDTO> listOfEntries = extractEntriesRecursively(0, urlString, trainLabels, null);
 
-        String csvTrainFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(trainLabels) + ".csv";
+        String csvTrainFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(trainLabels) + ".csv");
         writeEntriesIntoFile(csvTrainFileName, listOfEntries);
 
         if (testLabels != null) {
@@ -53,7 +53,7 @@ public final class DownloaderUtil {
 
             listOfEntries = extractEntriesRecursively(0, urlString, testLabels, trainLabels);
 
-            String csvTestFileName = "../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(testLabels) + ".csv";
+            String csvTestFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(testLabels) + ".csv");
             writeEntriesIntoFile(csvTestFileName, listOfEntries);
 
             return new String[]{csvTrainFileName, csvTestFileName};
@@ -249,7 +249,7 @@ public final class DownloaderUtil {
      * @param listOfEntries list of entries to be written into file
      * @throws IOException
      */
-    private static void writeEntriesIntoFile(String csvFileName, List<EntryDTO> listOfEntries) throws IOException {
+    private static void writeEntriesIntoFile(String csvFileName, List<EntryDTO> listOfEntries) throws Exception {
         LOGGER.log(INFO, "Writing Entries into file --> " + csvFileName + " <--");
 
         try (CSVWriter writer = new CSVWriter(new FileWriter(new File(csvFileName)))) {
@@ -261,5 +261,28 @@ public final class DownloaderUtil {
                 writer.writeNext(entry);
             }
         }
+    }
+
+    private static String updateFileNameIfNeeded(String fileName) throws Exception {
+        File file = new File(fileName);
+        if (!file.exists() || file.isDirectory()) {
+            return fileName;
+        }
+
+        String nameWithoutSuffix = fileName.substring(0, fileName.lastIndexOf('.'));
+
+        if (nameWithoutSuffix.length() <= 0) {
+            throw new Exception("File does not have a name.");
+        }
+
+        String output;
+        if (Character.isDigit(nameWithoutSuffix.charAt(nameWithoutSuffix.length() - 1))) {
+            int num = Character.getNumericValue(nameWithoutSuffix.charAt(nameWithoutSuffix.length() - 1));
+            output = nameWithoutSuffix.substring(0, nameWithoutSuffix.length() - 1) + (num + 1) + fileName.substring(fileName.lastIndexOf('.'));
+        } else {
+            output = nameWithoutSuffix + 1 + fileName.substring(fileName.lastIndexOf('.'));
+        }
+
+        return output;
     }
 }

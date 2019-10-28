@@ -12,15 +12,9 @@ import static java.util.logging.Level.INFO;
 public class Modeller {
     private final static Logger LOGGER = Logger.getLogger(Modeller.class.getName());
 
-    public static String main(String[] args) throws Exception {
-        if (args.length < 2) {
-            LOGGER.log(INFO, "Initialized Modeller with only " + args.length + " arguments.");
-        } else {
-            String trainFile = args[0];
-            String testFile = args[1];
-            return ModellerUtil.processData(trainFile, testFile);
-        }
+    public static String model(String trainFile, String testFile, String originalFile) throws Exception {
+        LOGGER.log(INFO, "Initialized Modeller for train file: " + trainFile +  ", test file: " + testFile + ", original file: " + originalFile);
 
-        return null;
+        return ModellerUtil.processData(trainFile, testFile, originalFile);
     }
 }
