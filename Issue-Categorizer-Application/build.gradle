@@ -31,3 +31,23 @@ dependencies {
 application {
     mainClassName = 'Main'
 }
+
+task download(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'Download'
+}
+
+task convert(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'Convert'
+}
+
+task classify(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'Model'
+}
+
+task info(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'Helper'
+}

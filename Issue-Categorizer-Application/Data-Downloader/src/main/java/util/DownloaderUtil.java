@@ -40,20 +40,20 @@ public final class DownloaderUtil {
      */
     public static String[] getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] trainLabels, String[] testLabels)
             throws Exception {
-        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + Arrays.toString(trainLabels));
+        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + String.join(" and ", trainLabels));
 
         String urlString = "https://api.github.com/repos/" + githubDownloadUsername + "/" + githubDownloadRepository + "/issues?state=" + issuesState;
         List<EntryDTO> listOfEntries = extractEntriesRecursively(0, urlString, trainLabels, null);
 
-        String csvTrainFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(trainLabels) + ".csv");
+        String csvTrainFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-labels-" + String.join("-", trainLabels) + ".csv");
         writeEntriesIntoFile(csvTrainFileName, listOfEntries);
 
         if (testLabels != null) {
-            LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + Arrays.toString(testLabels));
+            LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + String.join(" and ", testLabels));
 
             listOfEntries = extractEntriesRecursively(0, urlString, testLabels, trainLabels);
 
-            String csvTestFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-" + Arrays.toString(testLabels) + ".csv");
+            String csvTestFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-labels-" + String.join("-", testLabels)  + ".csv");
             writeEntriesIntoFile(csvTestFileName, listOfEntries);
 
             return new String[]{csvTrainFileName, csvTestFileName};

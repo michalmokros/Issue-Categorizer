@@ -14,4 +14,29 @@ public abstract class Utility {
 
         return null;
     }
+
+    //../data/IssueCategorizer-atom-atom-issues-open-test.arff
+    public static String addDataDirectoryToPathIfNot(String filePath) {
+        if (filePath == null) {
+            return null;
+        }
+
+        if (filePath.startsWith("../data/")) {
+            return filePath;
+        }
+
+        return "../data/" + filePath;
+    }
+
+    public static boolean isArffFile(String fileName) throws Exception {
+        String suffix = fileName.substring(fileName.lastIndexOf('.') + 1);
+
+        if (suffix.equals("arff")) {
+            return true;
+        } else if (suffix.equals("csv")) {
+            return false;
+        }
+
+        throw new Exception("Unknown file suffix.");
+    }
 }
