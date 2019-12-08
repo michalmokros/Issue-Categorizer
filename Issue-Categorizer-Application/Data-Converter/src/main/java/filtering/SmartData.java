@@ -1,9 +1,10 @@
 package filtering;
 
-import weka.classifiers.bayes.NaiveBayesMultinomialText;
 import weka.classifiers.meta.FilteredClassifier;
+import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
-import weka.filters.unsupervised.attribute.Remove;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class SmartData {
 
     private Instances instances;
     private final static int PARTITION_SPLIT_COUNT = 5;
-    private final static int LABEL_INDEX = 3;
+    private final static int LABEL_INDEX = 2;
 
     public SmartData(Instances instances) {
         this.instances = instances;
@@ -44,20 +45,20 @@ public class SmartData {
         for (int i = 0; i < PARTITION_SPLIT_COUNT; i++) {
             Instances train = getGroupedInstances(splitInstances, i, false);
             Instances test = getGroupedInstances(splitInstances, i, true);
-            Remove remove = new Remove();
-            remove.setAttributeIndices("1");
             train.setClassIndex(LABEL_INDEX);
             test.setClassIndex(LABEL_INDEX);
-            NaiveBayesMultinomialText naiveBayesMultinomialText = new NaiveBayesMultinomialText();
             FilteredClassifier filteredClassifier = new FilteredClassifier();
-            filteredClassifier.setFilter(remove);
-            filteredClassifier.setClassifier(naiveBayesMultinomialText);
+            StringToWordVector stringToWordVector = new StringToWordVector();
+            RandomForest randomForest = new RandomForest();
+            stringToWordVector.setInputFormat(train);
+            filteredClassifier.setFilter(stringToWordVector);
+            filteredClassifier.setClassifier(randomForest);
             filteredClassifier.buildClassifier(train);
 
             for (int j = 0; j < test.numInstances(); j++) {
                 double pred = filteredClassifier.classifyInstance(test.instance(j));
 
-                LOGGER.log(INFO, "Classified instance with Id: " + (int) test.instance(j).value(0)
+                LOGGER.log(INFO, "Classified instance number " + (i*test.numInstances()) + j
                         + ", actual: " + test.classAttribute().value((int) test.instance(j).classValue())
                         + ", predicted: " + test.classAttribute().value((int) pred));
 

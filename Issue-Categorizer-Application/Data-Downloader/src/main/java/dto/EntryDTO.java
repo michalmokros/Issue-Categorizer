@@ -6,24 +6,14 @@ package dto;
  * @author xmokros
  */
 public class EntryDTO {
-    private long id;
     private String title;
     private String body;
     private String label;
 
-    public EntryDTO(long id, String title, String body, String label) {
-        this.id = id;
+    public EntryDTO(String title, String body, String label) {
         this.title = title;
         this.body = body;
         this.label = label;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getTitle() {
@@ -53,7 +43,6 @@ public class EntryDTO {
     @Override
     public String toString() {
         return "EntryDTO{" +
-                "id='" + id + '\'' +
                 "title='" + title + '\'' +
                 ", body='" + body + '\'' +
                 ", label='" + label + '\'' +

@@ -1,15 +1,13 @@
 package classifier;
 
 import weka.classifiers.Classifier;
-import weka.classifiers.bayes.NaiveBayesMultinomialText;
 import weka.classifiers.meta.FilteredClassifier;
-import weka.classifiers.trees.J48;
+import weka.classifiers.trees.RandomForest;
 import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.filters.Filter;
-import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.util.logging.Logger;
@@ -23,7 +21,7 @@ public class IssuesClassifier /*implements Serializable*/ {
     private Instances data;
     private StringToWordVector filter;
     private FilteredClassifier filteredClassifier;
-    private NaiveBayesMultinomialText naiveBayesMultinomialText;
+    private Classifier classifier;
 
     public IssuesClassifier(Instances data) {
         this.data = data;
@@ -34,7 +32,7 @@ public class IssuesClassifier /*implements Serializable*/ {
 
         filter = new StringToWordVector();
         filteredClassifier = new FilteredClassifier();
-        naiveBayesMultinomialText = new NaiveBayesMultinomialText();
+        classifier = new RandomForest();
     }
 
     public Instances classifyIssues(Instances testData) throws Exception {
@@ -43,43 +41,24 @@ public class IssuesClassifier /*implements Serializable*/ {
             return null;
         }
 
-        Remove rm = new Remove();
-        rm.setAttributeIndices("1");
-        filteredClassifier.setFilter(rm);
-        filteredClassifier.setClassifier(naiveBayesMultinomialText);
+        if (testData.classIndex() == -1) {
+            testData.setClassIndex(testData.numAttributes() - 1);
+        }
+
         filter.setInputFormat(data);
-        Instances filteredData = Filter.useFilter(data, filter);
+        filteredClassifier.setFilter(filter);
+        filteredClassifier.setClassifier(classifier);
         filteredClassifier.buildClassifier(data);
 
         Instances classifiedTestData = new Instances(data, 0);
 
         for (Instance instance : testData) {
-            Instance adjustedInstance = makeInstance(instance, data);
-            filter.input(adjustedInstance);
-            Instance filteredInstance = filter.output();
-            double predicted = filteredClassifier.classifyInstance(adjustedInstance);
-            adjustedInstance.setClassValue(predicted);
-            classifiedTestData.add(adjustedInstance);
+            Instance predictedInstance = instance;
+            double predicted = filteredClassifier.classifyInstance(instance);
+            predictedInstance.setClassValue(predicted);
+            classifiedTestData.add(predictedInstance);
         }
 
         return classifiedTestData;
-    }
-
-    private Instance makeInstance(Instance testInstance, Instances data) {
-        // Create instance of length two.
-        Instance instance = new DenseInstance(data.numAttributes());
-
-        // Set value for message attribute
-        Attribute idAtt = data.attribute(0);
-        Attribute titleAtt = data.attribute(1);
-        Attribute bodyAtt = data.attribute(2);
-        instance.setValue(idAtt, idAtt.addStringValue(testInstance.stringValue(0)));
-        instance.setValue(titleAtt, titleAtt.addStringValue(testInstance.stringValue(1)));
-        instance.setValue(bodyAtt, bodyAtt.addStringValue(testInstance.stringValue(2)));
-
-        // Give instance access to attribute information from the dataset.
-        instance.setDataset(data);
-
-        return instance;
     }
 }

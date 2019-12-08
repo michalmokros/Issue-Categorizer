@@ -7,20 +7,14 @@ package entities;
  */
 public class DataHolder {
 
-    private final Long id;
     private String title;
     private String body;
     private final String label;
 
-    public DataHolder(Long id, String title, String body, String label) {
-        this.id = id;
+    public DataHolder(String title, String body, String label) {
         this.title = title;
         this.body = body;
         this.label = label;
-    }
-
-    public Long getId() {
-        return this.id;
     }
 
     public String getTitle() {

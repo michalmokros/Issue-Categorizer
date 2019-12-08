@@ -17,8 +17,8 @@ public class Model {
     }
 
     public static String model(String[] args) throws Exception {
-        String trainFile = Utility.extractArg("train", args);
-        String testFile = Utility.extractArg("test", args);
+        String trainFile = Utility.extractArg("learn", args);
+        String testFile = Utility.extractArg("csf", args);
         String originalFile = Utility.extractArg("og", args);
         boolean userSmartData = Boolean.parseBoolean(Utility.extractArg("sd", args));
 

@@ -32,12 +32,11 @@ public final class Parser {
         try (Reader in = new FileReader(csvFile)) {
             Iterable<CSVRecord> records = CSVFormat.EXCEL.withFirstRecordAsHeader().parse(in);
             for (CSVRecord record : records) {
-                String id = record.get("Id");
                 String title = record.get("Title");
                 String body = record.get("Body");
                 String label = record.get("Label");
 
-                arffList.add(new DataHolder(Long.parseLong(id), title, body, label));
+                arffList.add(new DataHolder(title, body, label));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -52,7 +51,6 @@ public final class Parser {
 
         FastVector attributes = new FastVector();
         FastVector attributesRel = new FastVector();
-        attributes.addElement(new Attribute(Column.ID.toString(), (FastVector) null));
         attributes.addElement(new Attribute(Column.TITLE.toString(), (FastVector) null));
         attributes.addElement(new Attribute(Column.BODY.toString(), (FastVector) null));
 
@@ -65,10 +63,9 @@ public final class Parser {
 
         for (DataHolder dataHolder : arffList) {
             double[] vals = new double[data.numAttributes()];
-            vals[0] = data.attribute(0).addStringValue(String.valueOf(dataHolder.getId()));
-            vals[1] = data.attribute(1).addStringValue(dataHolder.getTitle());
-            vals[2] = data.attribute(2).addStringValue(dataHolder.getBody());
-            vals[3] = attributesRel.indexOf(dataHolder.getLabel());
+            vals[0] = data.attribute(0).addStringValue(dataHolder.getTitle());
+            vals[1] = data.attribute(1).addStringValue(dataHolder.getBody());
+            vals[2] = attributesRel.indexOf(dataHolder.getLabel());
             Instance instance = new DenseInstance(1.0, vals);
             data.add(instance);
         }
