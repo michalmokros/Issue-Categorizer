@@ -38,28 +38,19 @@ public final class DownloaderUtil {
      * @throws IOException
      * @throws ParseException
      */
-    public static String[] getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] trainLabels, String[] testLabels)
+    public static String getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] labels, String[] excludedLabels)
             throws Exception {
-        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + String.join(" and ", trainLabels));
+        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState +
+                " for labels: " + String.join(" and ", labels) + (excludedLabels == null ? "" : " while excluding labels: " + String.join(" and ", excludedLabels)));
 
         String urlString = "https://api.github.com/repos/" + githubDownloadUsername + "/" + githubDownloadRepository + "/issues?state=" + issuesState;
-        List<EntryDTO> listOfEntries = extractEntriesRecursively(urlString, trainLabels, null);
+        List<EntryDTO> listOfEntries = extractEntriesRecursively(urlString, labels, excludedLabels);
 
-        String csvTrainFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-labels-" + String.join("-", trainLabels) + ".csv");
-        writeEntriesIntoFile(csvTrainFileName, listOfEntries);
+        String csvFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository +
+                "-issues-" + issuesState + "-labels-" + String.join("-", labels) + ".csv");
+        writeEntriesIntoFile(csvFileName, listOfEntries);
 
-        if (testLabels != null) {
-            LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + String.join(" and ", testLabels));
-
-            listOfEntries = extractEntriesRecursively(urlString, testLabels, trainLabels);
-
-            String csvTestFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-labels-" + String.join("-", testLabels)  + ".csv");
-            writeEntriesIntoFile(csvTestFileName, listOfEntries);
-
-            return new String[]{csvTrainFileName, csvTestFileName};
-        }
-
-        return new String[]{csvTrainFileName};
+        return csvFileName;
     }
 
     /**
@@ -176,7 +167,7 @@ public final class DownloaderUtil {
         }
 
         for (String labelToFind : labelsToFind) {
-            if (labelToFind.equals("") && labelsToFind.length == 1) {
+            if (labelToFind.equals("all") && labelsToFind.length == 1) {
                 if (labelNames.isEmpty()) {
                     output.add(UNLABELED_LABEL);
                     break;
@@ -251,11 +242,12 @@ public final class DownloaderUtil {
         LOGGER.log(INFO, "Writing Entries into file --> " + csvFileName + " <--");
 
         try (CSVWriter writer = new CSVWriter(new FileWriter(new File(csvFileName)))) {
-            String[] header = { "Title", "Body" , "Label" };
+            String[] header = { "Id", "Title", "Body" , "Label" };
             writer.writeNext(header);
 
-            for (EntryDTO entryDTO : listOfEntries) {
-                String[] entry = { entryDTO.getTitle(), entryDTO.getBody(), entryDTO.getLabel() };
+            for (int i = 1; i <= listOfEntries.size(); i++) {
+                EntryDTO entryDTO = listOfEntries.get(i - 1);
+                String[] entry = { String.valueOf(i), entryDTO.getTitle(), entryDTO.getBody(), entryDTO.getLabel() };
                 writer.writeNext(entry);
             }
         }
@@ -281,6 +273,6 @@ public final class DownloaderUtil {
             output = nameWithoutSuffix + 1 + fileName.substring(fileName.lastIndexOf('.'));
         }
 
-        return output;
+        return updateFileNameIfNeeded(output);
     }
 }

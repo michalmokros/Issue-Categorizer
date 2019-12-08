@@ -39,4 +39,8 @@ public abstract class Utility {
 
         throw new Exception("Unknown file suffix.");
     }
+
+    public static String addArgPrefixSuffix(String value) {
+        return "-" + value + "=";
+    }
 }
