@@ -6,6 +6,11 @@ import java.util.logging.Logger;
 import static java.util.logging.Level.INFO;
 import static java.util.logging.Level.WARNING;
 
+/**
+ *
+ *
+ * @author xmokros 456442@mail.muni.cz
+ */
 public class Download {
     private final static Logger LOGGER = Logger.getLogger(Download.class.getName());
 

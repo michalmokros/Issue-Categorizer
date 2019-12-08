@@ -36,11 +36,11 @@ public class Helper {
         //task classify
         System.out.println("TASK CLASSIFY");
         System.out.println("\tClassifies issues stored in csv/arff files based on another labeled issues");
-        System.out.println("\tExample: './gradlew classify --args='-train=train.arff -test=test.csv''");
-        System.out.println("\t-train\trepresents file where training issues for creating the model are stored, mandatory");
-        System.out.println("\t\texample: -train=IssueCategorizer-atom-atom-issues-open-labels-enhancement-bug.arff");
-        System.out.println("\t-test\trepresents file where issues to be classified are stored, mandatory");
-        System.out.println("\t\texample: -test=IssueCategorizer-atom-atom-issues-open-labels-unlabeled.csv");
+        System.out.println("\tExample: './gradlew classify --args='-learn=train.arff -csf=test.csv''");
+        System.out.println("\t-learn\trepresents file where training issues for creating the model are stored, mandatory");
+        System.out.println("\t\texample: -learn=IssueCategorizer-atom-atom-issues-open-labels-enhancement-bug.arff");
+        System.out.println("\t-csf\trepresents file where issues to be classified are stored, mandatory");
+        System.out.println("\t\texample: -csf=IssueCategorizer-atom-atom-issues-open-labels-unlabeled.csv");
         System.out.println("\t-sd\trepresents whether there should be used smartdata while converting training data(if stored in csv), default value: 'false'");
         System.out.println("\t\texample: -sd=true");
         System.out.println("--------------------------------------------ISSUE CATEGORIZER--------------------------------------------");

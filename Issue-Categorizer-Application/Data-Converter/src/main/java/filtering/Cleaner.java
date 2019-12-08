@@ -33,24 +33,20 @@ public final class Cleaner {
         //cleans data of numbers, symbols and stop-words
         for (DataHolder dataHolder : arffList) {
             //removes non alphanumeric symbols
-            LOGGER.log(FINE, "Removing non alpha-numeric symbols for Entry with Id: " + dataHolder.getId());
             String newTitle = dataHolder.getTitle().replaceAll("[^\\p{L}\\p{Nd}]+", " ");
             String newBody = dataHolder.getBody().replaceAll("[^\\p{L}\\p{Nd}]+", " ");
 
             //removes numbers only (not words containing numbers)
-            LOGGER.log(FINE, "Removing whole numbers for Entry with Id: " + dataHolder.getId());
             newTitle = removeWholeNumbers(newTitle);
             newBody = removeWholeNumbers(newBody);
 
             //clears string of stop-words
-            LOGGER.log(FINE, "Clearing stopwords for Entry with Id: " + dataHolder.getId());
             newTitle = removeStopWords(newTitle);
             newBody = removeStopWords(newBody);
 
             dataHolder.setTitle(newTitle.toLowerCase());
             dataHolder.setBody(newBody.toLowerCase());
 
-            LOGGER.log(FINE, "Creating vocabularies for arff Entry with Id: " + dataHolder.getId());
             for (String word : dataHolder.getTitle().split(" ")) {
                 vocabTitle.addWord(word, dataHolder.getLabel());
             }

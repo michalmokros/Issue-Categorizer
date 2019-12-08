@@ -43,7 +43,7 @@ public final class DownloaderUtil {
         LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + String.join(" and ", trainLabels));
 
         String urlString = "https://api.github.com/repos/" + githubDownloadUsername + "/" + githubDownloadRepository + "/issues?state=" + issuesState;
-        List<EntryDTO> listOfEntries = extractEntriesRecursively(0, urlString, trainLabels, null);
+        List<EntryDTO> listOfEntries = extractEntriesRecursively(urlString, trainLabels, null);
 
         String csvTrainFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-labels-" + String.join("-", trainLabels) + ".csv");
         writeEntriesIntoFile(csvTrainFileName, listOfEntries);
@@ -51,7 +51,7 @@ public final class DownloaderUtil {
         if (testLabels != null) {
             LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + String.join(" and ", testLabels));
 
-            listOfEntries = extractEntriesRecursively(0, urlString, testLabels, trainLabels);
+            listOfEntries = extractEntriesRecursively(urlString, testLabels, trainLabels);
 
             String csvTestFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-labels-" + String.join("-", testLabels)  + ".csv");
             writeEntriesIntoFile(csvTestFileName, listOfEntries);
@@ -70,7 +70,7 @@ public final class DownloaderUtil {
      * @throws IOException
      * @throws ParseException
      */
-    private static List<EntryDTO> extractEntriesRecursively(long numOfCurrentEntries, String urlString, String[] labels, String[] labelsToExclude)
+    private static List<EntryDTO> extractEntriesRecursively(String urlString, String[] labels, String[] labelsToExclude)
             throws IOException, ParseException, HttpException {
         LOGGER.log(INFO, "Extracting Issues for --> " + urlString + " <--");
 
@@ -94,7 +94,7 @@ public final class DownloaderUtil {
         String input;
 
         while ((input = in.readLine()) != null) {
-            listOfEntries = getEntries(numOfCurrentEntries, input, labels, labelsToExclude);
+            listOfEntries = getEntries(input, labels, labelsToExclude);
         }
 
         if (connection.getHeaderFields().containsKey("Link")) {
@@ -103,8 +103,7 @@ public final class DownloaderUtil {
 
             for (Map.Entry<String, String> pageEntry : pagesMap.entrySet()) {
                 if (pageEntry.getKey().equals("next")) {
-                    listOfEntries.addAll(extractEntriesRecursively(
-                            numOfCurrentEntries + listOfEntries.size(), pageEntry.getValue(), labels, labelsToExclude));
+                    listOfEntries.addAll(extractEntriesRecursively(pageEntry.getValue(), labels, labelsToExclude));
                 }
             }
         }
@@ -121,11 +120,10 @@ public final class DownloaderUtil {
      * @return list of entries extracted from specific page
      * @throws ParseException
      */
-    private static List<EntryDTO> getEntries(long numOfPreviousEntries, String content, String[] labelsToFind, String[] labelsToExclude) throws ParseException {
+    private static List<EntryDTO> getEntries(String content, String[] labelsToFind, String[] labelsToExclude) throws ParseException {
         JSONParser parser = new JSONParser();
         JSONArray jsonArray = (JSONArray) parser.parse(content);
         List<EntryDTO> listOfEntries = new ArrayList<>();
-        long id = numOfPreviousEntries;
 
         for (int i = 0; i < jsonArray.size(); i++) {
             JSONObject jsonObject = (JSONObject) jsonArray.get(i);
@@ -150,7 +148,7 @@ public final class DownloaderUtil {
                     label = "";
                 }
 
-                EntryDTO entry = new EntryDTO(++id, title, body, label);
+                EntryDTO entry = new EntryDTO(title, body, label);
                 LOGGER.log(FINE, "Adding Entry --> " + entry  + " <--");
                 listOfEntries.add(entry);
             }
@@ -253,11 +251,11 @@ public final class DownloaderUtil {
         LOGGER.log(INFO, "Writing Entries into file --> " + csvFileName + " <--");
 
         try (CSVWriter writer = new CSVWriter(new FileWriter(new File(csvFileName)))) {
-            String[] header = { "Id", "Title", "Body" , "Label" };
+            String[] header = { "Title", "Body" , "Label" };
             writer.writeNext(header);
 
             for (EntryDTO entryDTO : listOfEntries) {
-                String[] entry = { String.valueOf(entryDTO.getId()), entryDTO.getTitle(), entryDTO.getBody(), entryDTO.getLabel() };
+                String[] entry = { entryDTO.getTitle(), entryDTO.getBody(), entryDTO.getLabel() };
                 writer.writeNext(entry);
             }
         }

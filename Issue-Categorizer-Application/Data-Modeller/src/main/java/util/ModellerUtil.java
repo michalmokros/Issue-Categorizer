@@ -53,22 +53,23 @@ public abstract class ModellerUtil {
         LOGGER.log(INFO, "Beginning of creation of csv file --> " + csvFileName + " <--");
 
         try (CSVWriter writer = new CSVWriter(new FileWriter(new File(csvFileName)))) {
-            String[] header = { "Id", "Title", "Body" , "Label" };
+            String[] header = { "Title", "Body" , "Label" };
             writer.writeNext(header);
 
             List<Issue> originalList = getOriginal(originalCsvFileName);
-            for (Instance instance : instances) {
+            for (int i = 1; i <= instances.numInstances(); i++) {
+                Instance instance = instances.get(i - 1);
                 if (originalList != null) {
-                    Issue originalIssue = getIssueById(originalList, instance.stringValue(0));
+                    Issue originalIssue = getIssueById(originalList, String.valueOf(i));
 
                     if (originalIssue != null) {
-                        String[] entry = {originalIssue.getId(), originalIssue.getTitle(), originalIssue.getBody(), (originalIssue.getLabel().isEmpty() ? "" : originalIssue.getLabel() + ", ") + instance.stringValue(3)};
+                        String[] entry = {originalIssue.getTitle(), originalIssue.getBody(), (originalIssue.getLabel().isEmpty() ? "" : originalIssue.getLabel() + ", ") + instance.stringValue(2)};
                         writer.writeNext(entry);
                         continue;
                     }
                 }
 
-                String[] entry = { instance.stringValue(0), instance.stringValue(1), instance.stringValue(2) , instance.stringValue(3) };
+                String[] entry = { instance.stringValue(0), instance.stringValue(1), instance.stringValue(2) };
                 writer.writeNext(entry);
             }
         }
@@ -83,13 +84,13 @@ public abstract class ModellerUtil {
 
         try (Reader in = new FileReader(originalCsvFileName)) {
             Iterable<CSVRecord> records = CSVFormat.EXCEL.withFirstRecordAsHeader().parse(in);
+            int id = 1;
             for (CSVRecord record : records) {
-                String id = record.get("Id");
                 String title = record.get("Title");
                 String body = record.get("Body");
                 String label = record.get("Label");
 
-                output.add(new Issue(id, title, body, label));
+                output.add(new Issue(String.valueOf(id++), title, body, label));
             }
         } catch (Exception e) {
             e.printStackTrace();

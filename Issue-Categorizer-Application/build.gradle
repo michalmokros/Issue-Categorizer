@@ -26,6 +26,7 @@ dependencies {
     compile project(':Data-Converter')
     compile project(':Data-Downloader')
     compile project(':Data-Modeller')
+    compile project(':Data-Tester')
 }
 
 application {
@@ -50,4 +51,9 @@ task classify(type: JavaExec) {
 task info(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     main = 'Helper'
+}
+
+task diagnose(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'Test'
 }
