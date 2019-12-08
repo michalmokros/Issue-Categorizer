@@ -1,90 +1,66 @@
 package filtering;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.logging.Logger;
 
+import static java.util.logging.Level.FINE;
+
+/**
+ * Vocabulary class for storing and analyzing words used in different labels.
+ *
+ * @author xmokros
+ */
 public class Vocabulary {
-    private Map<String, Integer> bugDictionary;
-    private Map<String, Integer> enhDictionary;
-    private int bugCount;
-    private int enhCount;
+    private final static Logger LOGGER = Logger.getLogger(Vocabulary.class.getName());
+
+    private Map<String, Map<String, Integer>> labelDictionary;
 
     Vocabulary() {
-        bugDictionary = new HashMap<>();
-        enhDictionary = new HashMap<>();
-    }
-
-    public int getBugCount() {
-        return bugCount;
-    }
-
-    public int getEnhCount() {
-        return enhCount;
+        labelDictionary = new HashMap<>();
     }
 
     public void addWord(String word, String label) {
-        if (label.equals("bug")) {
-            if (bugDictionary.containsKey(word)) {
-                bugDictionary.put(word, bugDictionary.get(word) + 1);
-            } else {
-                bugDictionary.put(word, 1);
-            }
-            bugCount++;
+        if (!labelDictionary.containsKey(label)) {
+            labelDictionary.put(label, new HashMap<>());
+        }
+
+        Map<String, Integer> wordMap = labelDictionary.get(label);
+        if (wordMap.containsKey(word)) {
+            wordMap.put(word, wordMap.get(word) + 1);
         } else {
-            if (enhDictionary.containsKey(word)) {
-                enhDictionary.put(word, enhDictionary.get(word) + 1);
-            } else {
-                enhDictionary.put(word, 1);
-            }
-            enhCount++;
+            wordMap.put(word, 1);
         }
     }
 
- /*   public Set<String> findWordsWithCountLessThan(int minimum) {
-        Set<String> output = new HashSet<>();
+    /**
+     * Method for comparing and removing words, by some given ratio, used in opposing labels
+     *
+     * @param words to be checked and filtered
+     * @param label label of the entry for comparison with words from other labels
+     * @return filtered line without words
+     */
+    public String removeWordsUsedInMultipleLabels(List<String> words, String label) {
+        List<String> output = new ArrayList<>(words);
 
-        for (Map.Entry<String, Integer> dict : dictionary.entrySet()) {
-            if (dict.getValue() <= minimum) {
-                output.add(dict.getKey());
-            }
-        }
-
-        return output;
-    }
-
-    public String reduceWordsToNumOfMostPopular(List<String> words, int number) {
-        SortedMap<Integer, String> resultMap = new TreeMap<>();
-        List<String> output = new ArrayList<>();
-
+        Map<String, Integer> labelMap = labelDictionary.get(label);
         for (String word : words) {
-            int wordCount = this.dictionary.get(word);
-            resultMap.put(wordCount, word);
-        }
+            int labelWordCount = labelMap.getOrDefault(word, 0);
 
-        resultMap = ((TreeMap<Integer, String>) resultMap).descendingMap();
+            for (Map.Entry<String, Map<String, Integer>> labelEntry : labelDictionary.entrySet()) {
+                if (labelEntry.getKey().equals(label)) {
+                    continue;
+                }
 
-        for (SortedMap.Entry<Integer, String> entry : resultMap.entrySet()) {
-            if (number == 0) {
-                break;
-            }
+                int labelEntryWordCount = labelEntry.getValue().getOrDefault(word, 0);
 
-            output.add(entry.getValue());
-            number--;
-        }
-
-        return String.join(" ", output);
-    }
-*/
-    public String removeWordsUsedInMultipleLabels(List<String> words) {
-        List<String> output = new ArrayList<>();
-
-        for (String word : words) {
-            int bugOccurence = bugDictionary.get(word) == null ? 0 : bugDictionary.get(word);
-            int enhOccurence = enhDictionary.get(word) == null ? 0 : enhDictionary.get(word);
-
-            if ((enhOccurence > bugOccurence * 2) || (bugOccurence > enhOccurence * 2)) {
-                output.add(word);
-            } else {
-                System.out.println("Removing word '" + word + "' with bugOcc -> " + bugOccurence + " and enhOcc -> " + enhOccurence);
+                if (labelWordCount <= labelEntryWordCount * 2) {
+                    output.remove(word);
+                    LOGGER.log(FINE, "Removing word '" + word + "' from label '" + label + "' because of bad ratio of occurrence.");
+                    break;
+                }
             }
         }
 

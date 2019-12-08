@@ -1,15 +1,26 @@
 package entities;
 
+/**
+ * Class for holding entries of data containing information.
+ *
+ * @author xmokros
+ */
 public class DataHolder {
 
+    private final Long id;
     private String title;
     private String body;
     private final String label;
 
-    public DataHolder(String title, String body, String label) {
+    public DataHolder(Long id, String title, String body, String label) {
+        this.id = id;
         this.title = title;
         this.body = body;
         this.label = label;
+    }
+
+    public Long getId() {
+        return this.id;
     }
 
     public String getTitle() {

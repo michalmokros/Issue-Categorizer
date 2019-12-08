@@ -1,6 +1,12 @@
 package enums;
 
+/**
+ * Enum class for different types of columns.
+ *
+ * @author xmokros
+ */
 public enum Column {
+    ID("Id"),
     TITLE("Title"),
     BODY("Body"),
     LABEL("Label");

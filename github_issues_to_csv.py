@@ -21,14 +21,9 @@ def write_issues(r, csvout):
         if 'pull_request' not in issue:
             labels = ', '.join([l['name'] for l in issue['labels']])
             # Change the following line to write out additional fields
-            if (("debug" not in labels) and ("bug" in labels)):
+            if not labels:
                 csvout.writerow([unicode(issue['title']).encode("utf-8"),
-                                unicode(issue['body']).encode("utf-8"),
-                                "bug"])
-            elif "enhancement" in labels:
-                csvout.writerow([unicode(issue['title']).encode("utf-8"),
-                                unicode(issue['body']).encode("utf-8"),
-                                "enhancement"])
+                                unicode(issue['body']).encode("utf-8")])
 
 
 def get_issues(name):
@@ -40,7 +35,7 @@ def get_issues(name):
     csvfilename = '{}-issues-{}.csv'.format(name.replace('/', '-'), state)
     with open('data/' + csvfilename, 'wb') as csvfile:
         csvout = csv.writer(csvfile)
-        csvout.writerow(['Title', 'Body', 'Label'])
+        csvout.writerow(['Title', 'Body'])
         write_issues(r, csvout)
 
         # Multiple requests are required if response is paged
