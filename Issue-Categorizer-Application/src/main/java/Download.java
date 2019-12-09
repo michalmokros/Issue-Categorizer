@@ -33,6 +33,12 @@ public class Download {
         LOGGER.log(INFO, "Finished download task, created file: " + csvFileName);
     }
 
+    /**
+     * main function for extracting the arguments and calling the Downloader module
+     * @param args user arguments
+     * @return name of the created file of downloaded issues
+     * @throws Exception
+     */
     public static String download(String[] args) throws Exception {
         String githubDownloadArgs = Utility.extractArg(REPOSITORY_ARGUMENT, args);
         if (githubDownloadArgs == null || githubDownloadArgs.isEmpty()) {

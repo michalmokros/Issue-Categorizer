@@ -3,7 +3,7 @@ package dto;
 /**
  * DTO Entry class for Issue extracted from github api page.
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public class EntryDTO {
     private String title;

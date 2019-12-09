@@ -13,15 +13,29 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/Converter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/entities/DataHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/entities/DataHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/SmartData.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/SmartData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/parsing/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/parsing/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/util/ConverterUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/util/ConverterUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/enums/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/enums/Column.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/util/ConverterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/util/ConverterUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/util/DownloaderUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/util/DownloaderUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/dto/EntryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/dto/EntryDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Convert.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Convert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Download.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Download.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Convert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Download.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Download.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/MissingArgumentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/MissingTaskArgumentException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Utility.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +262,7 @@
       <workItem from="1572095459173" duration="25550000" />
       <workItem from="1572712463651" duration="43874000" />
       <workItem from="1573831203232" duration="27410000" />
-      <workItem from="1575720402898" duration="20372000" />
+      <workItem from="1575720402898" duration="30115000" />
     </task>
     <servers />
   </component>
@@ -283,7 +297,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Convert.java</url>
-          <line>20</line>
+          <line>35</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -293,8 +307,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>46</line>
+          <line>52</line>
           <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

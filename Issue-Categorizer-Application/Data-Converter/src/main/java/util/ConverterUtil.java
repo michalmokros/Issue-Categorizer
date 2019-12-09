@@ -9,13 +9,18 @@ import java.util.logging.Logger;
 
 import static java.util.logging.Level.INFO;
 
+/**
+ * Non instantiable utility class for Converter module with static methods for working with Issues online
+ *
+ * @author xmokros 456442@mail.muni.cz
+ */
 public abstract class ConverterUtil {
     private final static Logger LOGGER = Logger.getLogger(ConverterUtil.class.getName());
 
     private ConverterUtil() {}
 
     public static String preprocessIssues(String csvFile, boolean useSmartData) throws Exception {
-        LOGGER.log(INFO, "Beginning of pre-processing data from csv file --> " + csvFile + " <--");
+        LOGGER.log(INFO, "Beginning of pre-processing data from csv file --> " + csvFile + " <--" + (useSmartData ? "using Smart Data filter" : "not using Smart Data filter"));
 
         List<DataHolder> arffList;
         arffList = Parser.parseCsvFile(csvFile);

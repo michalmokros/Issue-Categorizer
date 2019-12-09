@@ -43,6 +43,12 @@ public class Main {
 //        LOGGER.log(INFO, "Finished run task, classified issues saved into file: " + cstClassifiedFileNames);
     }
 
+    /**
+     * Function for calling the Download task
+     * @param args user arguments
+     * @return names of the files of downloaded issues for training the classifier and for classification
+     * @throws Exception
+     */
     private static String[] callDownloader(String[] args) throws Exception {
         String githubDownloadArgs = Utility.extractArg(REPOSITORY_ARGUMENT, args);
         if (githubDownloadArgs == null || githubDownloadArgs.isEmpty()) {

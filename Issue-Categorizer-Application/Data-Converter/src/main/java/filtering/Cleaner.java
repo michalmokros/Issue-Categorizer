@@ -14,7 +14,7 @@ import static java.util.logging.Level.INFO;
 /**
  * Class for cleaning data of unusable symbols, words, etc...
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public final class Cleaner {
     private final static Logger LOGGER = Logger.getLogger(Cleaner.class.getName());

@@ -3,7 +3,7 @@ package enums;
 /**
  * Enum class for different types of columns.
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public enum Column {
     ID("Id"),

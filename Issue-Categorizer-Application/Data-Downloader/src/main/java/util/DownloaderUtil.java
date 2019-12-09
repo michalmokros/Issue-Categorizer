@@ -19,7 +19,7 @@ import static java.util.logging.Level.*;
 /**
  * Non instantiable utility class for Downloader module with static methods for working with Issues online
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public final class DownloaderUtil {
     private final static Logger LOGGER = Logger.getLogger(DownloaderUtil.class.getName());
@@ -31,12 +31,13 @@ public final class DownloaderUtil {
     /**
      * Wrapping method for downloading and writing Issues into file.
      *
-     * @param githubDownloadUsername username of github account to download issues from
-     * @param githubDownloadRepository repository of github's account to download issues from
-     * @param issuesState state of Issues to be downloaded
-     * @return name of csv file written into
-     * @throws IOException
-     * @throws ParseException
+     * @param githubDownloadUsername
+     * @param githubDownloadRepository
+     * @param issuesState
+     * @param labels
+     * @param excludedLabels
+     * @return
+     * @throws Exception
      */
     public static String getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] labels, String[] excludedLabels)
             throws Exception {
@@ -55,11 +56,13 @@ public final class DownloaderUtil {
 
     /**
      * Method for extracting entries from github api URL, used recursively.
-     *
-     * @param urlString url to be extracted from
-     * @return list of recursively extracted entries
+     * @param urlString
+     * @param labels
+     * @param labelsToExclude
+     * @return
      * @throws IOException
      * @throws ParseException
+     * @throws HttpException
      */
     private static List<EntryDTO> extractEntriesRecursively(String urlString, String[] labels, String[] labelsToExclude)
             throws IOException, ParseException, HttpException {
@@ -106,9 +109,10 @@ public final class DownloaderUtil {
 
     /**
      * Method for getting entries from api page.
-     *
-     * @param content whole content of github api page
-     * @return list of entries extracted from specific page
+     * @param content
+     * @param labelsToFind
+     * @param labelsToExclude
+     * @return
      * @throws ParseException
      */
     private static List<EntryDTO> getEntries(String content, String[] labelsToFind, String[] labelsToExclude) throws ParseException {
@@ -191,12 +195,6 @@ public final class DownloaderUtil {
         return output;
     }
 
-    /**
-     * Method for differencing and finding specific labels in json labels for issue.
-     *
-     * @param labels to be searched in
-     * @return specific label for that issue's labels
-     */
     private static List<String> getLabelNames(JSONArray labels) {
         List<String> labelNames = new ArrayList<>();
 
@@ -208,12 +206,6 @@ public final class DownloaderUtil {
         return labelNames;
     }
 
-    /**
-     * Method for extracting links to api pages from specific api page.
-     *
-     * @param linkFromHeader link value of api page
-     * @return map of keys and links to specific api pages
-     */
     private static Map<String, String> getPages(String linkFromHeader) {
         String[] linkMap = linkFromHeader.split(", ");
         Map<String, String> pagesMap = new HashMap<>();
@@ -231,13 +223,6 @@ public final class DownloaderUtil {
         return pagesMap;
     }
 
-    /**
-     * Method for creating a csv file and writing list of entries into that file
-     *
-     * @param csvFileName csv file's name to be created and written into
-     * @param listOfEntries list of entries to be written into file
-     * @throws IOException
-     */
     private static void writeEntriesIntoFile(String csvFileName, List<EntryDTO> listOfEntries) throws Exception {
         LOGGER.log(INFO, "Writing Entries into file --> " + csvFileName + " <--");
 

@@ -1,9 +1,11 @@
 package filtering;
 
+import enums.Column;
 import weka.classifiers.meta.FilteredClassifier;
 import weka.classifiers.trees.RandomForest;
-import weka.core.Instances;
+import weka.core.*;
 import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.util.ArrayList;
@@ -43,10 +45,10 @@ public class SmartData {
         }
 
         for (int i = 0; i < PARTITION_SPLIT_COUNT; i++) {
-            Instances train = getGroupedInstances(splitInstances, i, false);
+            Instances train = removeId(getGroupedInstances(splitInstances, i, false));
             Instances test = getGroupedInstances(splitInstances, i, true);
             train.setClassIndex(LABEL_INDEX);
-            test.setClassIndex(LABEL_INDEX);
+            test.setClassIndex(LABEL_INDEX + 1);
             FilteredClassifier filteredClassifier = new FilteredClassifier();
             StringToWordVector stringToWordVector = new StringToWordVector();
             RandomForest randomForest = new RandomForest();
@@ -56,13 +58,14 @@ public class SmartData {
             filteredClassifier.buildClassifier(train);
 
             for (int j = 0; j < test.numInstances(); j++) {
-                double pred = filteredClassifier.classifyInstance(test.instance(j));
+                Instance cleanInstance = removeId(test, test.instance(j));
+                double pred = filteredClassifier.classifyInstance(cleanInstance);
 
-                LOGGER.log(INFO, "Classified instance number " + (i*test.numInstances()) + j
-                        + ", actual: " + test.classAttribute().value((int) test.instance(j).classValue())
+                LOGGER.log(INFO, "Classified instance number " + ((int) test.instance(j).value(test.attribute(0)) + 1)
+                        + ", actual: " + test.classAttribute().value((int) cleanInstance.classValue())
                         + ", predicted: " + test.classAttribute().value((int) pred));
 
-                if (test.classAttribute().value((int) test.instance(j).classValue())
+                if (test.classAttribute().value((int) cleanInstance.classValue())
                         .equals(test.classAttribute().value((int) pred))) {
                     output.add(test.instance(j));
                 }
@@ -90,5 +93,21 @@ public class SmartData {
         }
 
         return output;
+    }
+
+    private Instances removeId(Instances instances) throws Exception {
+        Remove remove = new Remove();
+        remove.setAttributeIndices("1");
+        remove.setInvertSelection(false);
+        remove.setInputFormat(instances);
+        Instances cleanInstances = Filter.useFilter(instances, remove);
+        return cleanInstances;
+    }
+
+    private Instance removeId(Instances test, Instance instance) throws Exception {
+        Instances instances = new Instances(test, 0);
+        instances.add(instance);
+        Instances cleanInstances = removeId(instances);
+        return cleanInstances.get(0);
     }
 }
