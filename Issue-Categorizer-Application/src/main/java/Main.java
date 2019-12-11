@@ -1,4 +1,5 @@
 import exceptions.MissingTaskArgumentException;
+import org.apache.commons.lang3.ArrayUtils;
 import util.Utility;
 
 import java.util.ArrayList;
@@ -36,11 +37,11 @@ public class Main {
         LOGGER.log(INFO, "Started run task with arguments: " + Arrays.toString(args));
 
         String[] csvFileNames = callDownloader(args);
-//        String[] arffFileNames = callConverter(csvFileNames);
-//        String bestClassifier = callTester(csvFileNames); @TODO output of tester
-//        String cstClassifiedFileNames = callModeller(ArrayUtils.addAll(arffFileNames, csvFileNames[1]/*, bestClassifier*/)); //../data/IssueCategorizer-atom-atom-issues-open-test.arff
+        String[] arffFileNames = callConverter(csvFileNames);
+        String bestClassifier = callTester(arffFileNames);
+        String csvClassifiedFileName = callModeller(ArrayUtils.addAll(arffFileNames, csvFileNames[1], bestClassifier)); //@TODO LICENCe
 
-//        LOGGER.log(INFO, "Finished run task, classified issues saved into file: " + cstClassifiedFileNames);
+        LOGGER.log(INFO, "Finished run task, classified issues saved into file: " + csvClassifiedFileName);
     }
 
     /**
@@ -93,7 +94,8 @@ public class Main {
 
         for (int i = 0; i < args.length; i++) {
             boolean useSmartData = i == 0;
-            output.add(Convert.convert(new String[] { "-f=" + args[i], "-sd=" + useSmartData}));
+            output.add(Convert.convert(new String[] { addArgPrefixSuffix(Convert.FILE_ARGUMENT) + args[i],
+                    addArgPrefixSuffix(Convert.SMART_DATA_ARGUMENT) + useSmartData}));
         }
 
         return output.toArray(new String[0]);
@@ -101,10 +103,10 @@ public class Main {
 
     private static String callModeller(String[] args) throws Exception {
         if (args.length == 4) {
-            String trainFile = "-learn=" + args[0];
-            String testFile = "-csf=" + args[1];
-            String originalFile = "-og=" + args[2];
-            String classifier = "-cf=" + args[3];
+            String trainFile = addArgPrefixSuffix(Model.LABELED_FILE_ARGUMENT) + args[0];
+            String testFile = addArgPrefixSuffix(Model.UNLABELED_FILE_ARGUMENT) + args[1];
+            String originalFile = addArgPrefixSuffix(Model.ORIGINAL_UNLABELED_FILE) + args[2];
+            String classifier = addArgPrefixSuffix(Model.CLASSIFIER_ARGUMENT) + args[3];
 
             return Model.model(new String[] {trainFile, testFile, originalFile, classifier});
         } else {
@@ -112,16 +114,18 @@ public class Main {
         }
     }
 
-    private static void callTester(String[] args) throws Exception {
+    private static String callTester(String[] args) throws Exception {
         if (args.length > 0) {
-            String testedFile = "-f=" + args[0];
+            String testedFile = addArgPrefixSuffix(Test.FILE_ARGUMENT) + args[0];
 
-            String withCs = "-nb=true" ;
-            Test.test(new String[] {testedFile, withCs});
-            withCs = "-j48=true";
-            Test.test(new String[] {testedFile, withCs});
-            withCs = "-rf=true";
-            Test.test(new String[] {testedFile, withCs});
+            String withCs = addArgPrefixSuffix(Test.NAIVE_BAYES_ARGUMENT) + "true" ;
+            String nbSummary = Test.test(new String[] {testedFile, withCs});
+            withCs = addArgPrefixSuffix(Test.J48_ARGUMENT) + "true" ;
+            String j48Summary = Test.test(new String[] {testedFile, withCs});
+            withCs = addArgPrefixSuffix(Test.RANDOM_FOREST_ARGUMENT) + "true" ;
+            String rfSummary = Test.test(new String[] {testedFile, withCs});
+
+            return Utility.calculateTheBest(nbSummary, j48Summary, rfSummary);
         } else {
             throw new Exception("Not enough arguments for diagnose to begin.");
         }

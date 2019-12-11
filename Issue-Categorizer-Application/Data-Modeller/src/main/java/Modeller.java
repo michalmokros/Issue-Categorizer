@@ -5,16 +5,16 @@ import java.util.logging.Logger;
 import static java.util.logging.Level.INFO;
 
 /**
- * Class for creating a model from arff file and classifying unlabeled arff file.
+ * Modeller Main class for handling execution of method for classifying of unlabeled issues based on labeled issues.
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public class Modeller {
     private final static Logger LOGGER = Logger.getLogger(Modeller.class.getName());
 
-    public static String model(String trainFile, String testFile, String originalFile) throws Exception {
-        LOGGER.log(INFO, "Initialized Modeller for train file: " + trainFile +  ", test file: " + testFile + ", original file: " + originalFile);
+    public static String model(String trainFile, String testFile, String originalFile, String classifier) throws Exception {
+        LOGGER.log(INFO, "Initialized Modeller for train file: " + trainFile +  ", test file: " + testFile + " with classifier: " + classifier);
 
-        return ModellerUtil.processData(trainFile, testFile, originalFile);
+        return ModellerUtil.processData(trainFile, testFile, originalFile, classifier);
     }
 }

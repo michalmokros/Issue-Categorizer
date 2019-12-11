@@ -1,5 +1,7 @@
 package util;
 
+import java.util.List;
+
 public abstract class Utility {
     private Utility() {}
 
@@ -42,5 +44,27 @@ public abstract class Utility {
 
     public static String addArgPrefixSuffix(String value) {
         return "-" + value + "=";
+    }
+
+    public static String calculateTheBest(String nbSummary, String j48Summary, String rfSummary) {
+        double nb = findPercentage(nbSummary);
+        double j48 = findPercentage(j48Summary);
+        double rf = findPercentage(rfSummary);
+
+        double max = Math.max(Math.max(nb, j48), rf);
+
+        if (Double.compare(max, nb) == 0) {
+            return "nb";
+        } else if (Double.compare(max, j48) == 0) {
+            return "j48";
+        }
+
+        return "rf";
+    }
+
+    public static double findPercentage(String summary) {
+        int index = summary.indexOf("%");;
+        String percentage = summary.substring(index - 10, index).trim();
+        return Double.parseDouble(percentage);
     }
 }

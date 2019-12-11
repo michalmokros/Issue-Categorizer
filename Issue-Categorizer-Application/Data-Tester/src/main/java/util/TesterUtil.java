@@ -7,6 +7,7 @@ import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.util.Random;
@@ -21,7 +22,6 @@ public class TesterUtil {
 
     public static String testData(String fileName, boolean usingNB, boolean usingJ48, boolean usingRF) throws Exception {
         Instances instances = convertArffFileIntoInstances(fileName);
-        instances.setClassIndex(instances.numAttributes() - 1);
         String summary = runTesting(instances, usingNB, usingJ48, usingRF);
         return summary;
     }
@@ -63,7 +63,14 @@ public class TesterUtil {
     private static Instances convertArffFileIntoInstances(String filePath) {
         try {
             DataSource dataSource = new DataSource(filePath);
-            return dataSource.getDataSet();
+            Instances instances = dataSource.getDataSet();
+            instances.setClassIndex(instances.numAttributes() - 1);
+            Remove remove = new Remove();
+            remove.setAttributeIndices("1");
+            remove.setInvertSelection(false);
+            remove.setInputFormat(instances);
+            return Filter.useFilter(instances, remove);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

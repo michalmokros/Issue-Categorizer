@@ -40,10 +40,10 @@ autocomplete-asciidoc 0.1.2
 language-asciidoc 1.11.0 
 ```
 
-",""
+","bug"
 "2","Search feature in Settings","It's absolutely essential.
 If there is a search that I couldn't find, it would be bad design.
-Thank you for your time.",""
+Thank you for your time.","enhancement"
 "3","Uncaught Error: ENOENT: no such file or directory, lstat '~/Desktop/Login System (Node, MySQL)/ M...","[Enter steps to reproduce:]
 
 1. Create a folder inside a folder in atom.
@@ -99,7 +99,7 @@ emmet 2.4.3
 hyperclick 0.1.5 
 ```
 
-",""
+","bug"
 "4","Uncaught Error: Module did not self-register.","[Enter steps to reproduce:]
 
 1. Open a .blade.php file
@@ -158,7 +158,7 @@ laravel-snippets 2.1.0
 remote-ftp 2.2.2 
 ```
 
-",""
+","bug"
 "5","Uncaught Error: Cannot call function 'isFocused' on missing remote object 17","[Enter steps to reproduce:]
 
 1. ...
@@ -210,7 +210,7 @@ simplified-chinese-menu 5.3.5
 vim-mode 0.66.0 
 ```
 
-",""
+","bug"
 "6","Uncaught Error: Cannot call function 'getPosition' on missing remote object 103","[Enter steps to reproduce:]
 
 1. ...
@@ -267,7 +267,7 @@ rubocop-auto-correct 1.5.1
 ruby-block 0.3.6 
 ```
 
-",""
+","bug"
 "7","Autoclose tags, autocomplete htmlentities, highlight selected should be core features","Hello Atom Dev team, 
 
 Atom is really one of the best and IDE of choice for coders and it should rank up there. However, I think the following features should be included as core and not just installed. For example:-
@@ -277,7 +277,7 @@ Atom is really one of the best and IDE of choice for coders and it should rank u
 - a caret to display a dropdown of opened tabs or autoscroll, without having all of the tabs stack at the top and their title names barely visible.
 
 This would great!
-",""
+","bug"
 "8","Can't create git branch for local repository","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -320,7 +320,7 @@ The whole time
 ### Versions
 
 1.41.0
-",""
+","bug"
 "9","Panes steal focus when resizing","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -399,7 +399,7 @@ Ubuntu 19.04
 
 ### Additional Information
 
-[PR here](https://github.com/atom/atom/pull/19862)",""
+[PR here](https://github.com/atom/atom/pull/19862)","bug"
 "10","Uncaught Error: Module did not self-register.","[Enter steps to reproduce:]
 
 1. ...
@@ -449,7 +449,7 @@ atom-dbt 0.4.4
 atom-dbt-formatter 1.3.1 
 ```
 
-",""
+","bug"
 "11","Uncaught Error: Cannot call function 'getPosition' on missing remote object 692","[Enter steps to reproduce:]
 
 Opened two different instances of Atom and wait ~24 hours while pc was in sleep mode several times. Then one of Atom instances show this error.
@@ -496,7 +496,7 @@ tool-bar 1.2.0
 uber-juno 0.3.0 
 ```
 
-",""
+","bug"
 "12","Uncaught Error: Cannot call function 'getPosition' on missing remote object 737Error: Cannot cal...","[Enter steps to reproduce:]
 
 1. ...
@@ -583,7 +583,7 @@ platformio-ide-terminal 2.10.0
 prettier-atom 0.58.2 
 ```
 
-",""
+","bug"
 "13","Toward a more automatic installation : Automatically add ATOM_DEV_RESOURCE_PATH to .bashrc","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -628,7 +628,7 @@ Well, reading the manual is obviously a good solution.  But that's too easy.  I 
 <!-- Add any other context or screenshots about the feature request here. -->
 
 The feature is already [implemented](https://github.com/geverartsdev/atom/commit/106eefe5105dc8650f6e7f44cb29f06fd7f0dc41) on my own [fork](https://github.com/geverartsdev/atom), ready to be merged (but I am posting this issue to avoid skipping steps).
-",""
+","bug"
 "14","Uncaught Error: The specified module could not be found./\?\~\AppData\Local\atom\app-1.40.1\res...","[Enter steps to reproduce:]
 
 1. ...
@@ -693,7 +693,7 @@ script 3.18.1
 teletype 0.13.4 
 ```
 
-",""
+","bug"
 "15","""File has no contents"" while loading","When loading a file, the main file pane shows the false message ""File has no contents"" as an inaccurate informational point:
 ![image](https://user-images.githubusercontent.com/563406/70081498-af82f000-15d6-11ea-9b36-2cf23f3622fd.png)
 When loading a large file, or a medium-large diff (by clicking on a file name in the Git tab; package-lock.json often does it for me), or even a small file on a slow computer, this message might be displayed for a long time, long enough that the user might believe it and wonder where the contents of the file went.   
@@ -717,7 +717,7 @@ python
 git 2.15.0.windows.1
 visual studio 2015
 Win10 Pro
-",""
+","bug"
 "16","Uncaught Error: tunneling socket could not be established, statusCode=503","[Enter steps to reproduce:]
 
 1. ...
@@ -763,7 +763,7 @@ Error: tunneling socket could not be established, statusCode=503
 
 ```
 
-",""
+","bug"
 "17","Uncaught Error: Cannot call function 'getPosition' on missing remote object 5666Error: Cannot ca...","[Enter steps to reproduce:]
 
 1. installed git-merge add-on
@@ -843,7 +843,7 @@ split-diff 1.6.0
 terminal-plus 0.14.5 
 ```
 
-",""
+","bug"
 "18","Uncaught Error: ENOENT: no such file or directory, lstat '/ MD 21046'","[Enter steps to reproduce:]
 
 1. ...
@@ -895,7 +895,7 @@ Error: ENOENT: no such file or directory, lstat '/ MD 21046'
 git-plus 8.7.1 
 ```
 
-",""
+","bug"
 "19","Add log output feature to button push/fetch","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -945,7 +945,7 @@ It's a little nasty to push / commit code that was intercepted by a git hook and
 
 Thank you all, you are doing a great job
 <!-- Add any other context or screenshots about the feature request here. -->
-",""
+","bug"
 "20","Uncaught Error: The specified module could not be found./\?\~\AppData\Local\atom\app-1.41.0\res...","[Enter steps to reproduce:]
 
 1. ...
@@ -996,7 +996,7 @@ Error: The specified module could not be found.
 
 ```
 
-",""
+","bug"
 "21","Uncaught Error: dlopen(/private/var/folders/q3/s4jcckxs26j5csf74xvqm2nh0000gn/T/wzQL.uQJ8An/Atom....","[Enter steps to reproduce:]
 
 1. ...
@@ -1045,7 +1045,7 @@ Error: dlopen(/private/var/folders/q3/s4jcckxs26j5csf74xvqm2nh0000gn/T/wzQL.uQJ8
 
 ```
 
-",""
+","bug"
 "22","Bug when using multiple keyboard layouts on Windows 10","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -1152,7 +1152,7 @@ emmet 2.4.3
 ```
 
 
-",""
+","bug"
 "23","Uncaught Error: Cannot call function 'getPosition' on missing remote object 2475","[Enter steps to reproduce:]
 
 1. Unfortunately unsure - came back to my laptop and the error popup was in place (I assume that points to a memory leak, but that's speculative on my part)
@@ -1201,7 +1201,7 @@ svn 0.0.14
 sync-settings 0.8.6 
 ```
 
-",""
+","bug"
 "24","Uncaught Error: Cannot call function 'getPosition' on missing remote object 110","[Enter steps to reproduce:]
 
 1. ...
@@ -1274,7 +1274,7 @@ teletype 0.13.4
 todo 0.6.0 
 ```
 
-",""
+","bug"
 "25","Uncaught Error: Cannot call function 'setTouchBar' on missing remote object 5916","[Enter steps to reproduce:]
 
 1. I'm honestly unsure, sorry ¯\_(ツ)_/¯ 
@@ -1372,7 +1372,7 @@ tool-bar 1.2.0
 tool-bar-markdown-writer 0.5.0 
 ```
 
-",""
+","bug"
 "26","Atom Update Error İ'cant İnstall ATOM ***WİNDOWS 8.1***","Hi All i get ""aTOM İNstaller has stopped working"" *UPDATE.EXE*
 ***[21.11.19 14:19:32] ınfo: Program: Starting Squirrel Updater: --install . --rerunningWithoutUAC
 [21.11.19 14:19:32] ınfo: Program: Starting install, writing to C:\Users\Emre\AppData\Local\SquirrelTemp
@@ -1430,7 +1430,7 @@ tool-bar-markdown-writer 0.5.0
    konum: System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
    konum: System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    konum: System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
-   konum: Squirrel.Update.Program.<Install>d__4.MoveNext()<---***",""
+   konum: Squirrel.Update.Program.<Install>d__4.MoveNext()<---***","bug"
 "27","Atom 1.41 not showing images in Markdown Preview","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -1479,7 +1479,7 @@ Every time
 
 ![image](https://user-images.githubusercontent.com/36549872/69266040-a0885080-0b87-11ea-9136-2df9bb656318.png)
 
-",""
+","bug"
 "28","Uncaught Error: ENOENT: no such file or directory, lstat '~/projects/py38/hw2'","[Enter steps to reproduce:]
 
 1. Open a second instance of `atom`.
@@ -1530,7 +1530,7 @@ Error: ENOENT: no such file or directory, lstat '/home/fuzzy/projects/py38/hw2'
 
 ```
 
-",""
+","bug"
 "29","Uncaught Error: ENOENT: no such file or directory, lstat '~/Downloads\europe.png'","Tried to drag and drop an image from downloads.
 
 **Atom**: 1.41.0 x64
@@ -1579,8 +1579,8 @@ linter-ui-default 1.8.0
 pigments 0.40.2 
 ```
 
-",""
-"30","Data loss/corruption after crash","My computer crashed while editing a large python project and now the main file is completely blank. The file is now 10kB of 0x20 followed by a 0x0d, 0x0a. There is nothing in .atom/recovery. I hadn't committed about 5 days of work on this file. Is it just completely gone? I don't understand how the crash could completely destroy the file. Does atom have any autosaves, backups, or cached copys? ",""
+","bug"
+"30","Data loss/corruption after crash","My computer crashed while editing a large python project and now the main file is completely blank. The file is now 10kB of 0x20 followed by a 0x0d, 0x0a. There is nothing in .atom/recovery. I hadn't committed about 5 days of work on this file. Is it just completely gone? I don't understand how the crash could completely destroy the file. Does atom have any autosaves, backups, or cached copys? ","bug"
 "31","Not possible to scroll down, view text while editing multiple lines","## Summary
 
 I want to be able to scroll / see the text I'm editing not only the first occurrence where the first cursor is placed.
@@ -1591,7 +1591,7 @@ When editing text I want to make sure that the edits are what I expect. But this
 
 ## Describe alternatives you've considered
 
-Scroll down, edit text, scroll down, scroll down, scroll down",""
+Scroll down, edit text, scroll down, scroll down, scroll down","enhancement"
 "32","""atom --wait"" does not work","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -1647,7 +1647,7 @@ I've already run `git config --global core.editor` to verify that the command li
 $ git config --global core.editor
 ""D:\Users\Keith\AppData\Local\atom\app-1.41.0\atom.exe"" --wait
 ```
-",""
+","bug"
 "33","Uncaught Error: Cannot call function 'getPosition' on missing remote object 46","[Enter steps to reproduce:]
 
 1. ...
@@ -1689,7 +1689,7 @@ Error: Cannot call function 'getPosition' on missing remote object 46
 platformio-ide-terminal 2.10.0 
 ```
 
-",""
+","bug"
 "34","Atom 1.41.0 does not open windows on macOS 10.14","### Prerequisites
 
 * [X ] Put an X between the brackets on this line if you have done all of the following:
@@ -1738,7 +1738,7 @@ I tried safe mode, renamed the `~/.atom-backup`,  [deleted the whole installatio
 
 I have also attempted [the advice on how to update to the latest version on MacOS](https://flight-manual.atom.io/faq/sections/i-am-unable-to-update-to-the-latest-version-of-atom-on-macos-how-do-i-fix-this/)
 
-It seems that Atom itself is unable to start Chrome, or something?",""
+It seems that Atom itself is unable to start Chrome, or something?","bug"
 "35","Append scopes instead of overriding them in tree-sitter grammars","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -1814,7 +1814,7 @@ Would be much easier to maintain if scopes were appendable:
 'class_definition > argument_list > identifier': + 'class.inherited' # Append
 ```
 
-",""
+","bug"
 "36","Atom is not saving or opening","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -1864,7 +1864,7 @@ Node    : 10.11.0
 ### Additional Information
 
   - See also #18114 (locked due to inactivity and a lot of ""+1""s from people with other problems)
-  - I posted [on the forum](https://discuss.atom.io/t/files-not-opening-or-saving-debian/69839?u=larsgw)",""
+  - I posted [on the forum](https://discuss.atom.io/t/files-not-opening-or-saving-debian/69839?u=larsgw)","bug"
 "37","Atom silently fails to start up when incorrect path given on command line","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -1924,7 +1924,7 @@ Reproduced with Atom version: 1.41.0 (x64), Ubuntu oct. 2019
 ### Additional Information
 
 <!-- Any additional information, configuration or data that might be necessary to reproduce the issue. -->
-",""
+","bug"
 "38","Quit Atom leaves several ""Atom Helper""  processes active","### Prerequisites
 
 [x] - Reproduced the problem in Safe Mode: <https://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode>
@@ -1966,11 +1966,11 @@ All the time
 
 
 <!-- Any additional information, configuration or data that might be necessary to reproduce the issue. -->
-",""
+","bug"
 "39","The horizontal wheel of mouse is invalid","version: 1.41.0 x64(win10) electron 4.2.7 chrome 69.0.3497.128 node v10.11.0
 mouse: logi m590
 The horizontal wheel of mouse does not work in Atom(win10). But the horizontal wheel of mouse works well in Atom(Ubuntu). I mean when I open a PDF file in Atom(win10), I cannot use the  horizontal wheel of mouse, but sometimes it works. The pdf plugin is ""pdf-view"".
-",""
+","bug"
 "40","Atom 1.41 on Linux periodically makes a white flash and doesn't crash but generates a coredump","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -2073,7 +2073,7 @@ All the time but cannot say how much use time needs to occur before you see it.
 
 1.41
 
-",""
+","bug"
 "41","no progress bar / status bar for 3rd party package installation","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -2104,7 +2104,7 @@ Add the progress bar where the user can see which package is getting installed a
 <!-- Why are we doing this? What use cases does it support? What is the expected outcome? -->
 i am  fed up with the one line html code and don't want to use html5print or beautifulsoup to convert the html code in well indent way, just like in python. so thought of using some plugin, found atom-beautify, i have installed it but i was unable to get the progress bar that how much it is being installed and how much time left to install.
 so that is why raising this feature
-",""
+","bug"
 "42","Installing Elm package fails E400","### Steps to Reproduce
 
 1. Install fresh installation of atom
@@ -2135,7 +2135,7 @@ Node    : 10.11.0
 ### Additional Information
 
 Mac Os Mojave
-",""
+","bug"
 "43","Uncaught Error: Cannot call function 'getPosition' on missing remote object 36","[Enter steps to reproduce:]
 
 1. Open folder (was remotely mounted using sshfs)
@@ -2196,7 +2196,7 @@ pigments 0.40.2
 vhdl-entity-converter 0.9.0 
 ```
 
-",""
+","bug"
 "44","One part of the interface to avoid so much confusion and this repeated question.","I'm having these guys' problem:
 
 https://discuss.atom.io/t/connecting-to-github-in-atom-1-18/45655
@@ -2219,7 +2219,7 @@ I'm sorry but this seems so obvious to put into the interface right?
 
 If it has to be done on the CLI, ok sure! But *tell* people that.  
 
-Atom 1.41.0 on Ubuntu 18.04.2",""
+Atom 1.41.0 on Ubuntu 18.04.2","bug"
 "45","Atom blinks and flashes when using the application","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -2272,13 +2272,13 @@ Electron: 4.2.7
 Chrome  : 69.0.3497.128
 Node    : 10.11.0
 
-Ubuntu x64 18.04.3",""
+Ubuntu x64 18.04.3","bug"
 "46","Installation Failed Atom 1.41.0","I had some issues with Atom so i uninstalled and then reinstalled and started to get an installation failed error.
 
 I have attached the log
 
 [SquirrelSetup.log](https://github.com/atom/atom/files/3789675/SquirrelSetup.log)
-",""
+","bug"
 "47","Uncaught Error: dlopen(/private/var/folders/bw/56_pv5vn1rdchd9585kr4dmc0000gn/T/AppTranslocation/...","[Enter steps to reproduce:]
 
 1. ...
@@ -2333,7 +2333,7 @@ Error: dlopen(/private/var/folders/bw/56_pv5vn1rdchd9585kr4dmc0000gn/T/AppTransl
 
 ```
 
-",""
+","bug"
 "48","Uncaught Error: tunneling socket could not be established, cause=connect ETIMEDOUT 197.98.201.13:...","[Enter steps to reproduce:]
 
 1. Open Atom
@@ -2385,7 +2385,7 @@ tool-bar 1.2.0
 uber-juno 0.3.0 
 ```
 
-",""
+","bug"
 "49","Line number decoration not showing in gutter","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -2474,7 +2474,7 @@ I have never seen those colored line number decoration altrough I've used Atom e
 I'm not even sure it's a core feature but I've seen it in many screenshots like the one below so I'm quite confused... If it's not a core feature what should I do ?
 
 ![git diff pacakge screenshot](https://camo.githubusercontent.com/9f2171d19869c987271d066087a8357fa80611b3/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3637313337382f323234313531392f30343739316132342d396364362d313165332d396131322d3136346361626538316435382e706e67)
-",""
+","bug"
 "50","Atom will not start on Catalina -- Needs notarization","Hi! I was taking a quick look at Atom, and I noticed that the current macOS download is not notarized. Notarization is apple's current malware scanning service. There's some information up at https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution
 
 While there are some ways for end users to skip this check, it would be best practice to notarized directly. 
@@ -2487,106 +2487,7 @@ xcrun altool --username $APPLEID --password @env:N_PASS --asc-provider $TEAMID -
 xcrun altool --username $APPLEID --password @env:N_PASS --asc-provider $TEAMID  --notarization-info $REQUEST_GUUID
 staple Atom.app
 ```
-",""
-"51","Uncaught Error: The module '/usr/share/atom/resources/app.asar.unpacked/node_modules/@atom/fuzzy-...","1. Have open a file.
-2. Press CTRL+T
-
-**Atom**: 1.40.1 x64
-**Electron**: 3.1.10
-**OS**: Ubuntu 18.04.3
-**Thrown From**: Atom Core
-
-
-### Stack Trace
-
-Uncaught Error: The module '/usr/share/atom/resources/app.asar.unpacked/node_modules/@atom/fuzzy-native/build/Release/fuzzy-native.node'
-was compiled against a different Node.js version using
-NODE_MODULE_VERSION 69. This version of Node.js requires
-NODE_MODULE_VERSION 64. Please try re-compiling or re-installing
-the module (for instance, using `npm rebuild` or `npm install`).
-
-```
-At ELECTRON_ASAR.js:166
-
-Error: The module '/usr/share/atom/resources/app.asar.unpacked/node_modules/@atom/fuzzy-native/build/Release/fuzzy-native.node'
-was compiled against a different Node.js version using
-NODE_MODULE_VERSION 69. This version of Node.js requires
-NODE_MODULE_VERSION 64. Please try re-compiling or re-installing
-the module (for instance, using `npm rebuild` or `npm install`).
-    at process.module.(anonymous function) [as dlopen] (ELECTRON_ASAR.js:166:20)
-    at Object.Module._extensions..node (internal/modules/cjs/loader.js:740:18)
-    at Object.module.(anonymous function) [as .node] (ELECTRON_ASAR.js:180:18)
-    at Module.load (internal/modules/cjs/loader.js:620:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:559:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:551:3)
-    at Module.require (/app.asar/static/index.js:72:46)
-    at require (/usr/share/atom/resources/app/static/<embedded>:11:146745)
-    at /app.asar/node_modules/@atom/fuzzy-native/lib/main.js:1:173)
-    at /app.asar/node_modules/@atom/fuzzy-native/lib/main.js:3:3)
-    at Module.get_Module._compile (/usr/share/atom/resources/app/static/<embedded>:11:147429)
-    at Object.value [as .js] (/usr/share/atom/resources/app/static/<embedded>:11:150977)
-    at Module.load (internal/modules/cjs/loader.js:620:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:559:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:551:3)
-    at Module.require (/app.asar/static/index.js:72:46)
-    at require (internal/modules/cjs/helpers.js:20:18)
-    at customRequire (/usr/share/atom/resources/app/static/<embedded>:1:688157)
-    at get_NativeFuzzy (/usr/share/atom/resources/app/static/<embedded>:14:593455)
-    at FuzzyFinderView.subscriptions.add.atom.config.observe.e (/usr/share/atom/resources/app/static/<embedded>:14:597479)
-    at Config.observeKeyPath (/usr/share/atom/resources/app/static/<embedded>:11:334261)
-    at Config.observe (/usr/share/atom/resources/app/static/<embedded>:11:328743)
-    at new FuzzyFinderView (/usr/share/atom/resources/app/static/<embedded>:14:597274)
-    at new ProjectView (/usr/share/atom/resources/app/static/<embedded>:11:810942)
-    at Object.createProjectView (/usr/share/atom/resources/app/static/<embedded>:11:188411)
-    at HTMLElement.fuzzy-finder:toggle-file-finder (/usr/share/atom/resources/app/static/<embedded>:11:186909)
-    at CommandRegistry.handleCommandEvent (/usr/share/atom/resources/app/static/<embedded>:11:349123)
-    at KeymapManager.dispatchCommandEvent (/usr/share/atom/resources/app/static/<embedded>:11:1249835)
-    at KeymapManager.handleKeyboardEvent (/usr/share/atom/resources/app/static/<embedded>:11:1245969)
-    at WindowEventHandler.handleDocumentKeyEvent (/usr/share/atom/resources/app/static/<embedded>:11:284329)
-```
-
-### Commands
-
-```
-  2x -9:51.7.0 editor:newline (input.hidden-input)
-     -9:51.4.0 core:move-up (input.hidden-input)
-     -9:47.3.0 intentions:highlight (input.hidden-input)
-     -9:47.1.0 editor:delete-to-beginning-of-word (input.hidden-input)
-     -9:46.7.0 editor:select-line (input.hidden-input)
-     -9:46.4.0 core:backspace (input.hidden-input)
-     -9:46 intentions:highlight (input.hidden-input)
-     -9:45.9.0 core:save (input.hidden-input)
-     -2:26.8.0 fuzzy-finder:toggle-file-finder (input.hidden-input)
-```
-
-### Non-Core Packages
-
-```
-atom-language-r 1.4.8 
-busy-signal 2.0.1 
-intentions 1.1.5 
-language-latex 1.2.0 
-language-matlab 0.2.1 
-latex 0.50.2 
-latex-wordcount 0.6.0 
-linter 2.3.1 
-linter-chktex 1.4.0 
-linter-gcc 0.7.1 
-linter-pycodestyle 2.1.3 
-linter-shellcheck 1.6.0 
-linter-spell 0.15.0 
-linter-spell-latex 0.11.0 
-linter-ui-default 1.8.0 
-minimap 4.29.9 
-minimap-cursorline 0.2.0 
-minimap-find-and-replace 4.5.2 
-minimap-linter 2.2.1 
-pdf-view 0.72.0 
-todo-show 2.3.2 
-wordcount 3.1.0 
-```
-
-",""
+","bug"
 "52","Uncaught TypeError: Cannot read property 'text' of null","[Enter steps to reproduce:]
 
 Not sure exactly - was editing a JSX file and my `.eslintrc` and the explosion happened somewhere around me saving one of them. Submitting this in case it's helpful, sorry I don't have a better repro scenario. 
@@ -2692,7 +2593,7 @@ toggle-gutter 0.3.4
 travis-ci-status 1.3.1 
 ```
 
-",""
+","bug"
 "53","White line at the top of Atom app (macOS)","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -2731,13 +2632,13 @@ This might help to resolve the issue https://electronjs.org/docs/api/frameless-w
 ### Versions
 
 Atom 1.41.0
-macOS 10.5",""
+macOS 10.5","bug"
 "54","Difference between being ready for usage and what timecop says","Timecop looks good in my opinion:
 ![image](https://user-images.githubusercontent.com/5960902/67471899-8161d600-f650-11e9-8d34-64278529d014.png)
 A single second is quite nice for a texteditor with these capabilities.
 Though, from starting the app (click on its icon) until the UI and syntax highlighting are loaded (no icons missing etc) roughly 4 seconds pass. At the same time I get a spike in WLAN usage:
 ![image](https://user-images.githubusercontent.com/5960902/67472355-42805000-f651-11e9-9f5c-7344ddc61c8f.png)
-The vertical line spacing corresponds to 3s. The left edge of the spike was approximately 0.8 seconds after clicking the icon and the right edge of the spike was about 2.3 seconds after the UI was up. I guess delaying almost everything (e.g. internet access) except UI and syntax highlighting until the basic text editor is up and running would reduce the perceived startup time of Atom substantially. I.e. the gap between timecop measures and perceived speed. Are there any flags to check whether that'd help myself?",""
+The vertical line spacing corresponds to 3s. The left edge of the spike was approximately 0.8 seconds after clicking the icon and the right edge of the spike was about 2.3 seconds after the UI was up. I guess delaying almost everything (e.g. internet access) except UI and syntax highlighting until the basic text editor is up and running would reduce the perceived startup time of Atom substantially. I.e. the gap between timecop measures and perceived speed. Are there any flags to check whether that'd help myself?","bug"
 "55","Incredibly long Shell/Window load time ","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
@@ -2772,7 +2673,7 @@ Processor: Intel Core i7-7700HQ
 RAM: 16GB 
 
 ### Additional Information
-I also renamed ~/.atom and did a few restarts, did also use Atom Beta. Nothing changed.",""
+I also renamed ~/.atom and did a few restarts, did also use Atom Beta. Nothing changed.","bug"
 "56","Atom interferes with Skype on Ubuntu?","* [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: <https://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode>
     * Followed all applicable steps in the debugging guide: <https://flight-manual.atom.io/hacking-atom/sections/debugging/>
@@ -2822,7 +2723,7 @@ I am using Skype to communicate with remote developer (sharing screen etc.). So 
 ![Screencast 2019-10-02 08_50_51](https://user-images.githubusercontent.com/1765602/66046595-622ac980-e526-11e9-9384-a077f9763b4a.gif)
 
 
-",""
+","bug"
 "57","Previously automatically-saved state dialog even in safe mode.","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -2914,7 +2815,7 @@ C:\Users\cbu1\.atom\dev\packages (0)
 C:\Users\cbu1\.atom\packages (0)
 └── (no links)
 
-",""
+","bug"
 "58","Undo/redo leaks memory","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -3041,7 +2942,7 @@ My OS is macOS High Sierra 10.13.6, 64-bit.
 
 <!-- Any additional information, configuration or data that might be necessary to reproduce the issue. -->
 
-Recently, I've been suffering OS crashes and performance issues, likely due to something Chromium-related, but I've not had the time to debug that. This has turned my OOM crashes of Atom to OOM kernel panics, but the basic symptom is the same. I know it's likely separate since opening a new second window freezes my machine 50% of the time, 90% if I have a second browser window open. Also, startup time has become absolutely atrocious now, in the 2-3 minute range for just the limited set of plugins I've listed above. But I do feel this has *some* limited relevance to this bug, hence why I listed it.",""
+Recently, I've been suffering OS crashes and performance issues, likely due to something Chromium-related, but I've not had the time to debug that. This has turned my OOM crashes of Atom to OOM kernel panics, but the basic symptom is the same. I know it's likely separate since opening a new second window freezes my machine 50% of the time, 90% if I have a second browser window open. Also, startup time has become absolutely atrocious now, in the 2-3 minute range for just the limited set of plugins I've listed above. But I do feel this has *some* limited relevance to this bug, hence why I listed it.","bug"
 "59","Atom 1.40.1 starts infinite copies of itself (fork bomb!)","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -3112,7 +3013,7 @@ Codename:	xenial
 ### Additional Information
 
 <!-- Any additional information, configuration or data that might be necessary to reproduce the issue. -->
-",""
+","bug"
 "60","Atom eats up nearly all the RAM before releasing it some minutes later","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -3167,7 +3068,7 @@ Relevant specs: 8GB RAM __DDR3 (from memory)__, Intel Pentium G2020 CPU
 
 Syntactical coloration might be the reason of the lack of performance, but I don't think it's what trigger the sudden filling of RAM.
 I can eventually provide a profiling of what happens in the first case.
-",""
+","bug"
 "61","Error when installing Godot code support","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
@@ -3230,7 +3131,7 @@ Sucessful install.
 
 **Actual behavior:**
 Error (not installing).
-",""
+","bug"
 "62","Issue Using Keyboard Macros","I use iCUE software to create keyboard macros related to working to LaTeX in atom and have had an issue with a macro (using the prnt screen key) that produces the following:
 
 _\begin{itemize}
@@ -3241,7 +3142,7 @@ The macro works fine in every programming, however in atom the output of the mac
 
 ![Atom Issue (0)](https://user-images.githubusercontent.com/40768692/62695678-25f15600-ba1a-11e9-905d-579e618717c1.gif)
 
-",""
+","bug"
 "63","Vietnamese language display error with some specific chars.","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -3296,7 +3197,7 @@ Node    : 8.9.3
 ### Additional Information
 
 Nothing.
-",""
+","bug"
 "64","Settings -> Install page fails to open","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
@@ -3387,7 +3288,7 @@ Click +INSTALL in the settings menu
 None
 
 
-",""
+","bug"
 "65","Create issue button not working: ERR_INSECURE_RESPONSE","### Prerequisites
 
 * [X ] Put an X between the brackets on this line if you have done all of the following:
@@ -3430,7 +3331,7 @@ Electron: 2.0.18
 Chrome  : 61.0.3163.100
 Node    : 8.9.3
 Windows 10
-",""
+","bug"
 "66","Fail to generate an Atom build in Ubuntu 19.04 64bit","I have created a new fork of the repository for Atom 1.40.0-dev. Following these [instructions](https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core/#platform-linux) for generating an Atom build, I have run “script/bootstrap�? in order to install all required dependencies.
 
 When trying to generate the Atom build using a Linux 19.04 64bit enabled computer by executing the “script/build�?, I am getting an error message in the terminal when the building process stops. The error message is the following:
@@ -3509,7 +3410,7 @@ The build generation process was run again with the above-mentioned changes appl
 Alternatively, before running the building process I manually, and separately, installed the nodejs *superstring* package, which is described in the previously shared error message I got. For this, I executed `npm install superstring@2.3.6`. I did this in order to define if the dependency installed separately works when running the building process. But the results were also unsuccessful.
 
 Would anyone have experienced a problem similar to this and has suggestions on how to solve it?
-",""
+","bug"
 "67","TextMate Grammar scope specifications with multiple scopes is incorrectly handled","### Prerequisites
 
 * [ ] Put an X between the brackets on this line if you have done all of the following:
@@ -3570,14 +3471,14 @@ Chrome  : 61.0.3163.100
 Node    : 8.9.3
 
 Windows 10 1903 18908
-",""
+","bug"
 "68","We should reuse the electron-link cache between builds on Azure DevOps","When building Atom, we [generate a v8 startup snapshot](https://github.com/atom/atom/blob/1edf94a24032a8a0e555c3db7aa7de01e5b00633/script/lib/generate-startup-snapshot.js) by transforming every source file in the code base and concatenating them all into one giant `startup.js` script. I don't have exact timings, but this takes a decent percentage of the 10 minutes we spend on the `Build Atom` step of every build on every platform.
 
 The `electron-link` tool includes a caching facility, which skips transformation of any file that hasn't changed. If we could take advantage of that on Azure Pipelines, we'd save a significant chunk of time on every build.
 
 @jasonrudolph co-authored this issue.
 
-cc @daviwil ",""
+cc @daviwil ","bug"
 "69","Atom environment accessible from the main process","Turns out that the main process has access to the `atom` global variable and there are some usages of it across the codebase (which are unreliable since the environment available in the main process has the state of the snapshot).
 
 List of identified usages:
@@ -3603,7 +3504,7 @@ Object.defineProperty(global, 'atom', {
     console.error('Warning! Using the global atom variable from the main process')
     console.trace()
     return originalAtom
-  }```",""
+  }```","bug"
 "70","Opening file causes system to lock for ~10 seconds on Ubuntu 19.04","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following: [snip]
@@ -3663,7 +3564,7 @@ atom-beta:
 
 - See [this Ubuntu bug](https://bugs.launchpad.net/ubuntu/+source/gnome-shell/+bug/1826219) for further description.
 - Saving a file causes a similar lock, though much shorter (~1 second).
-- Google Chrome seems to cause similar locks (though much shorter in duration: ≤1 second, and not as repeatable), which maybe points to something underlying Electron/Chromium?",""
+- Google Chrome seems to cause similar locks (though much shorter in duration: ≤1 second, and not as repeatable), which maybe points to something underlying Electron/Chromium?","bug"
 "71","Support Semantic Highlighting on Tree-Sitter Grammars","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -3708,7 +3609,7 @@ return this.languageLayer.languageMode.grammar.idForScope(scopeName, this.treeCu
 
 I was able to produce somewhat reasonable results, but this doesn't give me a way to assign different scopes to each lexical token, so the results aren't perfect:
 
-![example](https://raw.githubusercontent.com/digitallyserviced/semanticolor/master/tree-sitter.png)",""
+![example](https://raw.githubusercontent.com/digitallyserviced/semanticolor/master/tree-sitter.png)","bug"
 "72","Do Atom can link to custom mixin details ?","## Summary
 
 Mixin details link to.
@@ -3721,7 +3622,7 @@ In purpose to switch from netbeans.
 
 As Netbeans does, do Atom can link to custom mixin details on click on it ? If yes, how to that (ctl + click don't) ?
 
-Thanks",""
+Thanks","bug"
 "73","""Fetching outdated packages and themes failed"" console error when starting Atom","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -3815,7 +3716,7 @@ Do you want to ask a question? Are you looking for support? The Atom message boa
 ├── todo-show@2.3.2
 ├── tree-view-git-status@1.5.2
 └── vim-mode-plus@1.36.0
-```",""
+```","bug"
 "74","Invisible window when Atom starts on Elementary OS","### Description
 
 I've taken invisible window when Atom starts, this behavior occurs when the Atom has closed in maximized window mode.
@@ -3861,7 +3762,7 @@ if atom.applicationDelegate.isWindowMaximized()
     atom.applicationDelegate.unmaximizeWindow();
 ```
 Sorry for my bad english.
-",""
+","bug"
 "75","#! in package.json breaks package install: npm ERR! path /usr/share/atom/resources/app/apm/node_modules/npm/node_modules/sntp/package.json","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -3931,7 +3832,7 @@ Note that this file is part of the installed atom package and that having a #! o
 
     $ rpm -qf /usr/share/atom/resources/app/apm/node_modules/npm/node_modules/sntp/package.json
     atom-1.34.0-2.fc29.x86_64
-",""
+","bug"
 "76","Provide Option to Enable 'darkTheme' Option of BrowserWindow","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -3966,7 +3867,7 @@ APM: 2.1.3
 
 Perhaps this could be implemented similiarly to how the custom title bar styles on macOS are handled, i.e. during the initialisation of a BrowserWindow, check the configuration whether the option for 'darkTheme' is set and if it is, set it to `true` in the BrowserWindow options. 
 
-Thank you all for your hard work and for considering this issue.",""
+Thank you all for your hard work and for considering this issue.","bug"
 "77","bootstrap error on centos 6.6: a lot errors and warnings for ../src/parser.c","Tried to build atom v1.34.0 on centOS v6.6. All the prerequisites have been installed, but when running ""./script/bootstra"", I got a lot of errors and warnings (see below, only very few error and warning lines are copied here). I believe it is a very small issue that caused a lot errors.
 
 Alex.
@@ -4068,7 +3969,7 @@ Error: Command failed: /mnt/share/rh/source/small_packages/temp/atom-1.34.0/apm/
     at tryModuleLoad (module.js:446:12)
     at Function.Module._load (module.js:438:3)
     at Module.runMain (module.js:604:10)
-",""
+","bug"
 "78","clean install of atom on osx fails to open a new window","A clean install of atom on osx fails to open a new window.
 
 **step 1 - remove your configs:**
@@ -4105,7 +4006,7 @@ expected 2:
 
 a way to debug why atom fails to start
 
-",""
+","bug"
 "79","EBUSY: resource busy or locked, unlink","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -4197,7 +4098,7 @@ You can get this information from copy and pasting the output of `atom --version
 ### Additional Information
 
 Any additional information, configuration or data that might be necessary to reproduce the issue.
-",""
+","bug"
 "80","Virtual memory leak, while executing make","Atom allocates huge amounts of memory without freeing it while a make process is running in a project directory of atom. Memory allocation stops when make exits and starts over when make is called. This happens for me on **linux** in **safe mode**.
 
 ### Steps to Reproduce
@@ -4233,7 +4134,7 @@ at least from 1.32.0 this issue was present.
 
 Linux Mint Tara 19 (Ubuntu 18.04) @ 4.19.4-041904-generic
 Dell XPS 15 9570 @ 32 GB RAM
-",""
+","bug"
 "81","macos: opening multiple files from the command line could be improved","I'm using Atom on macos,
 
 Sometimes I want to open multiple files from the command line.
@@ -4287,7 +4188,7 @@ on the first match of foo
 
 
 
-",""
+","bug"
 "82","Bitmap fonts break GTK menus","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
@@ -4339,7 +4240,7 @@ Running on Debian Sid
 
 ### Additional Information
 
-Font used is http://zevv.nl/play/code/zevv-peep/",""
+Font used is http://zevv.nl/play/code/zevv-peep/","bug"
 "83","Incorrectly Saving a file in a FUSE folder (cryptomator vault)","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -4406,7 +4307,7 @@ Cannot reproduce the issue with other editors like gedit and sublimetext.
 
 Screenshot:
 ![atom-cryptomator-vault-save](https://user-images.githubusercontent.com/14300004/51538172-83d89a80-1e48-11e9-8d1e-4dc6fc33c860.gif)
-",""
+","bug"
 "84","Subpixel anti-aliasing stops working if CSS is used to add smooth scrolling","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -4464,7 +4365,7 @@ Electron: 2.0.16
 Chrome: 61.0.3163.100
 Node: v8.9.3
 OS: Windows 7 64 bits
-",""
+","bug"
 "85","Add Mac Services support to File/Folder context menus","## Summary
 
 While #10213 has the highly useful goal of providing text-based Mac Services, I'd also like to see file/folder-based Mac Services to be available upon context menu clicks of tab and Project Tree files and folders.
@@ -4481,7 +4382,7 @@ A package could be designed for a one-off solution, but without integrating with
 
 I want to do the equivalent to this within Atom file context menus:
 ![screen shot 2018-11-23 at 8 45 27 am](https://user-images.githubusercontent.com/20234/48925224-42854680-eefc-11e8-992b-f96b2a6b195c.png)
-",""
+","bug"
 "86","Alt+LMB (Left Mouse Button) double click for subword selection","## Summary
 
 Alt+LMB (Left Mouse Button) double click for subword selection.
@@ -4501,11 +4402,11 @@ For now I don't see something (`lmb`, `mouse`, `click`) with mouse in Keybinding
 ## Additional context
 
 It's very handy for snake_cased syntax, like Ruby, without `_` in Non Word Characters. I think for camelCased it's also handy.
-",""
+","bug"
 "87","git-diff displays falsely gutter for non-utf8 encoded files","Atom falsely reports rows as being modified if the file is non-utf8 and contains extended latin characters (eg. å, ä, ö).
 
 ![image](https://user-images.githubusercontent.com/1257591/46802095-0ee3c800-cd65-11e8-976a-1e88387d5c8b.png)
-",""
+","enhancement"
 "88","Display issues using Mojave through Parallels VM","
 
 ### Prerequisites
@@ -4542,7 +4443,7 @@ You can get this information from copy and pasting the output of `atom --version
 ### Additional Information
 
 Any additional information, configuration or data that might be necessary to reproduce the issue.
-",""
+","bug"
 "89","Cannot See Atom Window with macOS 10.13.6  ","### Prerequisites
 
 * [ X] Put an X between the brackets on this line if you have done all of the following:
@@ -4577,7 +4478,7 @@ All the time, the application now unusable.
 - 1.28.1
 - 1.28.2
 
-This is the second time I have posted this as the issue was closed with no success. Please let me know what other information I can provide to help replicate the bug. ",""
+This is the second time I have posted this as the issue was closed with no success. Please let me know what other information I can provide to help replicate the bug. ","bug"
 "90","cannot search for packages inside atom editor GUI inside virtual box behind corporate proxy","I am unable to search for packages inside the atom editor GUI. Although `apm `via command line is running fine. I am able to install packages via `apm install` command. 
 But with GUI it throws some error:
 `getaddrinfo EAI_AGAIN atom.io:443`
@@ -4591,7 +4492,7 @@ One more thing that I am able to install featured packages via GUI but not searc
 I am working on 64-bit ubuntu 16.04 inside a virtual box with the host is Windows 10
 Also, the atom is working fine with another Linux 32-bit machine in the same host inside a virtual box.
 
-",""
+","bug"
 "91","Data loss when editing symlinked project","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -4647,7 +4548,7 @@ Ubuntu 16.04 4.4.0-119-generic
 ### Additional Information
 
 Any additional information, configuration or data that might be necessary to reproduce the issue.
-",""
+","bug"
 "92","text fields not showing typed characters","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -4701,7 +4602,7 @@ Node    : 7.9.0
 ### Additional Information
 
 I have virtual mac on my machine and i'm not sure if it's related to that one or not. I had older version of atom and was working properly after updating to last version happened to me.  
-",""
+","bug"
 "93","Linux only: editor crashes with rm -r node_modules","
 I have the editor open, no tabs from node_modules showing.
 
@@ -4709,7 +4610,7 @@ If I sudo rm -r node_modules/
 
 The editor crashes.   Also I have to do sudo, so not sure if atom has these files open when it shouldn't?  Windows and other systems didn't need sudo to remove node_modules.
 
-I'm on Debian now.",""
+I'm on Debian now.","bug"
 "94","Atom crashes when installing module via NPM","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -4765,7 +4666,7 @@ Extra steps:
 
 Happens randomly, as you can see here (I installed, uninstalled, reinstalled, then it crashed)
 ![crashpersist](https://user-images.githubusercontent.com/22607722/35186990-0f416aea-fdd2-11e7-8735-c42b94d12a4e.png)
-",""
+","bug"
 "95","[GPG key] Debian 9 gives error","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -4858,55 +4759,12 @@ gpg: import from 'AtomEditor-atom-4C6E74D6C0A35108.pub.gpg' failed: Invalid pack
   - Curl 7.52.0
   - httpie 0.9.8
 ### Additional Information
-",""
-"96","Feature requests: add primitives for multi-window-aware packages","I'm trying to write a package that needs to:
-
-1. Be able to manipulate config and settings on a per-window basis
-2. Be able to constrain which packages are loaded on a per-window basis
-3. Be able to intercept and rewire config changes done by packages
-4. Be able to intercept and realign packages with their proper serialization
-
-And for that:
-
-- I need a way to identify a window.
-- I need a way to know when a single window is created/closed.
-- I need a way to know when a single window receives focus.
-- I need a way to restrict the packages loaded for a window.
-    - This could be either whitelist (easier) or blacklist (not hard to compute from [this](https://atom.io/docs/api/v1.23.1/PackageManager#instance-getAvailablePackagePaths))
-- I need a way to read and alter config settings (across packages) per-window.
-- I need a way to control the serialized state used when creating a window.
-    - I do *not* need a way to inspect it or otherwise modify its integrity.
-    - I do *not* need to handle state separately from its package (and I wouldn't want to).
-
-What I'm wanting to do is more or less an expanded, fuller version of [this](https://github.com/atom/atom/issues/5168), but I'm wanting to do it in userland where I have better flexibility.
-
-Also, if any of these exist already, I'd like to know, so I can go ahead and strike them out.
-
-------
-
-Here's an incomplete high-level API proposal for all but serialized state control and ""on window startup"":
-
-- `atom.window` - A self-reference to this window instance (not the DOM global).
-- `atom.onDidOpenWindow(callback: (window) => any)` - Called with a new `AtomWindow` instance to control the other window.
-- `AtomWindow::onDidClose(callback: () => any)` - Called when the window is closed.
-- `AtomWindow::onDidReceiveFocus(callback: () => any)` - Called when the window receives focus.
-- `AtomWindow::send(scope, message, ...args)` - Send an IPC message with a given scope.
-- `AtomWindow::onDidReceiveMessage(scope, message, callback: (...args) => any)` - Receive a message with a given scope.
-- `PackageManager::enablePackageForWindow(name)` - Does what it says.
-- `PackageManager::disablePackageForWindow(name)` - Does what it says.
-- `PackageManager::isPackageDisabledForWindow(name)` - Checks what it says.
-- `Config::setForWindow(key, value)` - Set config for window
-- `Config::getForWindow(key, value)` - Get config for window
-- `Config::unsetForWindow(key, value)` - Unset config for window
-- `Config::observeAll(options, callback: (value) => any)` - Observe all key changes.
-    - I can detect nesting easily enough.
-
-I can use IPC to control config settings and package disabling across windows using the above methods.",""
+","bug"
 "97","Error ""unable to verify the first certificate""","![image](https://user-images.githubusercontent.com/29014463/33909381-7dee83a4-dfb1-11e7-89ce-5bce6a0328cf.png)
 
 ```
 Request for package information failed: unable to verify the first certificate (UNABLE_TO_VERIFY_LEAF_SIGNATURE)
-```",""
+```","bug"
 "98","Atom not opening files","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
@@ -4935,7 +4793,7 @@ Electron: 1.6.15
 Chrome: 56.0.2924.87
 Node: 7.4.0
 OSX: 10.13.1
-",""
+","bug"
 "99","Tree View crashes Atom when opening file on remounted disk volume","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -5042,7 +4900,7 @@ This happens on Windows 10 using [DiskCryptor](https://diskcryptor.net/wiki/Main
 **Prerequisite**
 Use e.g. DiskCryptor to create a new volume.
 Place a text file in that volume (in order to have content that can be opened by Atom).
-",""
+","enhancement"
 "100","Atom opens without any panes.","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
@@ -5092,7 +4950,7 @@ OSX 10.11.6
 
 ### Additional Information
 
-",""
+","bug"
 "101","Feature Request: Integrated Shell/Terminal Access","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
@@ -5138,9 +4996,9 @@ Windows 10 now has a bash terminal running on an Ubuntu underpinning. I want to 
 
 ### Additional Information
 Please consult Microsoft's Visual Studio Code editor for how to implement an integrated terminal well
-",""
+","bug"
 "102","Add an option to disable smooth scrolling","I was using Atom 1.8.8 previously which did not include smooth scrolling. Today I updated to 1.10 which has smooth scrolling enabled by default, but I cannot figure out how to turn it off. There do not seem to any plugins or tutorials on how to disable it either. In Chrome, the user can open chrome://flags and manually disable it, but I could not figure out how. [This post](https://discuss.atom.io/t/how-to-access-chrome-flags-in-electron/16470/6) gives me a few hints, but not much else unfortunately.
-",""
+","bug"
 "103","""Restart and Install"" does not restart Atom after update on Windows","### Prerequisites
 - [ ] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [x] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
@@ -5183,4 +5041,6 @@ Node    : 5.10.0
 Squirrel: 1.2.4.0
 
 OS: Windows 10 Pro, version 1607, build 14393.51
-",""
+","bug"
+"104","grammar","description case insensitive case filesystems passing folder atom command restore path case steps reproduce create atom folder foo open tabs close window reopen atom command differing case atom foo expected behavior atom restores previously open tabs actual behavior atom creates brand wrongly cased folder cape restore tabs versions os atom","bug"
+"105","flatpak release support","description atom multiple instances open versions atom open file finder context menu steps reproduce open files atom dock drawer finder context menu atom command line open atom expected behavior instance atom multiple windows actual behavior instances atom dock icon versions apparently click menu","bug"
