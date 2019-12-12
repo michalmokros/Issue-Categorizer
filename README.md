@@ -5,3 +5,4 @@ data directory is required to be in the top layer in order for application to co
 repository to download needs to be public
 Gradle and JDK need to be installed
 For any issue with application submit a pull request
+Run task "./gradlew info" inside Issue-Categorizer-Application directory for information about the application, all other tasks are run inside this folder
