@@ -7,6 +7,7 @@ import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import java.util.Random;
@@ -14,20 +15,23 @@ import java.util.logging.Logger;
 
 import static java.util.logging.Level.INFO;
 
+/**
+ * Utility class for basic Tester methods - analysis of labeled issues using different classifiers
+ *
+ * @author xmokros 456442@mail.muni.cz
+ */
 public class TesterUtil {
     private final static Logger LOGGER = Logger.getLogger(TesterUtil.class.getName());
     private static final int FOLDS = 10;
     private static final int SEED = 1;
 
-    public static String testData(String fileName, boolean usingNB, boolean usingJ48, boolean usingRF) throws Exception {
+    public static String testData(String fileName, String classifier) throws Exception {
         Instances instances = convertArffFileIntoInstances(fileName);
-        instances.setClassIndex(instances.numAttributes() - 1);
-        String summary = runTesting(instances, usingNB, usingJ48, usingRF);
-        return summary;
+        return runTesting(instances, classifier);
     }
 
-    private static String runTesting(Instances instances, boolean usingNB, boolean usingJ48, boolean usingRF) throws Exception {
-        if (usingNB) {
+    private static String runTesting(Instances instances, String classifier) throws Exception {
+        if (classifier.equals("nb")) {
             NaiveBayesMultinomialText nbMultiText = new NaiveBayesMultinomialText();
             Evaluation evaluation = new Evaluation(instances);
             evaluation.crossValidateModel(nbMultiText, instances, FOLDS, new Random(SEED));
@@ -35,7 +39,7 @@ public class TesterUtil {
             return getInfo(evaluation);
         }
 
-        if (usingJ48) {
+        if (classifier.equals("j48")) {
             StringToWordVector stringToWordVector = new StringToWordVector();
             J48 j48 = new J48();
             stringToWordVector.setInputFormat(instances);
@@ -46,7 +50,7 @@ public class TesterUtil {
             return getInfo(evaluation);
         }
 
-        if (usingRF) {
+        if (classifier.equals("rf")) {
             StringToWordVector stringToWordVector = new StringToWordVector();
             RandomForest randomForest = new RandomForest();
             stringToWordVector.setInputFormat(instances);
@@ -63,7 +67,14 @@ public class TesterUtil {
     private static Instances convertArffFileIntoInstances(String filePath) {
         try {
             DataSource dataSource = new DataSource(filePath);
-            return dataSource.getDataSet();
+            Instances instances = dataSource.getDataSet();
+            instances.setClassIndex(instances.numAttributes() - 1);
+            Remove remove = new Remove();
+            remove.setAttributeIndices("1");
+            remove.setInvertSelection(false);
+            remove.setInputFormat(instances);
+            return Filter.useFilter(instances, remove);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

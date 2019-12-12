@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeb1ee8f-185d-4867-9c57-76454d6c09b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Data-Tester/src/main/java/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data-Tester/src/main/java/util/TesterUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/MissingArgumentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-all-labels-enhancement-bug.arff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-all-labels-enhancement-bug.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../license.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,60 +15,27 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/entities/DataHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/entities/DataHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/Cleaner.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/Cleaner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/SmartData.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/filtering/SmartData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/parsing/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/parsing/Parser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/entities/DataHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Cleaner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/dto/EntryDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/dto/EntryDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/util/DownloaderUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/util/DownloaderUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/dto/EntryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/dto/EntryDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/classifier/IssuesClassifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/classifier/IssuesClassifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/util/ModellerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/build/classes/java/main/util/ModellerUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Modeller/build/libs/Data-Modeller-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/build/libs/Data-Modeller-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Modeller/src/main/java/dto/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/dto/Issue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Modeller/src/main/java/util/ModellerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/util/ModellerUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Tester/src/main/java/util/TesterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Tester/src/main/java/util/TesterUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Helper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MessageClassifier.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Model.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/Issue-Categorizer-Application-1.0-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/Issue-Categorizer-Application-1.0-SNAPSHOT.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/Issue-Categorizer-Application-1.0-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/Issue-Categorizer-Application-1.0-SNAPSHOT.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Issue-Categorizer-Application-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Issue-Categorizer-Application-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/Issue-Categorizer-Application" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/Issue-Categorizer-Application" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/Issue-Categorizer-Application.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/Issue-Categorizer-Application.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Download.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Download.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/util/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/util/Utility.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MessageClassifier.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open-[].arff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open-[].csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open-[enhancement, bug].arff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open-[enhancement, bug].csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open-test.arff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open-test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.arff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-open.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-openlabels=[].csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-openlabels=[unlabeled].csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/atom-atom-issues-all.arff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/atom-atom-issues-open.arff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/atom-atom-issues-open.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/atom-data-titles.arff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/atom-data-titles.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/atom-data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Utility.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -296,12 +262,23 @@
       <workItem from="1572095459173" duration="25550000" />
       <workItem from="1572712463651" duration="43874000" />
       <workItem from="1573831203232" duration="27410000" />
-      <workItem from="1575720402898" duration="3631000" />
+      <workItem from="1575720402898" duration="30115000" />
+      <workItem from="1576070605722" duration="32956000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -320,24 +297,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Test.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="49" />
+          <url>file://$PROJECT_DIR$/Data-Modeller/src/main/java/util/ModellerUtil.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Data-Modeller/src/main/java/util/ModellerUtil.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="51" />
+          <line>34</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Convert.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="52" />
+          <url>file://$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Model.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="53" />
+          <url>file://$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

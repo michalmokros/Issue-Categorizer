@@ -1,5 +1,5 @@
-"Title","Body","Label"
-"atom --wait works only after closing the window, not just the file tab","<!--
+"Id","Title","Body","Label"
+"1","atom --wait works only after closing the window, not just the file tab","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/.github/blob/master/CODE_OF_CONDUCT.md
 
@@ -76,7 +76,7 @@ Windows 10 Enterprise 64bit
 Demo:
 
 ![atom--wait_issue](https://user-images.githubusercontent.com/3825876/63950139-1fd41f80-ca84-11e9-99ae-b66a191ca56d.gif)","bug"
-"[WSL] atom.sh assumes default root automount","<!--
+"2","[WSL] atom.sh assumes default root automount","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -179,7 +179,7 @@ $ cat $(which atom)
 ```
 
 Other issues related to running Atom from Linux/WSL, like path availability or translation, are outside the scope of this issue.","bug"
-"Uncaught TypeError: Cannot read property 'length' of undefined","*@priyankvex commented on Jan 24, 2015, 7:48 AM UTC:*
+"3","Uncaught TypeError: Cannot read property 'length' of undefined","*@priyankvex commented on Jan 24, 2015, 7:48 AM UTC:*
 
 [Enter steps to reproduce below:]
 
@@ -245,19 +245,19 @@ No dev packages
 /cc @atom/core
 
 *This issue was moved by [daviwil](https://github.com/daviwil) from [atom/go-to-line#19](https://github.com/atom/go-to-line/issues/19).*","bug"
-"Allow converting line endings for multiple files in project","*@RichyHBM commented on Oct 31, 2016, 9:24 PM UTC:*
+"4","Allow converting line endings for multiple files in project","*@RichyHBM commented on Oct 31, 2016, 9:24 PM UTC:*
 
 It would be great to have the ability to convert files from the project side-view, maybe by right clicking on the file and selecting ""convert line endings""?
 If you were to do so on a file the default behaviour could happen, opening the file in the editor view and changing the endings without saving. But doing so on a folder should prompt the line ending to convert all files bellow that folder to; this could then auto save or, batch open all the files in editor and convert the endings without saving (the user could then click on close alll and hit save for all of the files)
 
 *This issue was moved by [jasonrudolph](https://github.com/jasonrudolph) from [atom/line-ending-selector#34](https://github.com/atom/line-ending-selector/issues/34).*","enhancement"
-"Request: Indicate that package is looking for existing issue","_From @tairun on September 26, 2015 15:6_
+"5","Request: Indicate that package is looking for existing issue","_From @tairun on September 26, 2015 15:6_
 
 I think its really cool, that the package checks if there is already an open issue on github. But the default button says **Report Error** and if you click it and the issue was in fact already reported, nothing happens. A good 2-3 seconds later the button changes to **View Issue**. I would appreciate it, if there was a visual indicator, that atom is searching online.
 
 
 _Copied from original issue: atom/exception-reporting#16_","enhancement"
-"Fails to report error when stacktrace includes core JavaScript API","_From @jasonrudolph on April 10, 2018 20:54_
+"6","Fails to report error when stacktrace includes core JavaScript API","_From @jasonrudolph on April 10, 2018 20:54_
 
 ### Description
 
@@ -362,7 +362,7 @@ Node    : 7.9.0
 /cc @as-cii (since we encountered this issue while pairing today)
 
 _Copied from original issue: atom/exception-reporting#40_","bug"
-"reflowing JSdoc fails","_From @slang800 on May 8, 2014 19:20_
+"7","reflowing JSdoc fails","_From @slang800 on May 8, 2014 19:20_
 
 ``` coffee
 ###*
@@ -400,7 +400,7 @@ get's reflowed into this:
 
 
 _Copied from original issue: atom/autoflow#9_","enhancement"
-"Reflow jumbles separate lines together","_From @joallard on October 18, 2016 12:39_
+"8","Reflow jumbles separate lines together","_From @joallard on October 18, 2016 12:39_
 
 This is following burodepeper/language-markdown#144. I searched briefly if the issue was already existing, sorry if it's a dupe.
 
@@ -429,7 +429,7 @@ Actual:
 
 
 _Copied from original issue: atom/autoflow#53_","bug"
-"Add support for .editorconfig file","_From @terrycloth on March 13, 2017 22:27_
+"9","Add support for .editorconfig file","_From @terrycloth on March 13, 2017 22:27_
 
 ### Prerequisites
 
@@ -462,7 +462,7 @@ In particular, I think it would be helpful if Autoflow followed the `max_line_le
 * git 2.9.3
 
 _Copied from original issue: atom/autoflow#58_","enhancement"
-"Symlinks within repository now breaking git-diff","_From @lucascosti on February 10, 2017 3:40_
+"10","Symlinks within repository now breaking git-diff","_From @lucascosti on February 10, 2017 3:40_
 
 <!--
 
@@ -519,7 +519,7 @@ python 2.7.13
 git 2.7.4
 
 _Copied from original issue: atom/git-diff#124_","bug"
-"Close icon re-appears after drag-dropping a tab","_From @chbk on October 1, 2017 2:7_
+"11","Close icon re-appears after drag-dropping a tab","_From @chbk on October 1, 2017 2:7_
 
 one-dark-ui 1.10.6 on atom 1.20.1
 
@@ -528,7 +528,7 @@ one-dark-ui 1.10.6 on atom 1.20.1
 Drag tab C, drop it on tab B, B takes C's place and its close icon appears.
 
 _Copied from original issue: atom/one-dark-ui#221_","bug"
-"Atom's UX problems","## Summary
+"12","Atom's UX problems","## Summary
 
 Here a few UX problems that aren't really bugs nor feature requests, but can still negatively impact a user's experience. I'll keep adding more when something comes to mind. Also feel free to comment below, but keep in mind that this issue is not meant to brainstorm solutions and only focuses on the problems first. If we want to improve something, an RFC should be proposed.
 
@@ -595,7 +595,7 @@ Atom provides some UI components like select-list, tooltip, mini-editor and ther
 
 **Workaround**: Package authors could use a 3rd party UI library.
 ","enhancement"
-"""check for updates"" button for Linux","_From @pedzed on October 13, 2016 17:55_
+"13","""check for updates"" button for Linux","_From @pedzed on October 13, 2016 17:55_
 
 On Windows and macOS you have a button to update Atom to the latest version. It would be nice if Linux also had that. If the update functionality will not be implemented (anytime soon), it would be nice if there's a button that tells you if an update is available - just so you know that your version is outdated. And perhaps also instructions on how to update.
 
@@ -603,7 +603,7 @@ Currently, you have to check at https://github.com/atom/atom/releases to see if 
 
 
 _Copied from original issue: atom/about#38_","enhancement"
-"Warn if using a git package with an unsupported version of Atom","<!--
+"14","Warn if using a git package with an unsupported version of Atom","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -659,7 +659,7 @@ visual studio 2015
 
 resubmitted from #14222
 ","enhancement"
-"Dock Bug: Crossing dock toggle with drag and drop breaks dock positioning","### Prerequisites
+"15","Dock Bug: Crossing dock toggle with drag and drop breaks dock positioning","### Prerequisites
 * [X] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: Attempted. None of the directions to enter safe mode or attempts to work around them worked. Might because this computer is running beta and there is a space in the file name (but everything from atom to 'Atom\ Beta' errors when executing from within the Contents/MacOS/ folder).
     * Followed all applicable steps in the debugging guide: 
@@ -697,7 +697,7 @@ Maybe the toggle is looking for a mouse event without checking whether the event
 <img width=""630"" alt=""dock-open"" src=""https://user-images.githubusercontent.com/1514228/37257058-3346aeac-253a-11e8-8c39-4a33766c80d8.png"">
 <img width=""630"" alt=""dock-closed"" src=""https://user-images.githubusercontent.com/1514228/37257060-353ed798-253a-11e8-83a4-38e266b985b3.png"">
 ","bug"
-"Application: Install Update closes the window and breaks the sessions","<!--
+"16","Application: Install Update closes the window and breaks the sessions","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -739,7 +739,7 @@ Windows 10:
 Version: 1709
 Build: 16299.192.
 ","bug"
-"[Regression] Auto indentation fails when moving multiple lines up or down","### Prerequisites
+"17","[Regression] Auto indentation fails when moving multiple lines up or down","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: https://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -799,7 +799,7 @@ See also https://github.com/atom/atom/issues/16556
 
 This is a regression that only started happening in the last month or so in Atom's dev builds.
 Are there no tests in place around these kind of indentation actions?","bug"
-"DISPOSE of MENU item not functioning as expected.","### Prerequisites
+"18","DISPOSE of MENU item not functioning as expected.","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode.
@@ -908,7 +908,7 @@ Thanks for your attention.
 \- Dan Padric
 
   ","bug"
-"Mapping ctrl-tab's key behavior to a different key, key doesn't work the same as ctrl-tab does","<!--
+"19","Mapping ctrl-tab's key behavior to a different key, key doesn't work the same as ctrl-tab does","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -988,7 +988,7 @@ Just try it- easy to see once you try it. It works **differently** for some reas
 
 Popup displaying used flies:
 ![image](https://user-images.githubusercontent.com/3532929/33127609-c9d0cc76-cf91-11e7-81d2-dfc0b17bcdef.png)","bug"
-"[Bug] text re-rendering on save","### Prerequisites
+"20","[Bug] text re-rendering on save","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     *  Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1032,7 +1032,7 @@ Node    : 7.4.0
 ![copy_bug](https://user-images.githubusercontent.com/2036040/32116289-09c68804-bb18-11e7-8307-4bf2ab06a0f1.gif)
 
 /cc @maxbrunsfeld ","bug"
-"[BUG] Fix resize behaviour when soft wrapping is enabled","
+"21","[BUG] Fix resize behaviour when soft wrapping is enabled","
 ### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
@@ -1084,7 +1084,7 @@ apm: 1.18.5
 OS: MacOS Sierra 10.12.3 
 
 ","bug"
-"Atom does not remember last-opened state if a spec window is closed last","### Prerequisites
+"22","Atom does not remember last-opened state if a spec window is closed last","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1123,7 +1123,7 @@ Node    : 7.4.0
 ### Additional Information
 
 This may be harder to reproduce on macOS due to its special Quit behavior.","bug"
-"Revert buffer / Revert to saved / Refresh from source","<!--
+"23","Revert buffer / Revert to saved / Refresh from source","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -1177,7 +1177,7 @@ visual studio
 
 None
 ","enhancement"
-"Scrollbar moves to the top when splitting panes","### Prerequisites
+"24","Scrollbar moves to the top when splitting panes","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1212,7 +1212,7 @@ None
 Related: https://github.com/atom/atom/issues/15552
 
 /cc: @as-cii @50Wliu ","bug"
-"Editor is empty if you scroll up after splitting","### Prerequisites
+"25","Editor is empty if you scroll up after splitting","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1248,7 +1248,7 @@ Related: https://github.com/atom/atom/issues/15552
 ### Additional Information
 
 /cc: @as-cii ","bug"
-"Cursor rendered incorrectly when horizontalPixelPositions are measured while not visible","### Prerequisites
+"26","Cursor rendered incorrectly when horizontalPixelPositions are measured while not visible","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1341,7 +1341,7 @@ Cannot reproduce with 1.18.0(so I believe this issue introduced by editor-rewrit
 Actual Issue in vim-mode-plus is here
 https://github.com/t9md/atom-vim-mode-plus/issues/855
 ","bug"
-"--log-file parameter didn't create log file","### Description
+"27","--log-file parameter didn't create log file","### Description
 
 I'm running Atom with `--log-file` parameter, but the log file isn't created. Tested on macOS Sierra.
 
@@ -1375,7 +1375,7 @@ node 6.9.5 x64
 python 2.7.10
 git 2.13.3
 ```","bug"
-"Persist undo history when reopening a previously-closed buffer","### Prerequisites
+"28","Persist undo history when reopening a previously-closed buffer","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1426,7 +1426,7 @@ Linux Alex-ArchMainPC 4.11.9-1-ARCH #1 SMP PREEMPT Wed Jul 5 18:23:08 CEST 2017 
 
 Missing.
 ","enhancement"
-"Atom doesn't correctly indent lines with combining diacritics","### Prerequisites
+"29","Atom doesn't correctly indent lines with combining diacritics","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1471,7 +1471,7 @@ Node    : 6.5.0
 ### Additional Information
 
 Tested on macOS 10.12.5.","bug"
-"""Editor is not responding"" after leaving ""Save As"" dialog open for some time on macOS Sierra","<!--
+"30","""Editor is not responding"" after leaving ""Save As"" dialog open for some time on macOS Sierra","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -1524,7 +1524,7 @@ git 2.11.0
 ### Additional Information
 
 N/A","bug"
-"Window dimensions and position not being saved","<!--
+"31","Window dimensions and position not being saved","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -1593,7 +1593,7 @@ The issue appears to be caused by an assumption that window positions are calcul
 The intent seems to be to prevent saving positions that would place the window outside the viewable area of the monitors, but in our case it generates a false negative due to the way the position data is calculated, and therefore the window position is not saved if your setup is as described above. 
 
 ","bug"
-"A cursor position is not restored when switching to and back from a pane without cursor","<!--
+"32","A cursor position is not restored when switching to and back from a pane without cursor","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -1645,7 +1645,7 @@ macOS Sierra 10.12.5
 
 Clicking on panes does not behave the same way and does what expected.
 ","bug"
-"⌘ + ⌃ + �?� (command + control + space | cmd + ctrl + space) does not open the Characters selector on macOS with system lang with non-English system language","<!--
+"33","⌘ + ⌃ + �?� (command + control + space | cmd + ctrl + space) does not open the Characters selector on macOS with system lang with non-English system language","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -1712,7 +1712,7 @@ BuildVersion:	16F73
 
 The Atom keybinding resolvers (⌘ + .) does detect that ⌘ + ⌃ + �?� is pressed, but no Atom action is bound to it, nor does it trigger the system's Characters selector.
 ","bug"
-"Feature request: add select-current-paragraph","<!--
+"34","Feature request: add select-current-paragraph","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -1749,7 +1749,7 @@ This functionality doesn't exist
 All
 
 ","enhancement"
-"macOS custom titlebar does not hide titlebar when reloading editor in fullscreen mode","### Prerequisites
+"35","macOS custom titlebar does not hide titlebar when reloading editor in fullscreen mode","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1801,7 +1801,7 @@ Node    : 6.5.0
 
 `macOS Sierra 10.12.5`
 ","bug"
-"Redirect outdated links in keymap.cson","When I open the Keymap.cson file, the links provided are outdated.
+"36","Redirect outdated links in keymap.cson","When I open the Keymap.cson file, the links provided are outdated.
 
 ```
 # You can find more information about keymaps in these guides:
@@ -1810,7 +1810,7 @@ Node    : 6.5.0
 ```
 
 They just redirect to the root of http://flight-manual.atom.io/.","enhancement"
-"Ctrl-alt-'letter' Keybindings do not appear as a shortcut","
+"37","Ctrl-alt-'letter' Keybindings do not appear as a shortcut","
 ![menu_bug](https://user-images.githubusercontent.com/27342440/26912866-71f377fe-4c17-11e7-83e4-00276419b9dc.png)
 ### Prerequisites
 
@@ -1840,7 +1840,7 @@ Importantly, this only happens on Windows, and I have tried it out with both 1.1
 
 
 ","bug"
-"Atom doesn't handle .gitignore/exclude files with trailing whitespace","<!--
+"38","Atom doesn't handle .gitignore/exclude files with trailing whitespace","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -1898,7 +1898,7 @@ visual studio 2015
 ```
 Windows 10.0.14393 x64
 ","bug"
-"Scroll Past End retains 3 lines instead of 1","### Prerequisites
+"39","Scroll Past End retains 3 lines instead of 1","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1947,7 +1947,7 @@ You can get this information from copy and pasting the output of `atom --version
 
 Any additional information, configuration or data that might be necessary to reproduce the issue.
 ","bug"
-"Dock Icon stays visible when mouse leaves Atom window","### Prerequisites
+"40","Dock Icon stays visible when mouse leaves Atom window","### Prerequisites
 
 * [X] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -1973,7 +1973,7 @@ If the editor loses focus I'd expect the icon to disappear.
 
 1.17.0
 ","bug"
-"`Dock.destroy()` leaves part of the UI of the Dock behind and then exceptions happen","### Prerequisites
+"41","`Dock.destroy()` leaves part of the UI of the Dock behind and then exceptions happen","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -2010,7 +2010,7 @@ Node    : 6.5.0
 
 When closing the Dev Tools Console after the above repro steps, I get an uncaught exception identical to the one described in https://github.com/atom/notifications/issues/155
 ","bug"
-"Opening directory with spaces and trailing slash opens invalid file","### Prerequisites
+"42","Opening directory with spaces and trailing slash opens invalid file","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -2077,7 +2077,7 @@ Failing under both PowerShell and old fashioned `cmd.exe`:
 * `PS C:\Temp> atom '.\foo bar\foo\'`
 * `PS C:\Temp> atom 'C:\Temp\foo bar\foo\'`
 * `PS C:\Temp> atom ""C:\Temp\foo bar\foo\""`","bug"
-"Atom 1.17.0-beta5 - onDidChangeActivePane and onDidStopChangingActivePaneItem on atom.workspace.getCenter() do not work.","<!--
+"43","Atom 1.17.0-beta5 - onDidChangeActivePane and onDidStopChangingActivePaneItem on atom.workspace.getCenter() do not work.","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -2123,7 +2123,7 @@ MacOS 10.12.4
 These two event handlers work on the workspace itself via `atom.workspace.onDidStopChangingActivePaneItem(console.log)` or `atom.workspace.onDidChangeActivePane(console.log)`.
 
 I'm looking to use these methods for my [tree-view-extended](https://github.com/hswolff/tree-view-extended) package.","bug"
-"Lost input focus when switching between popup dialogs via shortcut key","### Prerequisites
+"44","Lost input focus when switching between popup dialogs via shortcut key","### Prerequisites
 
 * [X ] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -2159,7 +2159,7 @@ Chrome  : 52.0.2743.82
 Node    : 6.5.0
 OS: ArchLinux
 ","bug"
-"File content is missing when drag&dropping file from zip archive","<!--
+"45","File content is missing when drag&dropping file from zip archive","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -2214,7 +2214,7 @@ visual studio 2015
 
 Windows 10 x64
 ","enhancement"
-"Saving and renaming different files causes conflict","### Prerequisites
+"46","Saving and renaming different files causes conflict","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -2264,7 +2264,7 @@ I've never read any of the related code, and decided that there's something to d
 
 **To regulators:** Change the issue title if you consider it inappropriate.
 ","bug"
-"Pasting new line char into settings field causing problem, see gif","### Description
+"47","Pasting new line char into settings field causing problem, see gif","### Description
 
 Pasting new line char into settings field causing problem, see gif
 
@@ -2295,13 +2295,13 @@ git 2.11.0
 
 ![out](https://cloud.githubusercontent.com/assets/9260214/24765927/9c26280e-1ac7-11e7-95ef-308ef6073127.gif)
 ","bug"
-"Add spec for Save As dialog","(Prerequisites do not apply)
+"48","Add spec for Save As dialog","(Prerequisites do not apply)
 
 See: https://github.com/atom/atom/pull/14119#issuecomment-291295209.
 Specifically, the test should ensure that the Save As dialog shows the correct directory and file name.
 
 /cc @cs150bf","enhancement"
-"Data loss when adding and removing project folders","<!--
+"49","Data loss when adding and removing project folders","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -2347,7 +2347,7 @@ Electron: 1.3.13
 Chrome  : 52.0.2743.82  
 Node    : 6.5.0  
 ","bug"
-"Copying or cutting without selecting text results in unexpected paste behaviour","<!--
+"50","Copying or cutting without selecting text results in unexpected paste behaviour","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -2407,7 +2407,7 @@ git 2.7.4
 ```
 
 I'm using Ubuntu 16.04, but I've seen the same issue in Windows 7 as well.","bug"
-"Folding keybindings duplicated","The keybinding for Fold All is `ctrl-alt-{` and for Fold Selection is `ctrl-alt-shift-[`. On a US keyboard, these are the same. I didn't override these bindings, and they remain duplicated when I start in safe mode.
+"51","Folding keybindings duplicated","The keybinding for Fold All is `ctrl-alt-{` and for Fold Selection is `ctrl-alt-shift-[`. On a US keyboard, these are the same. I didn't override these bindings, and they remain duplicated when I start in safe mode.
 
 Secondary problem: Under Settings => Keybindings, Fold All is shown as `ctrl-alt-{`, while in the command palette it's shown as `ctrl-alt-shift-[`. See screenshots below. Result: even on a keyboard layout that shouldn't be susceptible to this key binding duplication (on my Belgian layout, `[` and `{` don't share a physical key), Fold Selection still gets overridden by Fold All.
 
@@ -2417,7 +2417,7 @@ Keybindings according to Settings:
 Keybindings according to Command Palette:
 ![2017-03-17 13_51_44-mint - vmware workstation](https://cloud.githubusercontent.com/assets/570247/24043898/212f1a88-0b19-11e7-9abe-2c18d07525e5.png)
 ","bug"
-"horizontal scroll bar not fits longest line","### Prerequisites
+"52","horizontal scroll bar not fits longest line","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -2481,7 +2481,7 @@ GIF-age:
 
 ![no-scroll](https://cloud.githubusercontent.com/assets/734194/24685455/458348ec-1973-11e7-8bb7-16077969dc21.gif)
 ","bug"
-"Should use name of symlink for determining file type (or have an option).","<!--
+"53","Should use name of symlink for determining file type (or have an option).","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -2542,7 +2542,7 @@ git 2.7.4
 
 Any additional information, configuration or data that might be necessary to reproduce the issue.
 ","enhancement"
-"command line interface refinement [macOS]","<!--
+"54","command line interface refinement [macOS]","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -2581,7 +2581,7 @@ latest
 Atom    : 1.14.4
 Electron: 1.3.13
 ","enhancement"
-"Proxy icon shows ~ in directory stack only when no files open","<!--
+"55","Proxy icon shows ~ in directory stack only when no files open","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -2636,7 +2636,7 @@ macOS 10.12.3 (16D32)
 ### Additional Information
 
 Any additional information, configuration or data that might be necessary to reproduce the issue.","bug"
-"Improper display of long indented hyperlinks in text files with soft wrap","### Prerequisites
+"56","Improper display of long indented hyperlinks in text files with soft wrap","### Prerequisites
 
 * [X] All done! Including ""safe mode"" and ""factory settings"".
 
@@ -2679,7 +2679,7 @@ git 2.11.1
 Please let me know if you need more info.
 
 And thank you __so very much__ for the work you're doing!! :D","bug"
-"Unexpected restart causes Atom to lose project state","### Prerequisites
+"57","Unexpected restart causes Atom to lose project state","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -2725,7 +2725,7 @@ Windows 10 x64.
 ### Additional Information
 
 This may be related to #11406, though I have not been able to specifically reproduce that as 1) all open files are always saved before I put the laptop to sleep, and 2) there is no way for me to be typing in Atom when the restart occurs, as it happens as soon as Windows attempts to recover from sleep.","bug"
-"With invisibles on, hard tabs render larger than they should","<!--
+"58","With invisibles on, hard tabs render larger than they should","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -2936,7 +2936,7 @@ Node    : 6.5.0
     tabLength: 4
 ```
 ","bug"
-"Key combination doesn't show up in the menu -> `alt-shift-n`","<!--
+"59","Key combination doesn't show up in the menu -> `alt-shift-n`","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -2998,7 +2998,7 @@ Node    : 6.5.0
 ### Additional Information
 
 Had discussion on Slack channel with @BinaryMuse and @lee-dohm who requested I create this ticket","bug"
-"Rename, reveal in tree view, and show in finder with split files can affect the wrong split ","<!--
+"60","Rename, reveal in tree view, and show in finder with split files can affect the wrong split ","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -3046,7 +3046,7 @@ git 2.7.4
 
 *none*
 ","bug"
-"Arabic sentences between double quotations are rendered out of the quotations","<!--
+"61","Arabic sentences between double quotations are rendered out of the quotations","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -3097,7 +3097,7 @@ git 2.11.0
 ```
 OS: Arch linux
 ","bug"
-"The entire editor breaks when a UI theme's ui-variables.less causes the Less compiler to error","### Prerequisites
+"62","The entire editor breaks when a UI theme's ui-variables.less causes the Less compiler to error","### Prerequisites
 
 * [ ] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -3164,7 +3164,7 @@ Here is the stack trace:
         at setupWindow (file:///C:/Users/Matt/AppData/Local/atom/app-1.12.9/resources/app.asar/static/index.js:81:12)
         at window.onload (file:///C:/Users/Matt/AppData/Local/atom/app-1.12.9/resources/app.asar/static/index.js:41:9)
 ","bug"
-"Atom can't save over hidden files","### Info
+"63","Atom can't save over hidden files","### Info
 **OS:** Windows 10 64-bit
 **Atom Version:** 1.12.8
 
@@ -3183,7 +3183,7 @@ Under Windows OS
 4. open the file in atom and make some changes
 5. try saving the file through **File > Save** or **ctrl + s** and an error message will appear and changes will not be saved 
 ","bug"
-"Paste indentation issue with auto-indent off","<!--
+"64","Paste indentation issue with auto-indent off","<!--
 
 Have you read Atom's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/atom/atom/blob/master/CODE_OF_CONDUCT.md
 
@@ -3253,7 +3253,7 @@ Windows 8.1
 ![gif](https://cloud.githubusercontent.com/assets/24660923/21487661/17adbdc2-cbcf-11e6-95b4-5e271dd68e8e.gif)
 
 ","bug"
-"Replacing project folder from CLI in open atom editor window","### Prerequisites
+"65","Replacing project folder from CLI in open atom editor window","### Prerequisites
 
 * [x] Put an X between the brackets on this line if you have done all of the following:
     * Reproduced the problem in Safe Mode: http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode
@@ -3307,7 +3307,7 @@ git 2.11.0
 
 is feature request
 ","enhancement"
-"Some editor DOM operations stop working correctly after a certain number of lines","#### Scrollbar
+"66","Some editor DOM operations stop working correctly after a certain number of lines","#### Scrollbar
 
 We render a scrollbar by creating a div with a height that reflects the editor's screen line count. Unfortunately DOM nodes' heights seem to be bounded:
 
@@ -3320,7 +3320,7 @@ Reported by @ungb and @Ben3eeE
 Absolutely-positioned elements like cursors stop rendering correctly after a certain number of lines. It seems that DOM nodes' `top` property has a hard upper bound.
 
 /cc @nathansobo @as-cii Any ideas on how to solve this?","bug"
-"Overriding nonWordCharacters is unwieldy","### Prerequisites
+"67","Overriding nonWordCharacters is unwieldy","### Prerequisites
 
 * [x] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 * [x] Did you check the [FAQs on Discuss](https://discuss.atom.io/c/faq)?
@@ -3355,7 +3355,7 @@ Node    : 6.5.0
 on Windows 10 x64.
 
 /cc @nathansobo","enhancement"
-"Grapheme clusters are not properly supported","**EDIT: The emoji is now rendered properly but does not behave properly.  See https://github.com/atom/atom/issues/13360#issuecomment-272671671.**
+"68","Grapheme clusters are not properly supported","**EDIT: The emoji is now rendered properly but does not behave properly.  See https://github.com/atom/atom/issues/13360#issuecomment-272671671.**
 
 I'm running Atom 1.12.6 on macOS Sierra 10.12.1. While many single-codepoint emoji like 👻 are properly supported, emojis consisting of multiple codepoints (connected via [zero-width joiners](http://emojipedia.org/zero-width-joiner/)) like 👩�?👩�?👦�?👦 are not.
 
@@ -3369,7 +3369,7 @@ Pasting the second:
 
 It seems the joiners are removed, and the individual codepoints are inserted as separate characters. You can reproduce this by simply copy-pasting the emojis from this issue, or using the emoji selector (Ctrl + Command + Space) on a Mac.
 ","bug"
-"Problems editing mixed German/Syriac text","### Prerequisites
+"69","Problems editing mixed German/Syriac text","### Prerequisites
 
 * [YES ] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 * [ YES] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
@@ -3423,15 +3423,15 @@ $ uname -a
 Linux t430 4.8.0-1-amd64 #1 SMP Debian 4.8.5-1 (2016-10-28) x86_64 GNU/Linux
 ```
 I also tested the same atom version under Windows 7 Professional.","bug"
-"change the atom.sh script to launch the local build","The `atom.sh` script (which gets copied to the `out`directory during the build process) [seems to be looking](https://github.com/atom/atom/blob/0122b7726a1e4eace2a9650b94d9e03c2926c944/atom.sh#L66-L82) in common system-wide locations for an installed Atom version before looking for a local binary, which makes it impossible to use the script to run the locally built atom from the `out` directory.
+"70","change the atom.sh script to launch the local build","The `atom.sh` script (which gets copied to the `out`directory during the build process) [seems to be looking](https://github.com/atom/atom/blob/0122b7726a1e4eace2a9650b94d9e03c2926c944/atom.sh#L66-L82) in common system-wide locations for an installed Atom version before looking for a local binary, which makes it impossible to use the script to run the locally built atom from the `out` directory.
 
 [According to](https://atomio.slack.com/archives/atom/p1479831997006512) @50Wliu, the batch file on Windows is set up differently and always runs the relative Atom binary. It would be nice if the atom.sh script did the same.","enhancement"
-"Unsaved buffer state isn't silently preserved when the Window has no project folder","Unsaved buffer state is preserved as part of the project system. When there is no project, it doesn't get saved. Prior to [this fix](https://github.com/stereobooster/atom/commit/c6a89a4abe560c22758ea3c755dacc0fc4368039) this behavior could result in data loss. That's now fixed, but seamlessly preserving state as Atom does for projects would be more convenient and is the more elegant fix.
+"71","Unsaved buffer state isn't silently preserved when the Window has no project folder","Unsaved buffer state is preserved as part of the project system. When there is no project, it doesn't get saved. Prior to [this fix](https://github.com/stereobooster/atom/commit/c6a89a4abe560c22758ea3c755dacc0fc4368039) this behavior could result in data loss. That's now fixed, but seamlessly preserving state as Atom does for projects would be more convenient and is the more elegant fix.
 
 We would readily accept a well-tested PR providing this functionality.
 
 See also #10474.","enhancement"
-"File > Reopen Project. Option to reopen in current window.","Currently, choosing `File > Reopen Project > [MyProject]` reopens the chosen project in a new window.
+"72","File > Reopen Project. Option to reopen in current window.","Currently, choosing `File > Reopen Project > [MyProject]` reopens the chosen project in a new window.
 
 I request an option to have it open in the same window (unloading the currently loaded project then loading the chosen project).
 
@@ -3440,7 +3440,7 @@ I'm on:
 Atom 1.13.0-beta4.
 Windows 10 Pro.
 ","enhancement"
-"Package settings Keybindings disappear after unchecking Enable box","### Description
+"73","Package settings Keybindings disappear after unchecking Enable box","### Description
 
 When the **Enable** box in a package's **Keybindings** section is un-checked and Atom is re-started, the **Keybindings** section disappears, making it impossible to re-enable the package's default keybindings by checking the **Enable** box.
 
@@ -3504,7 +3504,7 @@ python
 git
 visual studio
 ```","bug"
-"Double click English surrounded by Chinese selects whole line","
+"74","Double click English surrounded by Chinese selects whole line","
 ### Description
 
 Now when I want to select English from surrounded by Chinese with double click, it would select whole line including those Chinese characters.
@@ -3529,7 +3529,7 @@ Node    : 6.5.0
 
 on archlinux.
 ","enhancement"
-"Failed to remove '/usr/local/bin/atom'","### Description
+"75","Failed to remove '/usr/local/bin/atom'","### Description
 
 I'm seeing a misleading error message when cancelling installation of the shell commands.
 
@@ -3554,7 +3554,7 @@ This is misleading because `usr/local/bin/atom` doesn't exist.
 
 MacOS 10.12
 Atom v1.11.2","bug"
-"subword selection behaves differently for UPPER_CASE and lower_case","### Prerequisites
+"76","subword selection behaves differently for UPPER_CASE and lower_case","### Prerequisites
 - [x] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [x] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [x] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -3609,7 +3609,7 @@ python 2.7.6
 git 1.9.1
 Linux 4.4.0-38-generic #57~14.04.1-Ubuntu SMP x86_64 GNU/Linux
 ","bug"
-"Case where TextEditor::getLastVisibleScreenRow() is off by one","### Prerequisites
+"77","Case where TextEditor::getLastVisibleScreenRow() is off by one","### Prerequisites
 - [x] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [x] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [x] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -3647,9 +3647,9 @@ The editor scrolls down two lines
 Atom 1.11.1, 1.12-beta3, or master as of 18609f8
 macOS 10.12 (Sierra)
 ","bug"
-"CLI flag to load only particular packages","I think it would be really useful for debugging purposes if we could basically launch Atom in safe mode, but with the ability to pass specific packages to activate, enabling you to easily completely isolate a package that might be conflicting with others. Maybe something like `atom --safe -a package-name -a another-package`?
+"78","CLI flag to load only particular packages","I think it would be really useful for debugging purposes if we could basically launch Atom in safe mode, but with the ability to pass specific packages to activate, enabling you to easily completely isolate a package that might be conflicting with others. Maybe something like `atom --safe -a package-name -a another-package`?
 ","enhancement"
-"Slow response of script/build when --help toggles","### Prerequisites
+"79","Slow response of script/build when --help toggles","### Prerequisites
 - [X] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [X] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [X] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -3699,7 +3699,7 @@ Chrome  : 52.0.2743.82
 Node    : 6.3.0
 ```
 ","enhancement"
-"Executing pane:close will ask to save changes of TextEditors twice","### Prerequisites
+"80","Executing pane:close will ask to save changes of TextEditors twice","### Prerequisites
 - [X] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [X] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [X] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -3744,7 +3744,7 @@ git 2.10.1.windows.1
 visual studio 2015
 ```
 ","bug"
-"Can not dismiss ""No update available"" window if opening menu again before the update check finishes","### Description
+"81","Can not dismiss ""No update available"" window if opening menu again before the update check finishes","### Description
 
 So I just discovered a weird little issue. If I use ""check for updates"" from the menu, and before the window pops up I open the Atom-menu again I can not dismiss the ""No updates available"" window neither press something in the menu. The only way to exit Atom is to kill the process using Activity Monitor.
 - It happens in safe mode as well.
@@ -3766,7 +3766,7 @@ Electron: 0.37.8
 Chrome  : 49.0.2623.75
 Node    : 5.10.0
 ","bug"
-"editor.bufferRangeForScopeAtCursor return undefined as special condition","### Steps to Reproduce
+"82","editor.bufferRangeForScopeAtCursor return undefined as special condition","### Steps to Reproduce
 
 Given a markdown file with **a list** with link:
 
@@ -3804,7 +3804,7 @@ Chrome  : 49.0.2623.75
 Node    : 5.10.0
 ```
 ","bug"
-"Indents based on previous lines are incorrectly tested using current/next line scope","https://github.com/atom/atom/blob/b97f317cd1cdc42a95c37274ed2818f665fd921f/src/language-mode.coffee#L272-L273
+"83","Indents based on previous lines are incorrectly tested using current/next line scope","https://github.com/atom/atom/blob/b97f317cd1cdc42a95c37274ed2818f665fd921f/src/language-mode.coffee#L272-L273
 
 The method `suggestedIndentForTokenizedLineAtBufferRow` is called with `bufferRow`, `line`, `tokenizedLine` containing information about the line that is to be indented. The indentation is based on the indentation of the previous line (duh), but at the highlighted lines `increaseIndentRegex` may not belong to the scope of that previous line.
 
@@ -3820,7 +3820,7 @@ For sake of simplicity let's say Blade has defined `increaseIndentPattern` is `@
 
 When `suggestedIndentForTokenizedLineAtBufferRow` is calculating the indentation for the line containing `echo` statement, then at the highlighted section it looks for the previous line: `@php` and tries to match `increaseIndentPattern` of the current line, which is of different scope (`.source.php`) and is different from Blade's scope, meaning the `increaseIndentPattern` of `@php` is never hit. 
 ","bug"
-"missing first letter on file operations (cut/copy/rename exc.)","Hi there. This is not an Atom bug but one of its dependencies. I open this issue here because I couldn't find the responsible package. 
+"84","missing first letter on file operations (cut/copy/rename exc.)","Hi there. This is not an Atom bug but one of its dependencies. I open this issue here because I couldn't find the responsible package. 
 
 I also encounter this bug in gulp (3 & 4), glob and a couple of other packages.
 ### Description
@@ -3847,7 +3847,7 @@ python
 git 2.9.0.windows.1
 visual studio 2015
 ","bug"
-"Open project folder dialog defaults to current filename","### Prerequisites
+"85","Open project folder dialog defaults to current filename","### Prerequisites
 - [X] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [X] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [X] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -3893,7 +3893,7 @@ git 1.9.2.msysgit.0
 visual studio
 ```
 ","bug"
-"Negated patterns from .gitignore_global are still included in VCS ignored paths","### Prerequisites
+"86","Negated patterns from .gitignore_global are still included in VCS ignored paths","### Prerequisites
 - [x] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [x] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [x] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -3969,7 +3969,7 @@ Chrome  : 49.0.2623.75
 Node    : 5.10.0
 ```
 ","bug"
-"The '/tmp/Atom Crashes' directory vs multiple userids","Hello...  Just last week I started trying to use Atom on MacOS 10 (Yosemite), and my main interest right now is in the languages ruby and crystal.
+"87","The '/tmp/Atom Crashes' directory vs multiple userids","Hello...  Just last week I started trying to use Atom on MacOS 10 (Yosemite), and my main interest right now is in the languages ruby and crystal.
 
 When Atom.app starts up, it creates a directory ""Atom Crashes"":
 
@@ -4021,7 +4021,7 @@ python 2.7.10
 git 2.9.1
 ```
 ","bug"
-"Scrollbar not refreshing when pasting code","### Prerequisites
+"88","Scrollbar not refreshing when pasting code","### Prerequisites
 - [x] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [x] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [x] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -4054,7 +4054,7 @@ Chrome  : 49.0.2623.75
 Node    : 5.10.0
 macOS/OSX El Capitan
 ","bug"
-"Cursor keeps switching back to pointer instead of i beam","### Prerequisites
+"89","Cursor keeps switching back to pointer instead of i beam","### Prerequisites
 - [x] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [x] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [x] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -4085,7 +4085,7 @@ Syntax and UI Theme: Atom One Dark
 
 Moving the cursor to the sidebar and back to the editor temporarily fixes the problem.
 ","bug"
-"DeserializerManager should throw an error if a registered deserializer returns undefined","### Prerequisites
+"90","DeserializerManager should throw an error if a registered deserializer returns undefined","### Prerequisites
 - [x] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#using-safe-mode)?
 - [x] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [x] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -4102,7 +4102,7 @@ Electron: 0.37.8
 Chrome  : 49.0.2623.75
 Node    : 5.10.0
 ","enhancement"
-"Invisibles enhancements and fixes","In order to clean things up, I'm unifying a number of invisibles-related enhancements and fixes under this one Issue and closing the others.
+"91","Invisibles enhancements and fixes","In order to clean things up, I'm unifying a number of invisibles-related enhancements and fixes under this one Issue and closing the others.
 - [ ] When `showInvisibles` is off, non-visible characters should be non-visible
 - [ ] When `showInvisibles` is on, all normally non-visible characters (control characters, zero-width spaces, other Unicode weirdness, etc) should be rendered in some way #1839
 - [ ] There should be some way of customizing which non-visible characters are displayed when `showInvisibles` is on (Perhaps by class? i.e. whitespace, control characters, Unicode groups)
@@ -4111,7 +4111,7 @@ Node    : 5.10.0
 
 Related: #6669
 ","enhancement"
-"Vertical Scroll When Horizontal Scroll Bar Is Visible","### Description
+"92","Vertical Scroll When Horizontal Scroll Bar Is Visible","### Description
 
 If horizontal scroll bar is visible you can scroll vertically (using mouse wheel) even if the content does not run off the bottom of the screen. In my case I only have 1 line of text.
 ### Steps to Reproduce
@@ -4127,7 +4127,7 @@ If horizontal scroll bar is visible you can scroll vertically (using mouse wheel
 Atom: 1.8.0
 OS: Linux Fedora 23
 ","bug"
-"word boundary not working with Unicode punctuations","### Prerequisites
+"93","word boundary not working with Unicode punctuations","### Prerequisites
 
   none
 ### Description
@@ -4164,7 +4164,7 @@ python 2.7.10
 
 OS X El Capitan 10.11.5
 ","bug"
-"MouseWheel Scrolling Ignores Operating System Settings","### Prerequisites
+"94","MouseWheel Scrolling Ignores Operating System Settings","### Prerequisites
 - [X] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-if-the-problem-shows-up-in-safe-mode)?
 - [X] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [ ] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -4191,7 +4191,7 @@ The number of lines scrolled gnores the operating system's setting.
 
 1.8
 ","bug"
-"Commenting selection comments out entire line instead of selection","### Description
+"95","Commenting selection comments out entire line instead of selection","### Description
 
 I only want to comment out a selected part of a line. When a portion of the line is selected and commented out, i would expect only that selection to be wrapped in comment tags, instead the whole line is wrapped.
 
@@ -4218,7 +4218,7 @@ node 0.10.40
 python 2.7.10
 git 2.8.4
 ","enhancement"
-"onDidChangeCursorPosition sends ""textChanged"" as false when backspace is pressed","### Prerequisites
+"96","onDidChangeCursorPosition sends ""textChanged"" as false when backspace is pressed","### Prerequisites
 - Atom 1.7.3
 - Adds a callback to `onDidChangeCursorPosition`
 ### Description
@@ -4227,7 +4227,7 @@ When pressing backspace or delete, `textChanged` property of event is set to `fa
 
 Tested on Ubuntu 16.04, with Atom 1.7.3
 ","bug"
-"Code folding based on grammar instead of indentation","The actual folding mechanism is simply wrong and unreliable.
+"97","Code folding based on grammar instead of indentation","The actual folding mechanism is simply wrong and unreliable.
 I often work with big files and use folding to speed up my work.
 
 But, if the file has a wrong indentation (something not rare if the files are human edited) atom also fold the code in a wrong manner. 
@@ -4257,7 +4257,7 @@ But for achieve this we must fix the indentation (on line 18 and 19):
 
 I think that correct indentation CAN'T be a requirement to correct code folding.
 ","enhancement"
-"Flatpak release support","### Prerequisites
+"98","Flatpak release support","### Prerequisites
 - [x ] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-if-the-problem-shows-up-in-safe-mode)?
 - [x ] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [ x] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -4281,7 +4281,7 @@ Can't find flatpak atom package.
 
 You can get this information from executing `atom --version` and `apm --version` at the command line. Also, please include the OS and what version of the OS you're running.
 ","enhancement"
-"Unfold tree (unfold everything under definition) feature","When I open a file, I first use the `Editor: Fold All` command to get a high-level view of the file, and then locate the function I want to look into. Now, to actually look at the code of that function I unfold the line where the function begins by clicking the little `>` arrow to it's left.
+"99","Unfold tree (unfold everything under definition) feature","When I open a file, I first use the `Editor: Fold All` command to get a high-level view of the file, and then locate the function I want to look into. Now, to actually look at the code of that function I unfold the line where the function begins by clicking the little `>` arrow to it's left.
 
 The problem is when functions contain other functions, then all the sub-functions are by default folded too. So to see the full code of the sub-function, I need to manually click and unfold each of them, and possibly the sub-sub-functions too. In a language like OCaml, where it's common coding practice to have many nested `let ... in` structures, this makes it a huge pain to use the folding feature.
 
@@ -4326,7 +4326,7 @@ This feature exists in Emacs, for example, the default behaviour of <Tab> foldin
 **Atom Version:** 1.7.3
 **OS and Version:** OS X 10.10.5
 ","enhancement"
-"Opening a file should open a new window if no window present on current Ubuntu workspace","### Prerequisites
+"100","Opening a file should open a new window if no window present on current Ubuntu workspace","### Prerequisites
 - [x] Can you reproduce the problem in [safe mode](http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-if-the-problem-shows-up-in-safe-mode)?
 - [x] Are you running the [latest version of Atom](http://flight-manual.atom.io/hacking-atom/sections/debugging/#update-to-the-latest-version)?
 - [x] Did you check the [debugging guide](http://flight-manual.atom.io/hacking-atom/sections/debugging/)?
@@ -4369,7 +4369,7 @@ python 2.7.11+
 git 2.7.4
 ```
 ","enhancement"
-"Error moving files across mounts or drives, ""Failed to move entry EXDEV: cross-device link not permitted""","*Edit by @rsese to add issue template details*
+"101","Error moving files across mounts or drives, ""Failed to move entry EXDEV: cross-device link not permitted""","*Edit by @rsese to add issue template details*
 
 ### Prerequisites
 
@@ -4433,7 +4433,7 @@ atom v1.6.2
 I got an error when I tried to move a directory from my desk to my project in atom tree. I cannot find any help from issues list. I googled it and found it may a npm problem. I am a layman for nodejs. I am not sure if here is a right place I can get help.
 ![untitled](https://cloud.githubusercontent.com/assets/2533629/14516152/c1ec84b0-0232-11e6-96e3-09fba04a6252.png)
 ","bug"
-"Scroll to center is ignored if already visible","### Description
+"102","Scroll to center is ignored if already visible","### Description
 
 When scrolling to a position that is already visible with the `center` option set to `true` (as described [here](https://atom.io/docs/api/v1.6.2/TextEditor#instance-scrollToBufferPosition)), no scrolling is performed.
 ### Steps to Reproduce
@@ -4459,7 +4459,7 @@ unless @getScrollTop() < desiredScrollCenter < @getScrollBottom()
 
 in [text-editor-presenter.coffee](https://github.com/atom/atom/blob/master/src/text-editor-presenter.coffee). I can open a PR with this change if necessary.
 ","bug"
-"Data loss after power outage","### Description
+"103","Data loss after power outage","### Description
 
 How to restore corrupted file after power outage.
 
@@ -4491,7 +4491,7 @@ node 0.10.40
 python 2.7.10
 git 2.5.0
 ","bug"
-"Identical folders are opened as separate projects on case-insensitive filesystems","### Description
+"104","Identical folders are opened as separate projects on case-insensitive filesystems","### Description
 
 On case-insensitive (but case-preserving) filesystems, opening a project by passing its folder to the `atom` command will not restore the project, if the path given has the wrong case.
 ### Steps to Reproduce
@@ -4507,7 +4507,7 @@ On case-insensitive (but case-preserving) filesystems, opening a project by pass
 
 OS X.11 x86_64, Atom 1.5.4.
 ","bug"
-"Multiple instances of Atom, multiple versions in Finder right-click menu","### Description
+"105","Multiple instances of Atom, multiple versions in Finder right-click menu","### Description
 
 Atom has multiple instances open. And there's two versions of atom in the Open File With... Finder context menu.
 ### Steps to Reproduce
@@ -4521,7 +4521,7 @@ Open files in Atom. I use the Dock drawer, Finder context menu and `atom` comman
 
 1.5.3 and 1.5.4 (apparently, according to right-click menu)
 ","bug"
-"atom.packages.resolvePackagePath(name) works incorrectly when directory with given name exists in current working directory","### Prerequisites
+"106","atom.packages.resolvePackagePath(name) works incorrectly when directory with given name exists in current working directory","### Prerequisites
 - [x] Can you reproduce the problem in [safe mode](https://atom.io/docs/latest/hacking-atom-debugging#check-if-the-problem-shows-up-in-safe-mode)?
 - [x] Are you running the [latest version of Atom](https://atom.io/docs/latest/hacking-atom-debugging#update-to-the-latest-version)?
 - [x] Did you check the [debugging guide](https://atom.io/docs/latest/hacking-atom-debugging)?
@@ -4573,7 +4573,7 @@ git 1.9.1
 return name if name !== path.basename(name) and fs.isDirectorySync(name)
 ```
 ","bug"
-"Restored window size set to maximized after exiting maximized","When I exit Atom and window state is restored, its size is remembered; so when I start Atom again, the window starts restored and remembers its size. However, when I exit Atom maximized, the restored window size is set to maximized size; so when I start Atom again, it start maximized and when I click restore, the window size remains just the same (maximized size).
+"107","Restored window size set to maximized after exiting maximized","When I exit Atom and window state is restored, its size is remembered; so when I start Atom again, the window starts restored and remembers its size. However, when I exit Atom maximized, the restored window size is set to maximized size; so when I start Atom again, it start maximized and when I click restore, the window size remains just the same (maximized size).
 
 Simply said, nonmaximized window is too often set to maximized size and is just too big to normaly drag around and I have to manually resize window to smaller size each time.
 
@@ -4607,7 +4607,7 @@ minimap
 - Problem can be reliably reproduced, doesn't happen randomly: Yes
 - Problem happens with all files and projects, not only some files or projects: Yes
 ","bug"
-"atom is ignoring files that shouldn't be ignored","atom is ignoring files that begin with a `test_` for me on Mac. eg. `test_function.js`. These files are greyed out in the tree-view sidebar, and my linter isn't linting these files.
+"108","atom is ignoring files that shouldn't be ignored","atom is ignoring files that begin with a `test_` for me on Mac. eg. `test_function.js`. These files are greyed out in the tree-view sidebar, and my linter isn't linting these files.
 
 If i go to atom -> packages -> tree-view -> settings, and check ""hide VCS ignored files"", `test_function.js` disappears from tree-view side bar.
 
@@ -4633,13 +4633,13 @@ It seems that there isn't anything that would cause `test_*` to be ignored by at
 
 Is there anything else I can do to find a cause ?
 ","bug"
-"Standard mac hotkeys not working  on File Open choose directory  dialog","Command-a, Command-c, Command-x etc all do not work when doing Command-o (file|open) and then Command-G (""Go to the folder"".
+"109","Standard mac hotkeys not working  on File Open choose directory  dialog","Command-a, Command-c, Command-x etc all do not work when doing Command-o (file|open) and then Command-G (""Go to the folder"".
 
 What am I supposed to do - retype a long long path character by character (since cut and paste do not work here..) ?
 
 This is hopefully easy to fix but is otherwise a showstopper.
 ","bug"
-"Double-click drag selections have unusual and bad behavior on non-word characters","Note: This may not be a bug in the sense that the behavior may be intended, but many text editors (apple text input boxes, emacs) have better behavior.
+"110","Double-click drag selections have unusual and bad behavior on non-word characters","Note: This may not be a bug in the sense that the behavior may be intended, but many text editors (apple text input boxes, emacs) have better behavior.
 
 To reproduce, enter the following text:
 
@@ -4651,7 +4651,7 @@ Double-click and hold on the word `multiple` - this will select the word `multip
 
 The reason this is bad is it is harder than other editors to select `multiple words;`, without the close parenthesis.  This seems to come up a lot when programming and is my biggest pet peeve with atom.
 ","bug"
-"RTL text selection","When trying to select a RTL substring, the highlighted text seems to be current but if you just press delete button, It will delete another part of the text instead of highlighted.
+"111","RTL text selection","When trying to select a RTL substring, the highlighted text seems to be current but if you just press delete button, It will delete another part of the text instead of highlighted.
 
 also double clicking on the text will highlight another word/part of text. 
 
@@ -4668,13 +4668,13 @@ Second Test:
 Double click on رسی
 رسی will be Highlighted but if you press delete, این will be deleted.
 ","bug"
-"Atom QuickLook plugin on OS X","Some apps bundle a QuickLook plugin (`.qlgenerator`) inside a `.app/Contents/Library/QuickLook` folder which OS X will load automatically.
+"112","Atom QuickLook plugin on OS X","Some apps bundle a QuickLook plugin (`.qlgenerator`) inside a `.app/Contents/Library/QuickLook` folder which OS X will load automatically.
 
 It would be _really_ cool if Atom came with a QL plugin to render previews/thumbnails using the same syntax highlighting/theme as the editor.
 
 I'd be happy to help out with this, but not quite sure how to go about it…
 ","enhancement"
-"Default font size reset / deleted after command window:reset-font-size","Hello everyone im not really sure if this is a bug or not.
+"113","Default font size reset / deleted after command window:reset-font-size","Hello everyone im not really sure if this is a bug or not.
 
 In my config.cson i have fontSize setup to 11 and on the settings section as well on 11.
 
@@ -4682,13 +4682,13 @@ The problem now is when im zooming in in the editor, and press cmd-0 to call the
 
 T think this was working before (don't know when it broke).
 ","bug"
-"Ligatures: put cursor inside of glyph","when the cursor is inside of ligatures, it appears as if it was behind the last character.
+"114","Ligatures: put cursor inside of glyph","when the cursor is inside of ligatures, it appears as if it was behind the last character.
 
 firefox solves the problem by simply dividing the ligature width into parts equal to the number of ligated (ligatured?) characters and putting the cursor accordingly.
 
 we should do the same.
 ","enhancement"
-"Switching UI/Syntax theme does not display all elements in the new correct color","Repro steps from @damieng https://github.com/atom/atom/issues/9550#issuecomment-322591908 
+"115","Switching UI/Syntax theme does not display all elements in the new correct color","Repro steps from @damieng https://github.com/atom/atom/issues/9550#issuecomment-322591908 
 
 1. Install atom-ide-ui package
 2. Open the diagnostics pane
@@ -4732,7 +4732,7 @@ One time it also did not changed the colour of the line numbers:
 Atom 1.1.0
 Windows 7
 ","bug"
-"Horizontal Scolling From Trackpad Treated Like Arrow Keys","When I use Horizontal Scrolling from my touchpad, Atom treats it like I am just pushing my left/right arrow keys, moving the cursor one character at a time left or right. Vertical Scrolling works great for me from my touchpad.
+"116","Horizontal Scolling From Trackpad Treated Like Arrow Keys","When I use Horizontal Scrolling from my touchpad, Atom treats it like I am just pushing my left/right arrow keys, moving the cursor one character at a time left or right. Vertical Scrolling works great for me from my touchpad.
 
 Behavior does not change with toggling the following settings:
 - Scroll Past End
@@ -4744,7 +4744,7 @@ Atom Version: 1.1.0
 Computer: Samsung ATIV Book 8
 Touchpad: Elan Touchpad (ETDWare X64 15.7.0.1_WHQL)
 ","bug"
-"Positioning Caret in CTL Text","Use this sample Hebrew (rtl)
+"117","Positioning Caret in CTL Text","Use this sample Hebrew (rtl)
 
 ```
 כָּתֵף
@@ -4756,13 +4756,13 @@ This gets interesting when you hit the right arrow a third time. The cursor now 
 
 This issue reported from https://github.com/atom/atom/issues/4007
 ","bug"
-"GitHub Markdown syntax highlighting bug for bash codeblocks","It seems like the syntax highlighting for bash code blocks ""leaks out"" when using the `GitHub Markdown` syntax highlighting.
+"118","GitHub Markdown syntax highlighting bug for bash codeblocks","It seems like the syntax highlighting for bash code blocks ""leaks out"" when using the `GitHub Markdown` syntax highlighting.
 
 Seems to be triggered by the keyword `if`.
 
 ![https://dl.dropboxusercontent.com/s/u3nhh3tiffs6spc/2015-10-29%20at%2014.33.png?dl=0](https://dl.dropboxusercontent.com/s/u3nhh3tiffs6spc/2015-10-29%20at%2014.33.png?dl=0)
 ","bug"
-"File auto reloading with untracked git files during branch change","Firstly:
+"119","File auto reloading with untracked git files during branch change","Firstly:
 Atom 1.0.19
 Ubuntu 14.04.2 LTS
 
@@ -4784,7 +4784,7 @@ Attached is a gif of the behavior.  Please let me know if I can provide any more
 
 ![atom-bug](https://cloud.githubusercontent.com/assets/4690898/10678022/bcda2682-78dd-11e5-830e-c29b223c1763.gif)
 ","bug"
-"Multiple applications running simultaneously","Every now an again when I use the `atom` command line tool to open a directory in Atom it starts a new process instead of opening it in the already running process.
+"120","Multiple applications running simultaneously","Every now an again when I use the `atom` command line tool to open a directory in Atom it starts a new process instead of opening it in the already running process.
 
 I don't see any pattern to it, more than that the first time it happens Atom has been running for hours, maybe days. If I just do `atom .` in two different directories after each other it opens in the same process, just as expected. Maybe it's just that I notice it more often when I get back to the computer in the morning or after I haven't used it for a long time, but it seems to happen more frequently in those cases.
 
@@ -4792,7 +4792,7 @@ Here's two Atom processes in my Dock just now, one of them contains the projects
 
 <img width=""178"" alt=""screen shot 2015-10-12 at 08 23 03"" src=""https://cloud.githubusercontent.com/assets/73330/10422429/88e58bbc-70ba-11e5-9fd9-939ef3a768b4.png"">
 ","bug"
-"Problem installing Packages/ Themes and Updates (Corporate SSL Proxies)","Hello. This is related to #4974, #4975, and #4122.
+"121","Problem installing Packages/ Themes and Updates (Corporate SSL Proxies)","Hello. This is related to #4974, #4975, and #4122.
 ## The Issue:
 
 Trying to use Atom at work (to hopefully replace Notepad++), and was able to install Atom fine without a problem. However, when I went to install some packages, I received the following error:
@@ -4830,7 +4830,7 @@ Thanks so much for considering this feature request.
 
 Running Atom 1.0.7 on Windows 7 Enterprise SP1.
 ","bug"
-"There is no naming convention of scope selectors","I assume Atom follows TextMate [naming conventions](http://manual.macromates.com/en/language_grammars#naming_conventions), but there is no mention about it. It causes misunderstandings([1](https://github.com/atom/language-javascript/issues/47), [2](https://github.com/atom/solarized-dark-syntax/issues/21), [3](https://github.com/atom/language-coffee-script/issues/33) etc.) Also many language packages don't follow it. Syntax theme looks awful for these languages. Syntax-theme developers must create a syntax rule for each language. It's a real headache.
+"122","There is no naming convention of scope selectors","I assume Atom follows TextMate [naming conventions](http://manual.macromates.com/en/language_grammars#naming_conventions), but there is no mention about it. It causes misunderstandings([1](https://github.com/atom/language-javascript/issues/47), [2](https://github.com/atom/solarized-dark-syntax/issues/21), [3](https://github.com/atom/language-coffee-script/issues/33) etc.) Also many language packages don't follow it. Syntax theme looks awful for these languages. Syntax-theme developers must create a syntax rule for each language. It's a real headache.
 ##### I suggest:
 - Add docs for grammar naming conventions
 - Mention about naming conventions
@@ -4850,7 +4850,7 @@ Mention in files might be something like this:
 // http://manual.macromates.com/en/language_grammars#naming_conventions
 ```
 ","enhancement"
-"Copy-paste doesn't work properly with Unix-style line endings under Windows","Copying (Ctrl+C-Ctrl+V) from a file with Unix-style line ending (LF) doesn't work as expected, since line endings are _preserved_ on the clipboard.
+"123","Copy-paste doesn't work properly with Unix-style line endings under Windows","Copying (Ctrl+C-Ctrl+V) from a file with Unix-style line ending (LF) doesn't work as expected, since line endings are _preserved_ on the clipboard.
 
 This causes a wide range of issues:
 - you can't paste text in an application that doesn't handle LF (notepad for example, but if you're using vim over PuTTY that also doesn't work)
@@ -4865,7 +4865,7 @@ For example, if I've got a file with LF line endings and I'd like to use copy-pa
 
 Atom should convert any text's line ending to the platform's native line ending _before_ it is placed on the clipboard. This conversion should only be done on the content that is placed on the clipboard—the text in the buffer should not be changed.
 ","bug"
-"Context-menu triggered by menu key is positioned at the mouse cursor","Using Atom 1.0.1 on Windows.
+"124","Context-menu triggered by menu key is positioned at the mouse cursor","Using Atom 1.0.1 on Windows.
 
 When summoning a context menu with the keyboard menu key, expected behavior (from visual studio, sublime, google docs, etc) is for the menu to be rooted at the input cursor. Instead, the Atom context menu is rooted at the position of the mouse cursor.
 
@@ -4873,14 +4873,14 @@ When summoning a context menu with the keyboard menu key, expected behavior (fro
 
 In the picture, the context menu should be positioned with the input cursor on the misspelled word. 
 ","bug"
-"Sign Linux releases","Could you please provide a signed checksums file or sign the files themselves for releases so we can cryptographically verify them.  Thanks
+"125","Sign Linux releases","Could you please provide a signed checksums file or sign the files themselves for releases so we can cryptographically verify them.  Thanks
 ","enhancement"
-"Deactivate multiple cursors feature (on Ctrl+mouse click)","I searched already several times but I cannot find out how to deactivate multiple cursors or how to change/deactivate the key binding. Finally, I open the issue here.
+"126","Deactivate multiple cursors feature (on Ctrl+mouse click)","I searched already several times but I cannot find out how to deactivate multiple cursors or how to change/deactivate the key binding. Finally, I open the issue here.
 
 If there is an option for this, how could I possibly find it; or rather, how can I find and search available configuration options in my version of the editor?
 The compiled coffeescript may make it hard to find options by using `grep`.
 ","enhancement"
-"Cannot install shell commands if no window is open","Atom 1.0.0
+"127","Cannot install shell commands if no window is open","Atom 1.0.0
 Mac OS X 10.10.3
 
 _Description_
@@ -4900,7 +4900,7 @@ _Observed Behavior_
 
 The command is not available (gray text).
 ","bug"
-"Frequent recurring freezing on Windows","I am getting random freezes and crashes on Windows 7. I am using Atom version 0.209.0.
+"128","Frequent recurring freezing on Windows","I am getting random freezes and crashes on Windows 7. I am using Atom version 0.209.0.
 
 Freezing occurs randomly (i.e. not all the time) when:
 - changing values in the settings window.
@@ -4911,7 +4911,7 @@ Freezing occurs randomly (i.e. not all the time) when:
 
 I can't find any log files to get more information. The program is completely unresponsive and devtools console is not updated.
 ","bug"
-"editor:select-to-end-of-line should work similarly to editor:move-to-end-of-line","I'd normally use the `Shift + End` buttons to select the text from the current cursor position to the end of the line, but this doesn't seem to be working with Atom.
+"129","editor:select-to-end-of-line should work similarly to editor:move-to-end-of-line","I'd normally use the `Shift + End` buttons to select the text from the current cursor position to the end of the line, but this doesn't seem to be working with Atom.
 
 Let's say I have this long line:
 
@@ -4927,7 +4927,7 @@ Now,  I'd expect that if I place the cursor at the beginning of the line and hit
 This is a very long line of text that is used to test a bug r
 ```
 ","bug"
-"""Add Project Folder…"" menu item does nothing if no window is open ","I am using Atom Version 0.204.0 (0.204.0) on OS X 10.10.3.
+"130","""Add Project Folder…"" menu item does nothing if no window is open ","I am using Atom Version 0.204.0 (0.204.0) on OS X 10.10.3.
 
 If there isn't a window open but you select ""Add Project Folder…"" from the ""File"" menu nothing happens.
 
@@ -4935,7 +4935,7 @@ The expected behavior would be for a file selection dialog box to appear and the
 
 (Alternatively, the menu item could be greyed out I suppose but having it operational would match the behavior of the ""Open…"" menu item.
 ","enhancement"
-"Atom may open windows off-screen if resolution/monitors have changed","### Reproducible Steps
+"131","Atom may open windows off-screen if resolution/monitors have changed","### Reproducible Steps
 - Use a laptop with docking station connected with dual monitor setup.
 - Move atom editor to second screen.
 - Quit atom editor.
@@ -4948,13 +4948,13 @@ The expected behavior would be for a file selection dialog box to appear and the
 Atom 0.201.0
 Windows 7
 ","bug"
-"Show invisibles only when selecting text","I tried searching for a similar issue here and I didn't find anything that directly addresses what I want, though #3249 (which I have subscribed to) is what I want, just asked for in a very roundabout way.
+"132","Show invisibles only when selecting text","I tried searching for a similar issue here and I didn't find anything that directly addresses what I want, though #3249 (which I have subscribed to) is what I want, just asked for in a very roundabout way.
 
 In short: we should have an option to only display invisibles within a selection. Showing them all the time is too noisy, not showing them at all loses their power, and turning them off and on when I want to see them is annoying. I'm aware that with CSS we cannot achieve what is required (hence unresolved #3249, and accompanying [forum post](https://discuss.atom.io/t/atom-is-so-powerful-that-it-blows-my-mind/294/17?)) due to the underlayer controlling the background highlight. So this will presumably be something that atom must provide from within the core.
 
 If this request appeals more as something that's more generic (and allow us to achieve what we want with CSS) you could actually just attach a `.selected` class to all elements (scopes) that are within the selection (obviously a selection part-way through an element will require an inner span injected with just the `.selected` class). This way, we can do what we want in regards to the invisibles, but package developers may find interesting ways to use this selection class/scope for other purposes.
 ","enhancement"
-"Autoindent not working properly","Version: 0.192.0
+"133","Autoindent not working properly","Version: 0.192.0
 ## Problem
 
 1) `autoindent` fails to indent parameter lists. Note: If I hit enter after `fake_function(`, `param=` would be indented 3x -- class > def > foo.
@@ -5077,7 +5077,7 @@ def correctly_indents_after_return():
     return True
 ```
 ","bug"
-"Atom Editor Doesn't Come to Foreground","Hi,
+"134","Atom Editor Doesn't Come to Foreground","Hi,
 
 My OS is Ubuntu 14.10. I use Unity as my window manager. Atom version is 0.188.0. 
 
@@ -5090,7 +5090,7 @@ What I want is, Atom should always come to foreground, if I open a file. Is ther
 Kind regards,
 Cagatay
 ","bug"
-"Atom should save new files where the last opened/saved file was","When you create a new buffer and hit save, Atom will present me with a save dialog and the default selected folder is the project root. That's almost never the place I want to put a file.
+"135","Atom should save new files where the last opened/saved file was","When you create a new buffer and hit save, Atom will present me with a save dialog and the default selected folder is the project root. That's almost never the place I want to put a file.
 
 Sublime Text was a lot smarter with this -- although I do not remember the exact heuristics. For example, it would propose saving the file in the same location where the file you last had opened was. This worked really well for me: Usually I create a new file by splitting an existing file, creating a test for a module (and those two are in directly adjacent directories) or similar.
 
@@ -5098,7 +5098,7 @@ Even if I want to save to the root directory, which is the current behavior, nav
 
 PS: I am using Atom 0.187.0
 ","enhancement"
-"Enable jumping between menus using left-right arrow keys","If there is no sub-menu to a menu-entry, I would like to switch to the next menu when I press the left/right arrow keys. Also when I'm on the last nesting level in a sub-menu, I'd like to switch to the next main menu entry. If the said feature already exists it does not work for me on Ubuntu 14.04 using Atom version 0.187.0.
+"136","Enable jumping between menus using left-right arrow keys","If there is no sub-menu to a menu-entry, I would like to switch to the next menu when I press the left/right arrow keys. Also when I'm on the last nesting level in a sub-menu, I'd like to switch to the next main menu entry. If the said feature already exists it does not work for me on Ubuntu 14.04 using Atom version 0.187.0.
 
 To clarify what I'm saying:
 
@@ -5112,7 +5112,7 @@ Thanks.
 
 **EDIT**:- It's UbuntuMATE 14.04, so I'm in a MATE-desktop environment.
 ","bug"
-"The insanity of Unicode's ""RTL override""","This is a bug report mostly based on [this neat article](http://habrahabr.ru/post/252813/). I'll summarize the essence that relates to Atom, right here. Consider this snippet of Python:
+"137","The insanity of Unicode's ""RTL override""","This is a bug report mostly based on [this neat article](http://habrahabr.ru/post/252813/). I'll summarize the essence that relates to Atom, right here. Consider this snippet of Python:
 
 ``` python
 def maps():
@@ -5157,14 +5157,14 @@ In those cases when plain text is used to author a document that makes use of th
 
 Thoughts?
 ","bug"
-"Three finger tap for definitions doesn't work on OS X ","In a Mac text view or web view, when you three finger tap a word it becomes yellow and a popover window with definitions (from country specific dictionaries and wikipedia) appears. Not so in atom.
+"138","Three finger tap for definitions doesn't work on OS X ","In a Mac text view or web view, when you three finger tap a word it becomes yellow and a popover window with definitions (from country specific dictionaries and wikipedia) appears. Not so in atom.
 I find this very annoying since I use that feature a lot. I'm not sure if this is a bug or a feature request since it is standard in all (not strictly) other similar apps.
 ","bug"
-"Man pages for atom and apm","Besides the `--help` and `-h` command line options/arguments, `atom` and `apm` should also have man pages. Moreover, Emacs and Vim have online documentation for their command line arguments and/or environment variables, too:
+"139","Man pages for atom and apm","Besides the `--help` and `-h` command line options/arguments, `atom` and `apm` should also have man pages. Moreover, Emacs and Vim have online documentation for their command line arguments and/or environment variables, too:
 - http://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Invocation.html#Emacs-Invocation
 - http://vimdoc.sourceforge.net/htmldoc/starting.html#vim-arguments
 ","enhancement"
-"Javascript comment indentation","When auto indenting JS comment blocks, 
+"140","Javascript comment indentation","When auto indenting JS comment blocks, 
 
 ```js
 /**
@@ -5182,11 +5182,11 @@ becomes:
 
 Since the first version is a pretty common comment block pattern (used in JSDoc and YUIDoc and similar projects), it'd be great if the auto indent feature could support this indentation instead of messing with it.
 ","bug"
-"Smooth scrolling (Linux)","I've seen some work in improving the smoothness of scrolling so far. But I'm wondering if it's actually possible to get real smooth scrolling or at least if it's planned for the near future?
+"141","Smooth scrolling (Linux)","I've seen some work in improving the smoothness of scrolling so far. But I'm wondering if it's actually possible to get real smooth scrolling or at least if it's planned for the near future?
 Just reducing the scroll sensitivity to 1 line at a time is not a real solution...
 ","enhancement"
-"Per-project config settings","","enhancement"
-"File replacement does not work against directories","When saving a new file, if you decide to save it as the same name of a directory (no extension), it will ask if you would like to replace it. If you choose yes, it will error saying that that file is already a directory 
+"142","Per-project config settings","","enhancement"
+"143","File replacement does not work against directories","When saving a new file, if you decide to save it as the same name of a directory (no extension), it will ask if you would like to replace it. If you choose yes, it will error saying that that file is already a directory 
 
 I am running Atom 0.165.0 for OSX.
 
@@ -5197,7 +5197,7 @@ There are basically three solutions to this:
 2. Have it replace the directory
 3. Have it handle directories and files separately (I'm not sure about other operating systems, but I'm pretty sure on OSX it considers them <name>.folder)
 ","bug"
-"Atom doesn't respect/update OSX's find pasteboard / clipboard","In OS X there's a separate pasteboard, NSFindPboard, used to keep search fields in sync.  The pasteboard gets updated when a search field changes or the user hits ⌘-E with text selected.  It can be pretty handy when you're searching through code for the same keyword, and most apps seem to generally respect it (Safari/XCode/Chrome/etc).  In general it seems like apps check it when they become active and update their search fields.
+"144","Atom doesn't respect/update OSX's find pasteboard / clipboard","In OS X there's a separate pasteboard, NSFindPboard, used to keep search fields in sync.  The pasteboard gets updated when a search field changes or the user hits ⌘-E with text selected.  It can be pretty handy when you're searching through code for the same keyword, and most apps seem to generally respect it (Safari/XCode/Chrome/etc).  In general it seems like apps check it when they become active and update their search fields.
 
 Chromium definitely supports NSFindPboard ([with some of the impl here](https://chromium.googlesource.com/chromium/src/+/git-svn/ui/base/cocoa/find_pasteboard.mm)), but I'm not sure that stuff is accessible at all from the Javascript layer.  
 
@@ -5211,29 +5211,7 @@ will dump the contents of NSFindPboard to stdout.
 
 You could also technically get at it with NodeObjC, but that seems like overkill.
 ","enhancement"
-"Atom does not start when using x2go","- I first saw the issue for version v0.152.0 debian package in ubuntu 12.04 VM running on vmware ESXi.
-
-$ [20853:1201/101159:ERROR:browser_main_loop.cc(162)] Running without the SUID sandbox! See https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment for more information on developing with the sandbox on.
-Xlib:  extension ""XInputExtension"" missing on display "":10.0"".
-Xlib:  extension ""XInputExtension"" missing on display "":10.0"".
-App load time: 368ms
-[20877:1201/101159:ERROR:gl_surface_glx.cc(333)] GLX 1.3 or later is required.
-[20877:1201/101159:ERROR:gl_surface_x11.cc(57)] GLSurfaceGLX::InitializeOneOff failed.
-[20877:1201/101200:ERROR:gpu_child_thread.cc(143)] Exiting GPU process due to errors during initialization
-atom: Fatal IO error 11 (Resource temporarily unavailable) on X server :10.0.
-- I then installed it from webupd8 team:
-
-sudo add-apt-repository ppa:webupd8team/atom
-sudo apt-get update
-sudo apt-get install atom
-
-However I got the same issue. 
-- I compiled then from sources following all instructions from README but still got the same issue.
-
-To replicate just right click on a file to get a context menu and once you start moving your mouse it will fail with the error above.
-- I updated to latest version debian package (186) won't even start. It will fail right up front with the same error. 
-","bug"
-"Undo/Redo doesn't affect file operations","Any operation that changes the file system isn't being affected by Undo/Redo. For example, adding a file:
+"145","Undo/Redo doesn't affect file operations","Any operation that changes the file system isn't being affected by Undo/Redo. For example, adding a file:
 1. Right click project tree
 2. `Add File`
 3. Enter name for new file
@@ -5245,26 +5223,26 @@ Same thing for deleting files.
 
 System is Ubuntu 14.04 x64, Atom 0.152.0.
 ","enhancement"
-"Implement Chromium task manager","Users frequently report issues with high CPU or memory usage, and the typical response is that it must be a package that is the root cause, not Atom itself. Presently, the operating system task managers just show a bunch of Atom Helper processes, so it is impossible to determine which package is associated with the offending process.
+"146","Implement Chromium task manager","Users frequently report issues with high CPU or memory usage, and the typical response is that it must be a package that is the root cause, not Atom itself. Presently, the operating system task managers just show a bunch of Atom Helper processes, so it is impossible to determine which package is associated with the offending process.
 
 Since Atom is based on Chromium, it would be beneficial to implement the Chromium task manager so that a user can see resource usage by package. Here is what Chromium's task manager looks like:
 
 ![screen shot 2014-10-25 at 8 46 34 am](https://cloud.githubusercontent.com/assets/157270/5021790/eb491578-6a97-11e4-81b5-feb2330f2360.png)
 ","enhancement"
-"Notify when file has changed outside of atom on unsaved buffer","today i worked on a project with sublime text and atom. i edited a file on sublime text, saved the changes and opened atom(the same file). both editors were open at the same time. but when i go to atom, there was no change detection to the file and all the changes, made in sublime text, were gone.
+"147","Notify when file has changed outside of atom on unsaved buffer","today i worked on a project with sublime text and atom. i edited a file on sublime text, saved the changes and opened atom(the same file). both editors were open at the same time. but when i go to atom, there was no change detection to the file and all the changes, made in sublime text, were gone.
 
 what i miss is a popup, mentioning that the file has changed and ask whether reloading.
 ","enhancement"
-"[Feature Request] Folding for include/import statements","Android Studio (based on IntelliJ) has the ability to fold Java imports.
+"148","[Feature Request] Folding for include/import statements","Android Studio (based on IntelliJ) has the ability to fold Java imports.
 This would be nice to have in Atom for Java and possibly other languages.
 ","enhancement"
-"Ability to log in with GitHub account to sync Atom config","It would be great if I could login with a GitHub account and have Atom store my settings either in Dropbox, or GitHub as a repository, or in some way that is easy to access and maybe even sync them across all my installations of Atom so that when I download a new package, it is downloaded everywhere. Another suggestion is to be able to manually export a .atomconfig JSON file that I could just import to Atom at any point to configure settings, install packages, change themes, etc.
+"149","Ability to log in with GitHub account to sync Atom config","It would be great if I could login with a GitHub account and have Atom store my settings either in Dropbox, or GitHub as a repository, or in some way that is easy to access and maybe even sync them across all my installations of Atom so that when I download a new package, it is downloaded everywhere. Another suggestion is to be able to manually export a .atomconfig JSON file that I could just import to Atom at any point to configure settings, install packages, change themes, etc.
 
 I think having the first would be more important for most people, but for anyone who is offline and for anyone who likes to keep their own backups in other places, the manual settings export is really useful.
 
 If this sounds like a good idea to Atom contributors and consumers, I'd like to help out with the PR to make this happen.
 ","enhancement"
-"Don't render byte order mark (BOM)","Currently the `\ufeff` character at the beginning of files is rendered in the editor.
+"150","Don't render byte order mark (BOM)","Currently the `\ufeff` character at the beginning of files is rendered in the editor.
 
 Other editors seems to ignore it so Atom should probably behave the same so it isn't deleted accidentally.
 
@@ -5274,7 +5252,7 @@ Currently it is an invisible space, notice the status bar in the gif below as mo
 
 Also perhaps adds a command to strip the BOM
 ","bug"
-"Atom can lock files or folders under some circumstances","Instead of vaguely explaining, here are the steps for reproducing the bug:
+"151","Atom can lock files or folders under some circumstances","Instead of vaguely explaining, here are the steps for reproducing the bug:
 1. If you have a Yeoman-created project folder i.e. `generator-webapp` created project, run `grunt serve`. It'll create a .tmp file, and I'll assume you haven't had one at first.
 2. When everything goes well expand the folder .tmp in Atom so you can see the subfolders inside.
 3. Stop the grunt process.
@@ -5286,11 +5264,11 @@ Go to Atom and try to delete it, and the Dev Tools will show the same error: `Un
 
 Atom is 0.123.0, and Windows is 8.1. Command line running Grunt is running as Administrator.
 ","bug"
-"Keybinding to Rename The Current Buffer","When saving a new file above the root folder of the current project, there is no way of reaching it via the tree view. It would be nice to be able to rename the current buffer by using <kbd>F2</kbd> or whatever maps to `tree-view:move`. As a workaround, one can open another Atom in the containing directory and rename/move the file from there using the tree view.
+"152","Keybinding to Rename The Current Buffer","When saving a new file above the root folder of the current project, there is no way of reaching it via the tree view. It would be nice to be able to rename the current buffer by using <kbd>F2</kbd> or whatever maps to `tree-view:move`. As a workaround, one can open another Atom in the containing directory and rename/move the file from there using the tree view.
 ","enhancement"
-"Possible Translations?","Hi, how can I translate Atom into Azerbaijani language? Thanks!
+"153","Possible Translations?","Hi, how can I translate Atom into Azerbaijani language? Thanks!
 ","enhancement"
-"Tab Length Detection","Default setting for tab length is 2 spaces.
+"154","Tab Length Detection","Default setting for tab length is 2 spaces.
 - When I open a file that uses 3 spaces for indentation, and press `Tab`, I expect editor to insert 3 spaces (currently 2)
 - When I open a file that uses 4 spaces for indentation, and press `Tab`, I expect editor to insert 4 spaces (currently 2)
 
@@ -5304,21 +5282,21 @@ Here is a screenshot from proprietary Sublime Text (some of these features are f
 
 ![tab_size](https://cloud.githubusercontent.com/assets/7157049/3666025/3ab2ba06-11ec-11e4-81c3-d125259a0eef.png)
 ","enhancement"
-"Overtype mode isn't working","After pressing `Insert` key, editor should engage overtype mode, in which the cursor, when typing, overwrites any text that is present in the current location.
+"155","Overtype mode isn't working","After pressing `Insert` key, editor should engage overtype mode, in which the cursor, when typing, overwrites any text that is present in the current location.
 
 ![out2](https://cloud.githubusercontent.com/assets/7157049/3642782/b7a43272-10c7-11e4-8472-fe555df4f1e5.gif)
 ","enhancement"
-"[OS X] Atom shell command should not show a (temporary) second dock icon when Atom is already open","Having _Atom_ running, when you open additional files (or try to open a file that you have already open) from the _Terminal_, _OS X's Dock_ will show a temporary second _Atom_ icon (and then it goes away). This should not be the case.
+"156","[OS X] Atom shell command should not show a (temporary) second dock icon when Atom is already open","Having _Atom_ running, when you open additional files (or try to open a file that you have already open) from the _Terminal_, _OS X's Dock_ will show a temporary second _Atom_ icon (and then it goes away). This should not be the case.
 
 See how _TextMate_ 1.5.x doesn't do this when you use the _mate_ shell command. Same for opening _Sublime Text_ running _subl_ from the terminal.
 ","bug"
-"process.cwd() behaviour","It's not a bug, it's a feature!
+"157","process.cwd() behaviour","It's not a bug, it's a feature!
 
 If I start multiple instances of atom, process.cwd() is the same for all instances (matches the cwd of the first instance started). Even if that one is closed process.cwd() continues to be the cwd of the first instance.
 
 Produces lots of funny bugs if I don't use absolute paths with `fs` for example. 
 ","bug"
-"Support configurable, non-uniform, visually aligned tab stops","I would like to raise the issue of configurable tab stops.
+"158","Support configurable, non-uniform, visually aligned tab stops","I would like to raise the issue of configurable tab stops.
 
 A proposal has been floating around the web for a few years, called [Elastic tabstops](http://nickgravgaard.com/elastictabstops/), that promises to usher in the ""next generation"" of source code alignment.
 
@@ -5340,9 +5318,9 @@ But it's one of those features that would set Atom apart from any other editor.
 
 Again, the tricky part is just the configurable tab stops. That would allow extension writers to align code, tables, and other data with various algorithms, including Elastic tabstops.
 ","enhancement"
-"Create an `atom bisect` command for determining which package is causing a problem","Similar to the `git bisect` command, this command would load Atom with a subset of the packages available to it. It would launch Atom, then when Atom exits it could ask for ""good"", ""bad"", ""reset"" or ""quit"". It would perform a binary search of the packages until only one package is left and is marked bad (the most likely scenario) telling the user which package it is.
+"159","Create an `atom bisect` command for determining which package is causing a problem","Similar to the `git bisect` command, this command would load Atom with a subset of the packages available to it. It would launch Atom, then when Atom exits it could ask for ""good"", ""bad"", ""reset"" or ""quit"". It would perform a binary search of the packages until only one package is left and is marked bad (the most likely scenario) telling the user which package it is.
 ","enhancement"
-"Add support for block / column selection","In plenty editors, doing `left-alt` (left option) and selecting text will take a slice of that text:
+"160","Add support for block / column selection","In plenty editors, doing `left-alt` (left option) and selecting text will take a slice of that text:
 
 ![sublime](https://cloud.githubusercontent.com/assets/1189716/3020145/21a1ced6-df9b-11e3-9cf2-70371ca5fee1.gif)
 
@@ -5356,7 +5334,7 @@ The current behavior in Atom is to perform a normal text selection:
 
 ![atom](https://cloud.githubusercontent.com/assets/1189716/3020155/3bbc4512-df9b-11e3-97a8-1acab2dd686f.gif)
 ","enhancement"
-"Add a way to handle mouse with keymaps","_Suggested tags: `enhancement`_
+"161","Add a way to handle mouse with keymaps","_Suggested tags: `enhancement`_
 _(Suggested in [PR #2246](https://github.com/atom/atom/pull/2246))_
 
 Mouse behaviour should be handled with `keymaps/*.cson`.
@@ -5365,7 +5343,7 @@ Of course, cutom keymaps and extension would also benefit from this feature.
 
 _Next: Joypad support! :smile:_
 ","enhancement"
-"Tree view and status bar show files with accented characters as new","Halp ticket:
+"162","Tree view and status bar show files with accented characters as new","Halp ticket:
 - support/6c407d52c9f711e38a0cc47a4027f259
 
 > Git support does not handle files with accented characters correctly, declaring them as new. See e.g spec/fixtures/subdir/a�?cce�?nte�?d.svg in atom/markdown-preview or lloeki/svg-preview plugins.
@@ -5384,7 +5362,7 @@ Notice that there's a file marked as new in the tree view -- `spec/fixtures/subd
 
 However, I can't reproduce this issue with the markdown-preview repository which has a file with the same name.
 ","bug"
-"Accessibility","Was using Atom today during a presentation.
+"163","Accessibility","Was using Atom today during a presentation.
 
 While Atom's not necessarily part of that evaluation, I noticed that VoiceOver thought the focus was on the close button the entire time. 
 
@@ -5392,7 +5370,7 @@ Since we're in a web browser, theoretically accessibility should be a given, but
 
 //cc @muan, @nuclearsandwich, @eanakashima
 ","enhancement"
-"ctrl-cmd-down combo for switching lines produces a sound","Reported by a few users:
+"164","ctrl-cmd-down combo for switching lines produces a sound","Reported by a few users:
 - http://discuss.atom.io/t/audible-bell-sounds-when-moving-text-down/2089
 - support/fc6c2ac6a04d11e38e5adef6c2d169fb
 - support/25cfbdeca0ad11e389626d489492fcbc
@@ -5402,12 +5380,12 @@ Since we're in a web browser, theoretically accessibility should be a given, but
 
 Did a bit of digging, and it seems that [Brackets has the same problem](https://github.com/adobe/brackets/issues/2419).
 ","bug"
-"Add some security precautions to package installation","- [ ] When installing a package, display a warning dialog that describes how packages have the capability of being malicious.
+"165","Add some security precautions to package installation","- [ ] When installing a package, display a warning dialog that describes how packages have the capability of being malicious.
 - [x] Link GitHub identities closely with packages (will be easy because everything in the package store will be hosted on GitHub.)
 - [x] Ability to flag package as malicious and convey this message to users who have installed package.
 - [ ] **Possibly** Log I/O, shelling, keychain access, etc... so people can see what is going on without their knowledge.
 ","enhancement"
-"""Non-native"" Fullscreen on OSX?","This is not a huge priority and may even be a ""wontfix"" (which is completely ok)
+"166","""Non-native"" Fullscreen on OSX?","This is not a huge priority and may even be a ""wontfix"" (which is completely ok)
 
 Currently when using Fullscreen in Atom it does what nearly every Mac app does post 10.7, creates a new space, and goes full screen over there. 
 
@@ -5420,5 +5398,5 @@ Is it possible to have this in Atom or even just something like it in my ~/.atom
 
 Totally recognize that this is a little finicky. :grin: 
 ","enhancement"
-"Elastic scrolling not working on editors","Can the rubber band scroll effect at the top and bottom of the editor when reaching the end of the scrollable area be enabled?  I'm not sure if this works yet on scrollable divs, but it would be nice.
+"167","Elastic scrolling not working on editors","Can the rubber band scroll effect at the top and bottom of the editor when reaching the end of the scrollable area be enabled?  I'm not sure if this works yet on scrollable divs, but it would be nice.
 ","enhancement"

@@ -4,26 +4,22 @@ import static java.util.logging.Level.INFO;
 import static util.DownloaderUtil.getIssues;
 
 /**
- * Downloader Main class for handling execution of method for downloading of issues from github's api page.
+ * Downloader Main class for handling execution of method for downloading of issues from GitHub's API page.
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public class Downloader {
     private final static Logger LOGGER = Logger.getLogger(Downloader.class.getName());
 
-    public static String[] download(String githubDownloadArgs, String issuesStatus, String trainLabels, String testLabels) throws Exception {
+    public static String download(String githubDownloadArgs, String issuesStatus, String labels, String excludedLabels) throws Exception {
         LOGGER.log(INFO, "Initialized Downloader module with github user/repository: " + githubDownloadArgs
-                + " status of the issues: " + issuesStatus + " for training labels: " + trainLabels + " and testing labels: " + testLabels);
+                + " status of the issues: " + issuesStatus + " for labels: " + labels + (excludedLabels == null ? "" : " and excluding labels: " + excludedLabels));
 
         String[] githubDownloadArgsArray = githubDownloadArgs.split("/");
-        String[] trainLabelsArray = trainLabels.split(",");
+        String[] labelsArray = labels.split(",");
+        String[] excludedLabelsArray = (excludedLabels == null ? null : excludedLabels.split(","));
 
-        if (testLabels != null) {
-            String[] testLabelsArray = testLabels.split(",");
-            return getIssues(githubDownloadArgsArray[0], githubDownloadArgsArray[1], issuesStatus, trainLabelsArray, testLabelsArray);
-        }
-
-        return getIssues(githubDownloadArgsArray[0], githubDownloadArgsArray[1], issuesStatus, trainLabelsArray, null);
+        return getIssues(githubDownloadArgsArray[0], githubDownloadArgsArray[1], issuesStatus, labelsArray, excludedLabelsArray);
     }
 }
 

@@ -11,7 +11,7 @@ import static java.util.logging.Level.FINE;
 /**
  * Vocabulary class for storing and analyzing words used in different labels.
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public class Vocabulary {
     private final static Logger LOGGER = Logger.getLogger(Vocabulary.class.getName());
@@ -35,13 +35,6 @@ public class Vocabulary {
         }
     }
 
-    /**
-     * Method for comparing and removing words, by some given ratio, used in opposing labels
-     *
-     * @param words to be checked and filtered
-     * @param label label of the entry for comparison with words from other labels
-     * @return filtered line without words
-     */
     public String removeWordsUsedInMultipleLabels(List<String> words, String label) {
         List<String> output = new ArrayList<>(words);
 

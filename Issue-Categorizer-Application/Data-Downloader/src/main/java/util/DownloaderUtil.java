@@ -19,7 +19,7 @@ import static java.util.logging.Level.*;
 /**
  * Non instantiable utility class for Downloader module with static methods for working with Issues online
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public final class DownloaderUtil {
     private final static Logger LOGGER = Logger.getLogger(DownloaderUtil.class.getName());
@@ -31,45 +31,29 @@ public final class DownloaderUtil {
     /**
      * Wrapping method for downloading and writing Issues into file.
      *
-     * @param githubDownloadUsername username of github account to download issues from
-     * @param githubDownloadRepository repository of github's account to download issues from
-     * @param issuesState state of Issues to be downloaded
-     * @return name of csv file written into
-     * @throws IOException
-     * @throws ParseException
+     * @param githubDownloadUsername
+     * @param githubDownloadRepository
+     * @param issuesState
+     * @param labels
+     * @param excludedLabels
+     * @return
+     * @throws Exception
      */
-    public static String[] getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] trainLabels, String[] testLabels)
+    public static String getIssues(String githubDownloadUsername, String githubDownloadRepository, String issuesState, String[] labels, String[] excludedLabels)
             throws Exception {
-        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + String.join(" and ", trainLabels));
+        LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState +
+                " for labels: " + String.join(" and ", labels) + (excludedLabels == null ? "" : " while excluding labels: " + String.join(" and ", excludedLabels)));
 
         String urlString = "https://api.github.com/repos/" + githubDownloadUsername + "/" + githubDownloadRepository + "/issues?state=" + issuesState;
-        List<EntryDTO> listOfEntries = extractEntriesRecursively(urlString, trainLabels, null);
+        List<EntryDTO> listOfEntries = extractEntriesRecursively(urlString, labels, excludedLabels);
 
-        String csvTrainFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-labels-" + String.join("-", trainLabels) + ".csv");
-        writeEntriesIntoFile(csvTrainFileName, listOfEntries);
+        String csvFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository +
+                "-issues-" + issuesState + "-labels-" + String.join("-", labels) + ".csv");
+        writeEntriesIntoFile(csvFileName, listOfEntries);
 
-        if (testLabels != null) {
-            LOGGER.log(INFO, "Getting Issues for --> " + githubDownloadUsername + "/" + githubDownloadRepository + " <-- with State --> " + issuesState + " for labels: " + String.join(" and ", testLabels));
-
-            listOfEntries = extractEntriesRecursively(urlString, testLabels, trainLabels);
-
-            String csvTestFileName = updateFileNameIfNeeded("../data/IssueCategorizer-" + githubDownloadUsername + "-" + githubDownloadRepository + "-issues-" + issuesState + "-labels-" + String.join("-", testLabels)  + ".csv");
-            writeEntriesIntoFile(csvTestFileName, listOfEntries);
-
-            return new String[]{csvTrainFileName, csvTestFileName};
-        }
-
-        return new String[]{csvTrainFileName};
+        return csvFileName;
     }
 
-    /**
-     * Method for extracting entries from github api URL, used recursively.
-     *
-     * @param urlString url to be extracted from
-     * @return list of recursively extracted entries
-     * @throws IOException
-     * @throws ParseException
-     */
     private static List<EntryDTO> extractEntriesRecursively(String urlString, String[] labels, String[] labelsToExclude)
             throws IOException, ParseException, HttpException {
         LOGGER.log(INFO, "Extracting Issues for --> " + urlString + " <--");
@@ -113,13 +97,6 @@ public final class DownloaderUtil {
         return listOfEntries;
     }
 
-    /**
-     * Method for getting entries from api page.
-     *
-     * @param content whole content of github api page
-     * @return list of entries extracted from specific page
-     * @throws ParseException
-     */
     private static List<EntryDTO> getEntries(String content, String[] labelsToFind, String[] labelsToExclude) throws ParseException {
         JSONParser parser = new JSONParser();
         JSONArray jsonArray = (JSONArray) parser.parse(content);
@@ -157,13 +134,6 @@ public final class DownloaderUtil {
         return listOfEntries;
     }
 
-    /**
-     * Find labels for current entry
-     * @param labelNames all labels in current found issue
-     * @param labelsToFind labels to find in entry
-     * @param labelsToExclude labels to exclude if found in entry
-     * @return labels that belong to issue, null if not found or labelsToExclude are in them
-     */
     private static List<String> getEntryLabels(List<String> labelNames, String[] labelsToFind, String[] labelsToExclude) {
         List<String> output = new ArrayList<>();
 
@@ -176,7 +146,7 @@ public final class DownloaderUtil {
         }
 
         for (String labelToFind : labelsToFind) {
-            if (labelToFind.equals("") && labelsToFind.length == 1) {
+            if (labelToFind.equals("all") && labelsToFind.length == 1) {
                 if (labelNames.isEmpty()) {
                     output.add(UNLABELED_LABEL);
                     break;
@@ -200,12 +170,6 @@ public final class DownloaderUtil {
         return output;
     }
 
-    /**
-     * Method for differencing and finding specific labels in json labels for issue.
-     *
-     * @param labels to be searched in
-     * @return specific label for that issue's labels
-     */
     private static List<String> getLabelNames(JSONArray labels) {
         List<String> labelNames = new ArrayList<>();
 
@@ -217,12 +181,6 @@ public final class DownloaderUtil {
         return labelNames;
     }
 
-    /**
-     * Method for extracting links to api pages from specific api page.
-     *
-     * @param linkFromHeader link value of api page
-     * @return map of keys and links to specific api pages
-     */
     private static Map<String, String> getPages(String linkFromHeader) {
         String[] linkMap = linkFromHeader.split(", ");
         Map<String, String> pagesMap = new HashMap<>();
@@ -240,22 +198,20 @@ public final class DownloaderUtil {
         return pagesMap;
     }
 
-    /**
-     * Method for creating a csv file and writing list of entries into that file
-     *
-     * @param csvFileName csv file's name to be created and written into
-     * @param listOfEntries list of entries to be written into file
-     * @throws IOException
-     */
     private static void writeEntriesIntoFile(String csvFileName, List<EntryDTO> listOfEntries) throws Exception {
         LOGGER.log(INFO, "Writing Entries into file --> " + csvFileName + " <--");
 
+        if (!new File("../data").isDirectory()) {
+            new File("../data").mkdirs();
+        }
+
         try (CSVWriter writer = new CSVWriter(new FileWriter(new File(csvFileName)))) {
-            String[] header = { "Title", "Body" , "Label" };
+            String[] header = { "Id", "Title", "Body" , "Label" };
             writer.writeNext(header);
 
-            for (EntryDTO entryDTO : listOfEntries) {
-                String[] entry = { entryDTO.getTitle(), entryDTO.getBody(), entryDTO.getLabel() };
+            for (int i = 1; i <= listOfEntries.size(); i++) {
+                EntryDTO entryDTO = listOfEntries.get(i - 1);
+                String[] entry = { String.valueOf(i), entryDTO.getTitle(), entryDTO.getBody(), entryDTO.getLabel() };
                 writer.writeNext(entry);
             }
         }
@@ -281,6 +237,6 @@ public final class DownloaderUtil {
             output = nameWithoutSuffix + 1 + fileName.substring(fileName.lastIndexOf('.'));
         }
 
-        return output;
+        return updateFileNameIfNeeded(output);
     }
 }
