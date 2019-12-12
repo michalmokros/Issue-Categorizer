@@ -82,6 +82,10 @@ public final class Parser {
             saver.setInstances(data);
         }
 
+        if (!new File("../data").isDirectory()) {
+            new File("../data").mkdirs();
+        }
+
         try {
             saver.setFile(new File(arffFile));
             saver.writeBatch();

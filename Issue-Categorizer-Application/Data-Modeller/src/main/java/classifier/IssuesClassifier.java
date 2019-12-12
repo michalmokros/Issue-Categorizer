@@ -17,6 +17,11 @@ import java.util.logging.Logger;
 
 import static java.util.logging.Level.INFO;
 
+/**
+ * Class for classifying issues based no classifier created from labeled issues
+ *
+ * @author xmokros 456442@mail.muni.cz
+ */
 public class IssuesClassifier /*implements Serializable*/ {
     private final static Logger LOGGER = Logger.getLogger(IssuesClassifier.class.getName());
     //private static final long serialVersionUID = -123455813150452885L;
@@ -27,7 +32,7 @@ public class IssuesClassifier /*implements Serializable*/ {
     private FilteredClassifier filteredClassifier;
     private Classifier classifier;
 
-    public IssuesClassifier(Instances data, String classifier) throws Exception {
+    public IssuesClassifier(Instances data, String classifier, int lengthOfToBeLabeled) throws Exception {
         if (data.classIndex() == -1) {
             data.setClassIndex(data.numAttributes() - 1);
         }

@@ -39,7 +39,7 @@ public class Main {
         String[] csvFileNames = callDownloader(args);
         String[] arffFileNames = callConverter(csvFileNames);
         String bestClassifier = callTester(arffFileNames);
-        String csvClassifiedFileName = callModeller(ArrayUtils.addAll(arffFileNames, csvFileNames[1], bestClassifier)); //@TODO LICENCe
+        String csvClassifiedFileName = callModeller(ArrayUtils.addAll(arffFileNames, csvFileNames[1], bestClassifier));
 
         LOGGER.log(INFO, "Finished run task, classified issues saved into file: " + csvClassifiedFileName);
     }
@@ -110,7 +110,7 @@ public class Main {
 
             return Model.model(new String[] {trainFile, testFile, originalFile, classifier});
         } else {
-            throw new Exception("For a modeller to be initialized there need to be 3 arguments.");
+            throw new MissingTaskArgumentException("For a modeller to be initialized there need to be 4 arguments.");
         }
     }
 
@@ -118,7 +118,7 @@ public class Main {
         if (args.length > 0) {
             String testedFile = addArgPrefixSuffix(Test.FILE_ARGUMENT) + args[0];
 
-            String fileArgument = addArgPrefixSuffix(Test.FILE_ARGUMENT);
+            String fileArgument = addArgPrefixSuffix(Test.CLASSIFIER_ARGUMENT);
             String withCs = fileArgument + Test.NAIVE_BAYES_ARGUMENT;
             String nbSummary = Test.test(new String[] {testedFile, withCs});
             withCs = fileArgument + Test.J48_ARGUMENT;
@@ -126,9 +126,9 @@ public class Main {
             withCs = fileArgument + Test.RANDOM_FOREST_ARGUMENT;
             String rfSummary = Test.test(new String[] {testedFile, withCs});
 
-            return Utility.calculateTheBest(nbSummary, j48Summary, rfSummary);
+            return Utility.calculateTheBestClassifier(nbSummary, j48Summary, rfSummary);
         } else {
-            throw new Exception("Not enough arguments for diagnose to begin.");
+            throw new MissingTaskArgumentException("Not enough arguments for diagnose to begin.");
         }
     }
 }

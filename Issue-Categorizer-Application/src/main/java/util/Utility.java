@@ -1,7 +1,10 @@
 package util;
 
-import java.util.List;
-
+/**
+ * Class for storing utility static methods
+ *
+ * @author xmokros 456442@mail.muni.cz
+ */
 public abstract class Utility {
     private Utility() {}
 
@@ -46,7 +49,7 @@ public abstract class Utility {
         return "-" + value + "=";
     }
 
-    public static String calculateTheBest(String nbSummary, String j48Summary, String rfSummary) {
+    public static String calculateTheBestClassifier(String nbSummary, String j48Summary, String rfSummary) {
         double nb = findPercentage(nbSummary);
         double j48 = findPercentage(j48Summary);
         double rf = findPercentage(rfSummary);

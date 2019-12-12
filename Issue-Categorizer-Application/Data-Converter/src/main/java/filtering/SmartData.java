@@ -1,9 +1,9 @@
 package filtering;
 
-import enums.Column;
 import weka.classifiers.meta.FilteredClassifier;
 import weka.classifiers.trees.RandomForest;
-import weka.core.*;
+import weka.core.Instance;
+import weka.core.Instances;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.StringToWordVector;
@@ -17,7 +17,7 @@ import static java.util.logging.Level.INFO;
 /**
  * Class for SmartData Clearing, using ML for better pre-processing of training data.
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public class SmartData {
     private final static Logger LOGGER = Logger.getLogger(SmartData.class.getName());

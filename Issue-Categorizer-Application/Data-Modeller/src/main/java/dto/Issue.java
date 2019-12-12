@@ -2,6 +2,11 @@ package dto;
 
 import java.util.Objects;
 
+/**
+ * Class used as DTO for storing the individual issues
+ *
+ * @author xmokros 456442@mail.muni.cz
+ */
 public class Issue {
     private String id;
     private String title;

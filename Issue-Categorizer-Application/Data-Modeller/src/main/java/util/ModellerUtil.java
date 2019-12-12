@@ -19,7 +19,7 @@ import static java.util.logging.Level.INFO;
 /**
  * Util class for basic model creating and handling methods.
  *
- * @author xmokros
+ * @author xmokros 456442@mail.muni.cz
  */
 public abstract class ModellerUtil {
     private final static Logger LOGGER = Logger.getLogger(ModellerUtil.class.getName());
@@ -30,8 +30,9 @@ public abstract class ModellerUtil {
 
     public static String processData(String trainingFile, String testFile, String originalCsvFileName, String classifier) throws Exception {
         Instances instances = convertArffFileIntoInstances(trainingFile);
-        IssuesClassifier issuesClassifier = new IssuesClassifier(instances, classifier);
-        Instances classifiedInstances = issuesClassifier.classifyIssues(convertArffFileIntoInstances(testFile));
+        Instances unclassifiedInstances = convertArffFileIntoInstances(testFile);
+        IssuesClassifier issuesClassifier = new IssuesClassifier(instances, classifier, unclassifiedInstances.numAttributes());
+        Instances classifiedInstances = issuesClassifier.classifyIssues(unclassifiedInstances);
         String csvFileName = updateFileNameIfNeeded(testFile.substring(0, testFile.length() - 5).concat("-classified.csv"));
         createCsvFile(csvFileName, originalCsvFileName, classifiedInstances);
         return csvFileName;
@@ -51,6 +52,10 @@ public abstract class ModellerUtil {
 
     public static void createCsvFile(String csvFileName, String originalCsvFileName, Instances instances) throws IOException {
         LOGGER.log(INFO, "Beginning of creation of csv file --> " + csvFileName + " <--");
+
+        if (!new File("../data").isDirectory()) {
+            new File("../data").mkdirs();
+        }
 
         try (CSVWriter writer = new CSVWriter(new FileWriter(new File(csvFileName)))) {
             String[] header = { "Id", "Title", "Body" , "Label" };

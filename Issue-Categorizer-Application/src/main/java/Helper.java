@@ -1,3 +1,8 @@
+/**
+ * Main application class for executing the "info" task.
+ *
+ * @author xmokros 456442@mail.muni.cz
+ */
 public class Helper {
     public static void main(String[] args) {
         System.out.println("--------------------------------------------ISSUE CATEGORIZER--------------------------------------------");
@@ -50,9 +55,9 @@ public class Helper {
         System.out.println("TASK CLASSIFY");
         System.out.println("\tClassifies issues stored in csv/arff files based on another labeled issues");
         System.out.println("\tExample: >./gradlew classify --args='-u=train.arff -l=test.csv -c=rf'");
-        System.out.println("\t-" + Model.UNLABELED_FILE_ARGUMENT + "\trepresents file where training issues for creating the model are stored, mandatory");
+        System.out.println("\t-" + Model.LABELED_FILE_ARGUMENT + "\trepresents file where training issues for creating the model are stored, mandatory");
         System.out.println("\t\texample: -u=IssueCategorizer-atom-atom-issues-open-labels-enhancement-bug.arff");
-        System.out.println("\t-" + Model.LABELED_FILE_ARGUMENT + "\trepresents file where issues to be classified are stored, mandatory");
+        System.out.println("\t-" + Model.UNLABELED_FILE_ARGUMENT + "\trepresents file where issues to be classified are stored, mandatory");
         System.out.println("\t\texample: -l=IssueCategorizer-atom-atom-issues-open-labels-unlabeled.csv");
         System.out.println("\t-" + Model.CLASSIFIER_ARGUMENT + "\trepresents which of the classifiers to use, mandatory, possible values: 'nb,rf,j48'");
         System.out.println("\t\texample: -c=nb");

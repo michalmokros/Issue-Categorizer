@@ -15,6 +15,11 @@ import java.util.logging.Logger;
 
 import static java.util.logging.Level.INFO;
 
+/**
+ * Utility class for basic Tester methods - analysis of labeled issues using different classifiers
+ *
+ * @author xmokros 456442@mail.muni.cz
+ */
 public class TesterUtil {
     private final static Logger LOGGER = Logger.getLogger(TesterUtil.class.getName());
     private static final int FOLDS = 10;

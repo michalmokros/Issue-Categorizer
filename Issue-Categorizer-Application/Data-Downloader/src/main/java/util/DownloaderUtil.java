@@ -54,16 +54,6 @@ public final class DownloaderUtil {
         return csvFileName;
     }
 
-    /**
-     * Method for extracting entries from github api URL, used recursively.
-     * @param urlString
-     * @param labels
-     * @param labelsToExclude
-     * @return
-     * @throws IOException
-     * @throws ParseException
-     * @throws HttpException
-     */
     private static List<EntryDTO> extractEntriesRecursively(String urlString, String[] labels, String[] labelsToExclude)
             throws IOException, ParseException, HttpException {
         LOGGER.log(INFO, "Extracting Issues for --> " + urlString + " <--");
@@ -107,14 +97,6 @@ public final class DownloaderUtil {
         return listOfEntries;
     }
 
-    /**
-     * Method for getting entries from api page.
-     * @param content
-     * @param labelsToFind
-     * @param labelsToExclude
-     * @return
-     * @throws ParseException
-     */
     private static List<EntryDTO> getEntries(String content, String[] labelsToFind, String[] labelsToExclude) throws ParseException {
         JSONParser parser = new JSONParser();
         JSONArray jsonArray = (JSONArray) parser.parse(content);
@@ -152,13 +134,6 @@ public final class DownloaderUtil {
         return listOfEntries;
     }
 
-    /**
-     * Find labels for current entry
-     * @param labelNames all labels in current found issue
-     * @param labelsToFind labels to find in entry
-     * @param labelsToExclude labels to exclude if found in entry
-     * @return labels that belong to issue, null if not found or labelsToExclude are in them
-     */
     private static List<String> getEntryLabels(List<String> labelNames, String[] labelsToFind, String[] labelsToExclude) {
         List<String> output = new ArrayList<>();
 
@@ -225,6 +200,10 @@ public final class DownloaderUtil {
 
     private static void writeEntriesIntoFile(String csvFileName, List<EntryDTO> listOfEntries) throws Exception {
         LOGGER.log(INFO, "Writing Entries into file --> " + csvFileName + " <--");
+
+        if (!new File("../data").isDirectory()) {
+            new File("../data").mkdirs();
+        }
 
         try (CSVWriter writer = new CSVWriter(new FileWriter(new File(csvFileName)))) {
             String[] header = { "Id", "Title", "Body" , "Label" };

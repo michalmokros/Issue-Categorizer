@@ -15,8 +15,8 @@ import static java.util.logging.Level.WARNING;
 public class Model {
     private final static Logger LOGGER = Logger.getLogger(Model.class.getName());
 
-    public final static String LABELED_FILE_ARGUMENT = "l";
-    public final static String UNLABELED_FILE_ARGUMENT = "u";
+    public final static String LABELED_FILE_ARGUMENT = "u";
+    public final static String UNLABELED_FILE_ARGUMENT = "l";
     public final static String SMART_DATA_ARGUMENT = "sd";
     public final static String CLASSIFIER_ARGUMENT = "c";
     public final static String ORIGINAL_UNLABELED_FILE = "og";
