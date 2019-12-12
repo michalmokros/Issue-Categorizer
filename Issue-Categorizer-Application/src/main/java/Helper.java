@@ -40,16 +40,12 @@ public class Helper {
         //task diagnose
         System.out.println("TASK DIAGNOSE");
         System.out.println("\tRuns analysis on the labeled issues and outputs the summary of the classifier");
-        System.out.println("\tExample: >./gradlew diagnose --args='-f=IssueCategorizer-atom-atom-issues-open-labels-enhancement-bug.csv -rf=true'");
+        System.out.println("\tExample: >./gradlew diagnose --args='-f=IssueCategorizer-atom-atom-issues-open-labels-enhancement-bug.csv -c=nb'");
         System.out.println("\tWarning: one of the tree classifiers must be set to true in the arguments");
         System.out.println("\t-" + Test.FILE_ARGUMENT + "\trepresents the name of the file where the issues are stored, mandatory");
         System.out.println("\t\texample: -f=file.arff");
-        System.out.println("\t-" + Test.NAIVE_BAYES_ARGUMENT + "\trepresents whether to use naive Bayes multinomial as the classifying algorithm, default value; 'false'");
-        System.out.println("\t\texample: -nb=true");
-        System.out.println("\t-" + Test.J48_ARGUMENT + "\trepresents whether to use J48 decision tree as the classifying algorithm, default value; 'false'");
-        System.out.println("\t\texample: -j48=false");
-        System.out.println("\t-" + Test.RANDOM_FOREST_ARGUMENT + "\trepresents whether to use Random Forest as the classifying algorithm, default value; 'false'");
-        System.out.println("\t\texample: -rf=true");
+        System.out.println("\t-" + Test.CLASSIFIER_ARGUMENT + "\trepresents which classifying algorithm is used, mandatory, possible values: 'nb,j48,rf'");
+        System.out.println("\t\texample: -c=rf");
         //task classify
         System.out.println("TASK CLASSIFY");
         System.out.println("\tClassifies issues stored in csv/arff files based on another labeled issues");
@@ -58,7 +54,7 @@ public class Helper {
         System.out.println("\t\texample: -u=IssueCategorizer-atom-atom-issues-open-labels-enhancement-bug.arff");
         System.out.println("\t-" + Model.LABELED_FILE_ARGUMENT + "\trepresents file where issues to be classified are stored, mandatory");
         System.out.println("\t\texample: -l=IssueCategorizer-atom-atom-issues-open-labels-unlabeled.csv");
-        System.out.println("\t-" + Model.CLASSIFIER_ARGUMENT + "\trepresents which of the classifiers to use, mandatory, possible value: 'nb,rf,j48'");
+        System.out.println("\t-" + Model.CLASSIFIER_ARGUMENT + "\trepresents which of the classifiers to use, mandatory, possible values: 'nb,rf,j48'");
         System.out.println("\t\texample: -c=nb");
         System.out.println("\t-" + Model.SMART_DATA_ARGUMENT + "\trepresents whether to use Smart Data filter during conversion if the train file is in csv format, default value 'false'");
         System.out.println("\t\texample: -sd=true");

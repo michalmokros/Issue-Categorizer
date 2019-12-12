@@ -12,9 +12,9 @@ import static java.util.logging.Level.INFO;
 public class Tester {
     private final static Logger LOGGER = Logger.getLogger(Tester.class.getName());
 
-    public static String test(String fileName, boolean usingNB, boolean usingJ48, boolean usingRF) throws Exception {
-        LOGGER.log(INFO, "Initialized Tester for file for testing: " + fileName);
+    public static String test(String fileName, String classifier) throws Exception {
+        LOGGER.log(INFO, "Initialized Tester for file for testing: " + fileName + "with classifier: " + classifier);
 
-        return TesterUtil.testData(fileName, usingNB, usingJ48, usingRF);
+        return TesterUtil.testData(fileName, classifier);
     }
 }

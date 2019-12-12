@@ -118,11 +118,12 @@ public class Main {
         if (args.length > 0) {
             String testedFile = addArgPrefixSuffix(Test.FILE_ARGUMENT) + args[0];
 
-            String withCs = addArgPrefixSuffix(Test.NAIVE_BAYES_ARGUMENT) + "true" ;
+            String fileArgument = addArgPrefixSuffix(Test.FILE_ARGUMENT);
+            String withCs = fileArgument + Test.NAIVE_BAYES_ARGUMENT;
             String nbSummary = Test.test(new String[] {testedFile, withCs});
-            withCs = addArgPrefixSuffix(Test.J48_ARGUMENT) + "true" ;
+            withCs = fileArgument + Test.J48_ARGUMENT;
             String j48Summary = Test.test(new String[] {testedFile, withCs});
-            withCs = addArgPrefixSuffix(Test.RANDOM_FOREST_ARGUMENT) + "true" ;
+            withCs = fileArgument + Test.RANDOM_FOREST_ARGUMENT;
             String rfSummary = Test.test(new String[] {testedFile, withCs});
 
             return Utility.calculateTheBest(nbSummary, j48Summary, rfSummary);

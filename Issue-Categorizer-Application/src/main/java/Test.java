@@ -16,6 +16,7 @@ public class Test {
     private final static Logger LOGGER = Logger.getLogger(Test.class.getName());
 
     public final static String FILE_ARGUMENT = "f";
+    public final static String CLASSIFIER_ARGUMENT = "c";
     public final static String NAIVE_BAYES_ARGUMENT = "nb";
     public final static String J48_ARGUMENT = "j48";
     public final static String RANDOM_FOREST_ARGUMENT = "rf";
@@ -41,9 +42,12 @@ public class Test {
             throw new MissingTaskArgumentException("Mandatory arguments for task missing: " + FILE_ARGUMENT);
         }
 
-        boolean usingNB = Boolean.parseBoolean(Utility.extractArg(NAIVE_BAYES_ARGUMENT, args));
-        boolean usingJ48 = Boolean.parseBoolean(Utility.extractArg(J48_ARGUMENT, args));
-        boolean usingRF = Boolean.parseBoolean(Utility.extractArg(RANDOM_FOREST_ARGUMENT, args));
+        String classifier = Utility.extractArg(CLASSIFIER_ARGUMENT, args);
+        if (classifier == null || classifier.isEmpty() ||
+                !(classifier.equals(NAIVE_BAYES_ARGUMENT) || classifier.equals(J48_ARGUMENT) || classifier.equals(RANDOM_FOREST_ARGUMENT))) {
+            LOGGER.log(WARNING, "Wrong classifier argument for testing.");
+            throw new MissingTaskArgumentException("Mandatory arguments for task missing: " + CLASSIFIER_ARGUMENT);
+        }
 
         testedFile = Utility.addDataDirectoryToPathIfNot(testedFile);
 
@@ -51,12 +55,6 @@ public class Test {
             testedFile = Converter.convert(testedFile, false);
         }
 
-        if (!usingNB && !usingJ48 && !usingRF) {
-            LOGGER.log(WARNING, "No classifier argument for testing.");
-            throw new MissingTaskArgumentException("Mandatory arguments for task missing: "
-                    + NAIVE_BAYES_ARGUMENT + " or " + J48_ARGUMENT + " or " + RANDOM_FOREST_ARGUMENT);
-        }
-
-        return Tester.test(testedFile, usingNB, usingJ48, usingRF);
+        return Tester.test(testedFile, classifier);
     }
 }

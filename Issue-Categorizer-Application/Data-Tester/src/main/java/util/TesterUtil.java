@@ -20,14 +20,13 @@ public class TesterUtil {
     private static final int FOLDS = 10;
     private static final int SEED = 1;
 
-    public static String testData(String fileName, boolean usingNB, boolean usingJ48, boolean usingRF) throws Exception {
+    public static String testData(String fileName, String classifier) throws Exception {
         Instances instances = convertArffFileIntoInstances(fileName);
-        String summary = runTesting(instances, usingNB, usingJ48, usingRF);
-        return summary;
+        return runTesting(instances, classifier);
     }
 
-    private static String runTesting(Instances instances, boolean usingNB, boolean usingJ48, boolean usingRF) throws Exception {
-        if (usingNB) {
+    private static String runTesting(Instances instances, String classifier) throws Exception {
+        if (classifier.equals("nb")) {
             NaiveBayesMultinomialText nbMultiText = new NaiveBayesMultinomialText();
             Evaluation evaluation = new Evaluation(instances);
             evaluation.crossValidateModel(nbMultiText, instances, FOLDS, new Random(SEED));
@@ -35,7 +34,7 @@ public class TesterUtil {
             return getInfo(evaluation);
         }
 
-        if (usingJ48) {
+        if (classifier.equals("j48")) {
             StringToWordVector stringToWordVector = new StringToWordVector();
             J48 j48 = new J48();
             stringToWordVector.setInputFormat(instances);
@@ -46,7 +45,7 @@ public class TesterUtil {
             return getInfo(evaluation);
         }
 
-        if (usingRF) {
+        if (classifier.equals("rf")) {
             StringToWordVector stringToWordVector = new StringToWordVector();
             RandomForest randomForest = new RandomForest();
             stringToWordVector.setInputFormat(instances);
