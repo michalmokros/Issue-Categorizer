@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeb1ee8f-185d-4867-9c57-76454d6c09b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-all-labels-enhancement-bug.arff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../data/IssueCategorizer-atom-atom-issues-all-labels-enhancement-bug.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../license.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/parsing/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/classes/java/main/parsing/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/build/libs/Data-Converter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/SmartData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/filtering/Vocabulary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Converter/src/main/java/parsing/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/util/DownloaderUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/classes/java/main/util/DownloaderUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/build/libs/Data-Downloader-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Downloader/src/main/java/util/DownloaderUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/classifier/IssuesClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Modeller/src/main/java/dto/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/dto/Issue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Modeller/src/main/java/util/ModellerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Modeller/src/main/java/util/ModellerUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data-Tester/src/main/java/util/TesterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Tester/src/main/java/util/TesterUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Helper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Model.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/util/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/util/Utility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Utility.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +230,8 @@
       <workItem from="1572712463651" duration="43874000" />
       <workItem from="1573831203232" duration="27410000" />
       <workItem from="1575720402898" duration="30115000" />
-      <workItem from="1576070605722" duration="32956000" />
+      <workItem from="1576070605722" duration="33558000" />
+      <workItem from="1579784890291" duration="332000" />
     </task>
     <servers />
   </component>
